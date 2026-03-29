@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "generated_at": "2026-03-29T08:25:24.659Z",
+  "generator": "ai-context-builder-v1",
+  "source_branch": "main",
+  "source_commit_sha": "807156c2b056553e1a237eddbba6e3a107cf9fc1",
+  "build_mode_requested": "auto",
+  "build_mode_used": "full",
+  "rebuild_reasons": [
+    "기존 .ai-context가 없음"
+  ],
+  "total_cs_files": 0,
+  "changed_cs_files": 0,
+  "added_cs_files": 0,
+  "deleted_cs_files": 0,
+  "index_status": "ready"
+}
