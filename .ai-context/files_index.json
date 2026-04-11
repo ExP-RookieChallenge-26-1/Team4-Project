@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "file_id": "2048Modified/Assets/Scenes/HCH_SquareProceed.cs",
+    "path": "2048Modified/Assets/Scenes/HCH_SquareProceed.cs",
+    "file_name": "HCH_SquareProceed.cs",
+    "content_hash": "b596540a294958707a1b2bd00fafa9466f3878ed",
+    "size": 456,
+    "line_count": 23,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "HCH_SquareProceed",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "HCH_SquareProceed",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start",
+      "Update",
+      "FixedUpdate",
+      "Vector2"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start",
+      "Update",
+      "FixedUpdate"
+    ],
+    "has_update": true,
+    "has_fixed_update": true,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 1,
+    "find_call_count": 0,
+    "new_keyword_count": 1,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "UnityEngine",
+      "Start",
+      "Update",
+      "Log",
+      "FixedUpdate",
+      "Rigidbody2D",
+      "GetComponent",
+      "AddForce",
+      "Vector2"
+    ],
+    "component_access_types": [
+      "Rigidbody2D"
+    ],
+    "created_types": [
+      "Vector2"
+    ],
+    "singleton_access_types": [],
+    "string_literals": [
+      "square proceed wow"
+    ],
+    "numeric_literals": [
+      5
+    ],
+    "guessed_roles": [
+      "runtime"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "Update 기반 처리 존재",
+      "물리 타이밍 처리 가능성",
+      "컴포넌트 조회 사용"
+    ]
+  }
+]
