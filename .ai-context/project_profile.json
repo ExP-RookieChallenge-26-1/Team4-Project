@@ -18,14 +18,14 @@
   "high_coupling_classes": [
     {
       "class_name": "HCH_SquareProceed",
-      "file_id": "2048Modified/Assets/Scenes/HCH_SquareProceed.cs",
+      "file_id": "2048Modified/Assets/Scripts/HCH_SquareProceed.cs",
       "relation_count": 12,
       "referenced_type_count": 9
     }
   ],
   "high_risk_classes": [
     {
-      "file_id": "2048Modified/Assets/Scenes/HCH_SquareProceed.cs",
+      "file_id": "2048Modified/Assets/Scripts/HCH_SquareProceed.cs",
       "class_name": "HCH_SquareProceed",
       "risk_flags": [
         "update-heavy",

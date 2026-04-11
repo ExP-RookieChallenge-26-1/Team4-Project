@@ -1,6 +1,6 @@
 [
   {
-    "file_id": "2048Modified/Assets/Scenes/HCH_SquareProceed.cs",
+    "file_id": "2048Modified/Assets/Scripts/HCH_SquareProceed.cs",
     "class_name": "HCH_SquareProceed",
     "risk_flags": [
       "update-heavy",
