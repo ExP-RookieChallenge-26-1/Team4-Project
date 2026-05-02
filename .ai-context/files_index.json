@@ -1,5 +1,96 @@
 [
   {
+    "file_id": "2048Modified/Assets/Scenes/KGB_SquareProceed.cs",
+    "path": "2048Modified/Assets/Scenes/KGB_SquareProceed.cs",
+    "file_name": "KGB_SquareProceed.cs",
+    "content_hash": "a5d24b87a8c77f385ca5b55721489137fa8326fd",
+    "size": 293,
+    "line_count": 18,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "KGB_SquareProceed",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "KGB_SquareProceed",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start",
+      "FixedUpdate"
+    ],
+    "fields": [
+      {
+        "name": "rigid",
+        "type": "Rigidbody2D",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start",
+      "FixedUpdate"
+    ],
+    "has_update": false,
+    "has_fixed_update": true,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 1,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "Rigidbody2D",
+      "UnityEngine",
+      "Start",
+      "Log",
+      "GetComponent",
+      "FixedUpdate",
+      "AddForce",
+      "Vector2"
+    ],
+    "component_access_types": [
+      "Rigidbody2D"
+    ],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [
+      "유니티!"
+    ],
+    "numeric_literals": [
+      10
+    ],
+    "guessed_roles": [
+      "runtime"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "물리 타이밍 처리 가능성",
+      "컴포넌트 조회 사용"
+    ]
+  },
+  {
     "file_id": "2048Modified/Assets/Scripts/HCH_SquareProceed.cs",
     "path": "2048Modified/Assets/Scripts/HCH_SquareProceed.cs",
     "file_name": "HCH_SquareProceed.cs",
