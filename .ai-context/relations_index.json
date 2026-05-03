@@ -1,75 +1,5 @@
 [
   {
-    "from_file": "2048Modified/Assets/Scenes/KGB_SquareProceed.cs",
-    "from_class": "KGB_SquareProceed",
-    "to_type": "Rigidbody2D",
-    "relation_type": "component-access",
-    "strength": 3
-  },
-  {
-    "from_file": "2048Modified/Assets/Scenes/KGB_SquareProceed.cs",
-    "from_class": "KGB_SquareProceed",
-    "to_type": "MonoBehaviour",
-    "relation_type": "inherits",
-    "strength": 4
-  },
-  {
-    "from_file": "2048Modified/Assets/Scenes/KGB_SquareProceed.cs",
-    "from_class": "KGB_SquareProceed",
-    "to_type": "AddForce",
-    "relation_type": "uses",
-    "strength": 1
-  },
-  {
-    "from_file": "2048Modified/Assets/Scenes/KGB_SquareProceed.cs",
-    "from_class": "KGB_SquareProceed",
-    "to_type": "FixedUpdate",
-    "relation_type": "uses",
-    "strength": 1
-  },
-  {
-    "from_file": "2048Modified/Assets/Scenes/KGB_SquareProceed.cs",
-    "from_class": "KGB_SquareProceed",
-    "to_type": "GetComponent",
-    "relation_type": "uses",
-    "strength": 1
-  },
-  {
-    "from_file": "2048Modified/Assets/Scenes/KGB_SquareProceed.cs",
-    "from_class": "KGB_SquareProceed",
-    "to_type": "Log",
-    "relation_type": "uses",
-    "strength": 1
-  },
-  {
-    "from_file": "2048Modified/Assets/Scenes/KGB_SquareProceed.cs",
-    "from_class": "KGB_SquareProceed",
-    "to_type": "Rigidbody2D",
-    "relation_type": "uses",
-    "strength": 1
-  },
-  {
-    "from_file": "2048Modified/Assets/Scenes/KGB_SquareProceed.cs",
-    "from_class": "KGB_SquareProceed",
-    "to_type": "Start",
-    "relation_type": "uses",
-    "strength": 1
-  },
-  {
-    "from_file": "2048Modified/Assets/Scenes/KGB_SquareProceed.cs",
-    "from_class": "KGB_SquareProceed",
-    "to_type": "UnityEngine",
-    "relation_type": "uses",
-    "strength": 1
-  },
-  {
-    "from_file": "2048Modified/Assets/Scenes/KGB_SquareProceed.cs",
-    "from_class": "KGB_SquareProceed",
-    "to_type": "Vector2",
-    "relation_type": "uses",
-    "strength": 1
-  },
-  {
     "from_file": "2048Modified/Assets/Scripts/HCH_SquareProceed.cs",
     "from_class": "HCH_SquareProceed",
     "to_type": "Rigidbody2D",
@@ -149,6 +79,76 @@
   {
     "from_file": "2048Modified/Assets/Scripts/HCH_SquareProceed.cs",
     "from_class": "HCH_SquareProceed",
+    "to_type": "Vector2",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "2048Modified/Assets/Scripts/KGB_SquareProceed.cs",
+    "from_class": "KGB_SquareProceed",
+    "to_type": "Rigidbody2D",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
+    "from_file": "2048Modified/Assets/Scripts/KGB_SquareProceed.cs",
+    "from_class": "KGB_SquareProceed",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "2048Modified/Assets/Scripts/KGB_SquareProceed.cs",
+    "from_class": "KGB_SquareProceed",
+    "to_type": "AddForce",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "2048Modified/Assets/Scripts/KGB_SquareProceed.cs",
+    "from_class": "KGB_SquareProceed",
+    "to_type": "FixedUpdate",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "2048Modified/Assets/Scripts/KGB_SquareProceed.cs",
+    "from_class": "KGB_SquareProceed",
+    "to_type": "GetComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "2048Modified/Assets/Scripts/KGB_SquareProceed.cs",
+    "from_class": "KGB_SquareProceed",
+    "to_type": "Log",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "2048Modified/Assets/Scripts/KGB_SquareProceed.cs",
+    "from_class": "KGB_SquareProceed",
+    "to_type": "Rigidbody2D",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "2048Modified/Assets/Scripts/KGB_SquareProceed.cs",
+    "from_class": "KGB_SquareProceed",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "2048Modified/Assets/Scripts/KGB_SquareProceed.cs",
+    "from_class": "KGB_SquareProceed",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "2048Modified/Assets/Scripts/KGB_SquareProceed.cs",
+    "from_class": "KGB_SquareProceed",
     "to_type": "Vector2",
     "relation_type": "uses",
     "strength": 1

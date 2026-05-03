@@ -24,7 +24,7 @@
     },
     {
       "class_name": "KGB_SquareProceed",
-      "file_id": "2048Modified/Assets/Scenes/KGB_SquareProceed.cs",
+      "file_id": "2048Modified/Assets/Scripts/KGB_SquareProceed.cs",
       "relation_count": 10,
       "referenced_type_count": 8
     }
@@ -46,7 +46,7 @@
       "risk_score": 28
     },
     {
-      "file_id": "2048Modified/Assets/Scenes/KGB_SquareProceed.cs",
+      "file_id": "2048Modified/Assets/Scripts/KGB_SquareProceed.cs",
       "class_name": "KGB_SquareProceed",
       "risk_flags": [
         "update-heavy"
