@@ -1,7 +1,7 @@
 [
   {
-    "file_id": "2048Modified/Assets/Scripts/HCH_SquareProceed.cs",
-    "path": "2048Modified/Assets/Scripts/HCH_SquareProceed.cs",
+    "file_id": "TrollyFindMine/Assets/Scripts/HCH_SquareProceed.cs",
+    "path": "TrollyFindMine/Assets/Scripts/HCH_SquareProceed.cs",
     "file_name": "HCH_SquareProceed.cs",
     "content_hash": "b596540a294958707a1b2bd00fafa9466f3878ed",
     "size": 456,
@@ -90,8 +90,8 @@
     ]
   },
   {
-    "file_id": "2048Modified/Assets/Scripts/KGB_SquareProceed.cs",
-    "path": "2048Modified/Assets/Scripts/KGB_SquareProceed.cs",
+    "file_id": "TrollyFindMine/Assets/Scripts/KGB_SquareProceed.cs",
+    "path": "TrollyFindMine/Assets/Scripts/KGB_SquareProceed.cs",
     "file_name": "KGB_SquareProceed.cs",
     "content_hash": "a5d24b87a8c77f385ca5b55721489137fa8326fd",
     "size": 293,
@@ -178,6 +178,389 @@
       "런타임 컴포넌트",
       "물리 타이밍 처리 가능성",
       "컴포넌트 조회 사용"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/Managers/Singleton.cs",
+    "path": "TrollyFindMine/Assets/Scripts/Managers/Singleton.cs",
+    "file_name": "Singleton.cs",
+    "content_hash": "9f73c4936f2c888ac19dfebe439de7c97a6682bc",
+    "size": 941,
+    "line_count": 43,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "Singleton",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour where T : MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": true
+      }
+    ],
+    "main_class_name": "Singleton",
+    "unity_type": "None",
+    "methods": [
+      "GameObject",
+      "Awake",
+      "OnApplicationQuit"
+    ],
+    "fields": [
+      {
+        "name": "_instance",
+        "type": "T",
+        "access": "private",
+        "serialized": false,
+        "is_static": true
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Awake"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": true,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 1,
+    "find_call_count": 1,
+    "new_keyword_count": 1,
+    "coroutine_count": 0,
+    "singleton_candidate": true,
+    "dont_destroy_on_load": true,
+    "referenced_types": [
+      "UnityEngine",
+      "Instance",
+      "FindObjectOfType",
+      "Name",
+      "AddComponent",
+      "DontDestroyOnLoad",
+      "Awake",
+      "GetComponent",
+      "Destroy",
+      "OnApplicationQuit"
+    ],
+    "component_access_types": [
+      "T"
+    ],
+    "created_types": [
+      "GameObject"
+    ],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "manager",
+      "runtime",
+      "ui",
+      "save-load"
+    ],
+    "summary_signals": [
+      "싱글톤 후보",
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함",
+      "컴포넌트 조회 사용",
+      "Find 계열 탐색 사용"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/Managers/UIManager.cs",
+    "path": "TrollyFindMine/Assets/Scripts/Managers/UIManager.cs",
+    "file_name": "UIManager.cs",
+    "content_hash": "847c9c8ebfb8a48ea4b75cc74ac8c2bf01350e71",
+    "size": 4294,
+    "line_count": 155,
+    "namespace": "",
+    "using_list": [
+      "System.Collections.Generic",
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "UIManager",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "Singleton"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "UIManager",
+    "unity_type": "None",
+    "methods": [
+      "Awake",
+      "AddCallbacks",
+      "OnShowUI",
+      "OnHideUI",
+      "HideStack",
+      "HideAll",
+      "IsViewActivated",
+      "IsUIStackEmpty",
+      "ClearCollections"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Awake"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": true,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 3,
+    "find_call_count": 0,
+    "new_keyword_count": 3,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "System",
+      "Collections",
+      "Generic",
+      "UnityEngine",
+      "Singleton",
+      "UIView",
+      "UIViewStackable",
+      "Awake",
+      "AddCallbacks",
+      "OnShowUI",
+      "OnHideUI",
+      "UI",
+      "Show",
+      "Hide",
+      "Resources",
+      "Path",
+      "GetUIComponent",
+      "Name",
+      "ContainsKey",
+      "Load",
+      "TODO",
+      "Set",
+      "UNITY_EDITOR",
+      "LogError",
+      "Prefab",
+      "Instantiate",
+      "TryGetComponent",
+      "Get",
+      "Component",
+      "Add",
+      "GetComponent",
+      "SetActive",
+      "TryGetUIComponent",
+      "Push",
+      "Assert",
+      "Peek",
+      "Pop",
+      "Remove",
+      "HideStack",
+      "HideAll",
+      "IsViewActivated",
+      "Contains",
+      "IsUIStackEmpty",
+      "Count",
+      "ClearCollections",
+      "Clear"
+    ],
+    "component_access_types": [
+      "T"
+    ],
+    "created_types": [
+      "Dictionary",
+      "HashSet",
+      "Stack"
+    ],
+    "singleton_access_types": [],
+    "string_literals": [
+      "Resources/UI",
+      "T",
+      "UI/{key}",
+      "UI Prefab 로드 실패 : {key}",
+      "Get UI Component 실패 : {key}"
+    ],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "ui",
+      "player",
+      "save-load",
+      "manager",
+      "runtime"
+    ],
+    "summary_signals": [
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함",
+      "컴포넌트 조회 사용"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/UIView.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/UIView.cs",
+    "file_name": "UIView.cs",
+    "content_hash": "df8b880d15112776cd7eff83afcf677aa784d3b8",
+    "size": 519,
+    "line_count": 24,
+    "namespace": "",
+    "using_list": [
+      "System",
+      "System.Collections.Generic",
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "UIView",
+        "kind": "class",
+        "access": "internal",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "UIView",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Show",
+      "Hide"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "System",
+      "Collections",
+      "Generic",
+      "UnityEngine",
+      "OnShowUI",
+      "OnHideUI",
+      "Show",
+      "SetActive",
+      "Invoke",
+      "TODO",
+      "Animation",
+      "Sound",
+      "Hide"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "ui",
+      "runtime"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "UI 관련 로직 포함"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/UIViewStackable.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/UIViewStackable.cs",
+    "file_name": "UIViewStackable.cs",
+    "content_hash": "2f3984af6b71dbae65ea5b25ab70b418482a1c8e",
+    "size": 136,
+    "line_count": 9,
+    "namespace": "",
+    "using_list": [
+      "System.Collections",
+      "System.Collections.Generic",
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "UIViewStackable",
+        "kind": "class",
+        "access": "internal",
+        "base_types": [
+          "UIView"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "UIViewStackable",
+    "unity_type": "None",
+    "methods": [],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "System",
+      "Collections",
+      "Generic",
+      "UnityEngine",
+      "UIView"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "ui"
+    ],
+    "summary_signals": [
+      "UI 관련 로직 포함"
     ]
   }
 ]
