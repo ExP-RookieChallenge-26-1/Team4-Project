@@ -1,5 +1,12 @@
 [
   {
+    "from_file": "TrollyFindMine/Assets/Scripts/Definition.cs",
+    "from_class": "Coord",
+    "to_type": "int",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
     "from_file": "TrollyFindMine/Assets/Scripts/HCH_SquareProceed.cs",
     "from_class": "HCH_SquareProceed",
     "to_type": "Rigidbody2D",
@@ -598,6 +605,258 @@
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/UIManager.cs",
     "from_class": "UIManager",
     "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ButtonFrontend.cs",
+    "from_class": "ButtonFrontend",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ButtonFrontend.cs",
+    "from_class": "ButtonFrontend",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ButtonFrontend.cs",
+    "from_class": "ButtonFrontend",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ButtonFrontend.cs",
+    "from_class": "ButtonFrontend",
+    "to_type": "Update",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
+    "from_class": "GridFrontend",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
+    "from_class": "GridFrontend",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
+    "from_class": "GridFrontend",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
+    "from_class": "GridFrontend",
+    "to_type": "Update",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "Coord",
+    "relation_type": "creates",
+    "strength": 2
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "BFS",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "bool",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "bool[,]",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "ButtonFrontend",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "Collections",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "Coord",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "Field",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "Frontend",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "GenerateMap",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "Generic",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "GridFrontend",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "InitGrid",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "int",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "IsInRange",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "LeftMineNumber",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "LogError",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "Methods",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "OpenCell",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "OpenedCellNumber",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "Private",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "Property",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "Public",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "System",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "TODO",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "Update",
     "relation_type": "uses",
     "strength": 1
   },

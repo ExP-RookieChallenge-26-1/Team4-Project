@@ -1,5 +1,76 @@
 [
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/Definition.cs",
+    "path": "TrollyFindMine/Assets/Scripts/Definition.cs",
+    "file_name": "Definition.cs",
+    "content_hash": "79ec72455d742362dbacbb4c16d562eb3dec3455",
+    "size": 141,
+    "line_count": 12,
+    "namespace": "",
+    "using_list": [],
+    "classes": [
+      {
+        "name": "Coord",
+        "kind": "struct",
+        "access": "public",
+        "base_types": [],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "Coord",
+    "unity_type": "None",
+    "methods": [
+      "Coord"
+    ],
+    "fields": [
+      {
+        "name": "x",
+        "type": "int",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "y",
+        "type": "int",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 2,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "int"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [],
+    "summary_signals": []
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/HCH_SquareProceed.cs",
     "path": "TrollyFindMine/Assets/Scripts/HCH_SquareProceed.cs",
     "file_name": "HCH_SquareProceed.cs",
@@ -412,6 +483,340 @@
       "UI 관련 로직 포함",
       "저장/불러오기 관련 로직 포함",
       "컴포넌트 조회 사용"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ButtonFrontend.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/MineField/ButtonFrontend.cs",
+    "file_name": "ButtonFrontend.cs",
+    "content_hash": "556dcf558035c96e077d15a8ab95538e87ba3c20",
+    "size": 285,
+    "line_count": 17,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "ButtonFrontend",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "ButtonFrontend",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start",
+      "Update"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start",
+      "Update"
+    ],
+    "has_update": true,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "UnityEngine",
+      "Start",
+      "Update"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "runtime",
+      "ui"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "Update 기반 처리 존재",
+      "UI 관련 로직 포함"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
+    "file_name": "GridFrontend.cs",
+    "content_hash": "0d1ed5286dac29e1be64dfa9f20ccc9aca00a6a0",
+    "size": 283,
+    "line_count": 17,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "GridFrontend",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "GridFrontend",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start",
+      "Update"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start",
+      "Update"
+    ],
+    "has_update": true,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "UnityEngine",
+      "Start",
+      "Update"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "runtime"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "Update 기반 처리 존재"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "file_name": "MineFieldBackend.cs",
+    "content_hash": "e60d0934b2e40c60f18342d93d1760982a006554",
+    "size": 4078,
+    "line_count": 144,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine",
+      "System.Collections.Generic"
+    ],
+    "classes": [
+      {
+        "name": "MineFieldBackend",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "MineFieldBackend",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "IsInRange",
+      "GenerateMap",
+      "Coord",
+      "InitGrid",
+      "OpenCell"
+    ],
+    "fields": [
+      {
+        "name": "openedCells",
+        "type": "bool[,]",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "row",
+        "type": "int",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "col",
+        "type": "int",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "leftMineNumber",
+        "type": "int",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "openedCellNumber",
+        "type": "int",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "mapGeneratedFlag",
+        "type": "bool",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "nx",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "ny",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "toGenerateMine",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "mineCount",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "nx",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "ny",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 2,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "bool[,]",
+      "int",
+      "bool",
+      "UnityEngine",
+      "System",
+      "Collections",
+      "Generic",
+      "Field",
+      "ButtonFrontend",
+      "GridFrontend",
+      "Property",
+      "LeftMineNumber",
+      "OpenedCellNumber",
+      "Private",
+      "Methods",
+      "IsInRange",
+      "Coord",
+      "GenerateMap",
+      "TODO",
+      "Frontend",
+      "Public",
+      "InitGrid",
+      "LogError",
+      "OpenCell",
+      "BFS",
+      "Update"
+    ],
+    "component_access_types": [],
+    "created_types": [
+      "Coord"
+    ],
+    "singleton_access_types": [],
+    "string_literals": [
+      "올바르지 않은 생성입니다."
+    ],
+    "numeric_literals": [
+      8,
+      2
+    ],
+    "guessed_roles": [
+      "runtime",
+      "ui",
+      "save-load"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함"
     ]
   },
   {
