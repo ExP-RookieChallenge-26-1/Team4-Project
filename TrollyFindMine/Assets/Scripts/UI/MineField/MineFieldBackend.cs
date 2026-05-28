@@ -7,7 +7,7 @@ using System;
 public class MineFieldBackend : MonoBehaviour
 {
     #region  event
-    public event Action<Coord> OnSelectedCoordChanged; // TODO : Frontend에서 Highlight 변경시키는 함수 구독시킬것
+    public event Action<Coord> OnSelectedCoordChanged; // Frontend에서 Highlight 변경시키는 함수 구독
     #endregion
     
     #region Field
@@ -17,6 +17,7 @@ public class MineFieldBackend : MonoBehaviour
     
     private int[,] grid; //-1이 지뢰 0은 빈칸 나머지 [1-8]는 숫자를 의미 -2는 초기값
     private bool[,] openedCells;
+    private bool[,] mineFlag;
     private int row;
     private int col;
     private int leftMineNumber;
@@ -94,7 +95,7 @@ public class MineFieldBackend : MonoBehaviour
             }
         }
         
-        //TODO: Frontend에 변경사항 적용하기
+        //Frontend에 변경사항 적용하기
         gridFrontend.InitializeGrid(row,col,grid);
     }
 
@@ -102,7 +103,8 @@ public class MineFieldBackend : MonoBehaviour
     {
         openedCells[coord.x, coord.y] = true;
         openedCellNumber++;
-        //TODO : Frontend 업데이트
+        //Frontend 업데이트
+        shaderFrontend.ShaderClicked(coord);
     }
     
     #endregion
@@ -119,10 +121,14 @@ public class MineFieldBackend : MonoBehaviour
         col = m;
         grid = new int[row, col];
         openedCells = new bool[row, col];
+        mineFlag = new bool[row, col];
         for(int i = 0; i < row; i++) for (int j = 0; j < col; j++) grid[i, j] = -2; 
         
-        //TODO: buttonFrontend에서 N,M초기화
-        //TODO: GridFrontend에서 N,M초기화
+        //shaderFrontend에서 N,M초기화
+        shaderFrontend.InitializeGrid(row,col);
+        //GridFrontend에서 N,M초기화
+        gridFrontend.InitializeGrid(row, col, grid);
+        
         selectedCoord = new Coord(UnityEngine.Random.Range(0, row), UnityEngine.Random.Range(0, col)); //selectedCoord 초기화
         OnSelectedCoordChanged.Invoke(selectedCoord); //highlight
         leftMineNumber = numOfMine;
@@ -198,7 +204,10 @@ public class MineFieldBackend : MonoBehaviour
         Coord coord = selectedCoord;
         if (openedCells[coord.x, coord.y] == false)
         {
-            //TODO : frontend에서 깃발 꽂는 로직
+            leftMineNumber--;
+            mineFlag[coord.x, coord.y] = true;
+            //frontend에서 깃발 꽂는 로직
+            shaderFrontend.SetFlag(coord);
         } 
     }
 

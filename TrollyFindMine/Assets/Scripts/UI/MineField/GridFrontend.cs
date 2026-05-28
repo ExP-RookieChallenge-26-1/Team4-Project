@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GridFrontend : MonoBehaviour
+public class GridFrontend : Frontend
 {
     #region Fields
 
@@ -18,7 +18,7 @@ public class GridFrontend : MonoBehaviour
     public void InitializeGrid(int row, int col, int [,] gridInfo)
     {
         //gridCells 할당
-        gridCells = new GridCell[row, col];
+        Cells = new GameObject[row, col];
         
         RectTransform thisRectTransform = gameObject.GetComponent<RectTransform>();
         //cell의 부모 오브젝트의 width와 height
@@ -45,6 +45,9 @@ public class GridFrontend : MonoBehaviour
             {
                 Vector2 offset = new Vector2(prefabWidth*j,-prefabWidth*i);
                 GameObject cell = Instantiate(gridCellPrefab, thisRectTransform, false);
+                
+                //HighLight를 위한 배열에 cell reference저장
+                Cells[i, j] = cell;
                 //배열에 script저장
                 gridCells[i,j] = cell.GetComponent<GridCell>();
                 
@@ -52,6 +55,9 @@ public class GridFrontend : MonoBehaviour
                 RectTransform cellRectTransform = cell.GetComponent<RectTransform>();
                 cellRectTransform.anchorMax = new Vector2(0,1);
                 cellRectTransform.anchorMin = new Vector2(0,1);
+                
+                //cell의 크기를 설정
+                cellRectTransform.localScale = new Vector3(width, width, 1);
                 
                 //좌표 계산해서 채워넣기
                 cellRectTransform.anchoredPosition = instantiateStartPos + offset;
@@ -61,6 +67,8 @@ public class GridFrontend : MonoBehaviour
             }
         }
     }
+    
+    //TODO : highlight 구현 
     
     #endregion
 }

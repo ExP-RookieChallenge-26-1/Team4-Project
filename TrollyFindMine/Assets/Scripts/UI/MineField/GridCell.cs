@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GridCell : MonoBehaviour
+public class GridCell : Cell
 {
     public void ChangeCellImage(int id)
     {
