@@ -633,13 +633,15 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "file_name": "MineFieldBackend.cs",
-    "content_hash": "e60d0934b2e40c60f18342d93d1760982a006554",
-    "size": 4078,
-    "line_count": 144,
+    "content_hash": "12dcaa70b55570e80bf04d84a705576f5618fc9c",
+    "size": 7038,
+    "line_count": 224,
     "namespace": "",
     "using_list": [
       "UnityEngine",
-      "System.Collections.Generic"
+      "System.Collections.Generic",
+      "System.Linq",
+      "System"
     ],
     "classes": [
       {
@@ -661,8 +663,11 @@
       "IsInRange",
       "GenerateMap",
       "Coord",
+      "OpenCellSequence",
       "InitGrid",
-      "OpenCell"
+      "OpenCellWithLeftClick",
+      "FlagCellWithRightClick",
+      "SelectedCellMove"
     ],
     "fields": [
       {
@@ -694,6 +699,13 @@
         "is_static": false
       },
       {
+        "name": "totalMineNumber",
+        "type": "int",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
         "name": "openedCellNumber",
         "type": "int",
         "access": "private",
@@ -704,6 +716,13 @@
         "name": "mapGeneratedFlag",
         "type": "bool",
         "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "startPoint",
+        "type": "Coord",
+        "access": "internal",
         "serialized": false,
         "is_static": false
       },
@@ -748,6 +767,41 @@
         "access": "internal",
         "serialized": false,
         "is_static": false
+      },
+      {
+        "name": "coord",
+        "type": "Coord",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "chk",
+        "type": "bool[,]",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "nx",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "ny",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "coord",
+        "type": "Coord",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
       }
     ],
     "properties": [],
@@ -764,7 +818,7 @@
     "public_field_count": 0,
     "get_component_count": 0,
     "find_call_count": 0,
-    "new_keyword_count": 2,
+    "new_keyword_count": 6,
     "coroutine_count": 0,
     "singleton_candidate": false,
     "dont_destroy_on_load": false,
@@ -772,33 +826,45 @@
       "bool[,]",
       "int",
       "bool",
+      "Coord",
       "UnityEngine",
       "System",
       "Collections",
       "Generic",
+      "Linq",
+      "OnSelectedCoordChanged",
+      "TODO",
+      "Frontend",
+      "Highlight",
       "Field",
       "ButtonFrontend",
       "GridFrontend",
       "Property",
       "LeftMineNumber",
       "OpenedCellNumber",
+      "SelectedCoord",
       "Private",
       "Methods",
       "IsInRange",
-      "Coord",
       "GenerateMap",
-      "TODO",
-      "Frontend",
+      "OpenCellSequence",
       "Public",
       "InitGrid",
       "LogError",
-      "OpenCell",
+      "Invoke",
+      "OpenCellWithLeftClick",
       "BFS",
-      "Update"
+      "Enqueue",
+      "Count",
+      "Dequeue",
+      "FlagCellWithRightClick",
+      "SelectedCellMove",
+      "Vector2"
     ],
     "component_access_types": [],
     "created_types": [
-      "Coord"
+      "Coord",
+      "Queue"
     ],
     "singleton_access_types": [],
     "string_literals": [
@@ -811,6 +877,7 @@
     "guessed_roles": [
       "runtime",
       "ui",
+      "player",
       "save-load"
     ],
     "summary_signals": [
