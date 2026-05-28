@@ -486,19 +486,81 @@
     ]
   },
   {
-    "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ButtonFrontend.cs",
-    "path": "TrollyFindMine/Assets/Scripts/UI/MineField/ButtonFrontend.cs",
-    "file_name": "ButtonFrontend.cs",
-    "content_hash": "556dcf558035c96e077d15a8ab95538e87ba3c20",
-    "size": 285,
-    "line_count": 17,
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/Frontend.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/MineField/Frontend.cs",
+    "file_name": "Frontend.cs",
+    "content_hash": "047da24cd8cd6c5d8d0061763f459233d38c8129",
+    "size": 76,
+    "line_count": 7,
     "namespace": "",
     "using_list": [
       "UnityEngine"
     ],
     "classes": [
       {
-        "name": "ButtonFrontend",
+        "name": "Frontend",
+        "kind": "class",
+        "access": "internal",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "Frontend",
+    "unity_type": "MonoBehaviour",
+    "methods": [],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "UnityEngine"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "runtime"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
+    "file_name": "GridCell.cs",
+    "content_hash": "f7da7904a6e13ba49a1e722e398c79744baf6f97",
+    "size": 157,
+    "line_count": 10,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "GridCell",
         "kind": "class",
         "access": "public",
         "base_types": [
@@ -510,24 +572,20 @@
         "is_generic": false
       }
     ],
-    "main_class_name": "ButtonFrontend",
+    "main_class_name": "GridCell",
     "unity_type": "MonoBehaviour",
     "methods": [
-      "Start",
-      "Update"
+      "ChangeCellImage"
     ],
     "fields": [],
     "properties": [],
     "events": [],
-    "unity_messages": [
-      "Start",
-      "Update"
-    ],
-    "has_update": true,
+    "unity_messages": [],
+    "has_update": false,
     "has_fixed_update": false,
     "has_late_update": false,
     "has_awake": false,
-    "has_start": true,
+    "has_start": false,
     "has_on_enable": false,
     "has_on_disable": false,
     "serialize_field_count": 0,
@@ -540,8 +598,9 @@
     "dont_destroy_on_load": false,
     "referenced_types": [
       "UnityEngine",
-      "Start",
-      "Update"
+      "ChangeCellImage",
+      "TODO",
+      "ID"
     ],
     "component_access_types": [],
     "created_types": [],
@@ -549,12 +608,11 @@
     "string_literals": [],
     "numeric_literals": [],
     "guessed_roles": [
-      "runtime",
-      "ui"
+      "ui",
+      "runtime"
     ],
     "summary_signals": [
       "런타임 컴포넌트",
-      "Update 기반 처리 존재",
       "UI 관련 로직 포함"
     ]
   },
@@ -562,9 +620,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
     "file_name": "GridFrontend.cs",
-    "content_hash": "0d1ed5286dac29e1be64dfa9f20ccc9aca00a6a0",
-    "size": 283,
-    "line_count": 17,
+    "content_hash": "b3153b514bad6fd5fdf0c55a40dd8f4bd5195aa2",
+    "size": 2103,
+    "line_count": 67,
     "namespace": "",
     "using_list": [
       "UnityEngine"
@@ -586,56 +644,112 @@
     "main_class_name": "GridFrontend",
     "unity_type": "MonoBehaviour",
     "methods": [
-      "Start",
-      "Update"
+      "InitializeGrid",
+      "Vector2"
     ],
-    "fields": [],
+    "fields": [
+      {
+        "name": "gridCells",
+        "type": "GridCell[,]",
+        "access": "private",
+        "serialized": true,
+        "is_static": false
+      },
+      {
+        "name": "width",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "height",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "instantiateStartPos",
+        "type": "Vector2",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "prefabWidth",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
     "properties": [],
     "events": [],
-    "unity_messages": [
-      "Start",
-      "Update"
-    ],
-    "has_update": true,
+    "unity_messages": [],
+    "has_update": false,
     "has_fixed_update": false,
     "has_late_update": false,
     "has_awake": false,
-    "has_start": true,
+    "has_start": false,
     "has_on_enable": false,
     "has_on_disable": false,
-    "serialize_field_count": 0,
+    "serialize_field_count": 1,
     "public_field_count": 0,
-    "get_component_count": 0,
+    "get_component_count": 3,
     "find_call_count": 0,
-    "new_keyword_count": 0,
+    "new_keyword_count": 6,
     "coroutine_count": 0,
     "singleton_candidate": false,
     "dont_destroy_on_load": false,
     "referenced_types": [
+      "GridCell[,]",
+      "float",
+      "Vector2",
       "UnityEngine",
-      "Start",
-      "Update"
+      "Fields",
+      "GridCell",
+      "Properties",
+      "Methods",
+      "InitializeGrid",
+      "RectTransform",
+      "GetComponent",
+      "Instantiate",
+      "ChangeCellImage"
     ],
-    "component_access_types": [],
-    "created_types": [],
+    "component_access_types": [
+      "RectTransform",
+      "GridCell"
+    ],
+    "created_types": [
+      "Vector2"
+    ],
     "singleton_access_types": [],
     "string_literals": [],
-    "numeric_literals": [],
+    "numeric_literals": [
+      0,
+      2
+    ],
     "guessed_roles": [
-      "runtime"
+      "ui",
+      "runtime",
+      "save-load"
     ],
     "summary_signals": [
       "런타임 컴포넌트",
-      "Update 기반 처리 존재"
+      "인스펙터 직렬화 필드 사용",
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함",
+      "컴포넌트 조회 사용"
     ]
   },
   {
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "file_name": "MineFieldBackend.cs",
-    "content_hash": "12dcaa70b55570e80bf04d84a705576f5618fc9c",
-    "size": 7038,
-    "line_count": 224,
+    "content_hash": "3abcc53f781a6588646e2c790e8f7fc6a683573e",
+    "size": 7084,
+    "line_count": 225,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -837,7 +951,7 @@
       "Frontend",
       "Highlight",
       "Field",
-      "ButtonFrontend",
+      "ShaderFrontend",
       "GridFrontend",
       "Property",
       "LeftMineNumber",
@@ -847,6 +961,7 @@
       "Methods",
       "IsInRange",
       "GenerateMap",
+      "InitializeGrid",
       "OpenCellSequence",
       "Public",
       "InitGrid",
@@ -876,14 +991,152 @@
     ],
     "guessed_roles": [
       "runtime",
-      "ui",
       "player",
+      "ui",
       "save-load"
     ],
     "summary_signals": [
       "런타임 컴포넌트",
       "UI 관련 로직 포함",
       "저장/불러오기 관련 로직 포함"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "file_name": "ShaderCell.cs",
+    "content_hash": "35ffee4acc799f1c193dd9ba56c2c0516bc80881",
+    "size": 125,
+    "line_count": 10,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "ShaderCell",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "ShaderCell",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "ChangeCellImage"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "UnityEngine",
+      "ChangeCellImage"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "ui",
+      "runtime"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "UI 관련 로직 포함"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
+    "file_name": "ShaderFrontend.cs",
+    "content_hash": "2c44d949500491b588d24159de86b50c54f69c04",
+    "size": 285,
+    "line_count": 17,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "ShaderFrontend",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "ShaderFrontend",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start",
+      "Update"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start",
+      "Update"
+    ],
+    "has_update": true,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "UnityEngine",
+      "Start",
+      "Update"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "runtime"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "Update 기반 처리 존재"
     ]
   },
   {

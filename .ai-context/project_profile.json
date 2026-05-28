@@ -2,21 +2,21 @@
   "project_name": "unknown",
   "language": "C#",
   "engine_guess": "Unity",
-  "total_cs_files": 10,
-  "mono_behaviour_files": 6,
+  "total_cs_files": 13,
+  "mono_behaviour_files": 9,
   "scriptable_object_files": 0,
-  "files_with_update": 3,
+  "files_with_update": 2,
   "files_with_fixed_update": 2,
   "files_with_late_update": 0,
   "singleton_candidates": 1,
   "manager_like_classes": 2,
-  "ui_related_classes": 6,
-  "save_load_related_classes": 3,
+  "ui_related_classes": 8,
+  "save_load_related_classes": 4,
   "role_counts": {
-    "runtime": 8,
+    "runtime": 11,
     "manager": 2,
-    "ui": 6,
-    "save-load": 3,
+    "ui": 8,
+    "save-load": 4,
     "player": 2
   },
   "high_coupling_classes": [
@@ -29,8 +29,14 @@
     {
       "class_name": "MineFieldBackend",
       "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
-      "relation_count": 40,
-      "referenced_type_count": 37
+      "relation_count": 41,
+      "referenced_type_count": 38
+    },
+    {
+      "class_name": "GridFrontend",
+      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
+      "relation_count": 17,
+      "referenced_type_count": 13
     },
     {
       "class_name": "UIView",
@@ -63,22 +69,16 @@
       "referenced_type_count": 5
     },
     {
-      "class_name": "ButtonFrontend",
-      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ButtonFrontend.cs",
-      "relation_count": 4,
-      "referenced_type_count": 3
+      "class_name": "GridCell",
+      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
+      "relation_count": 5,
+      "referenced_type_count": 4
     },
     {
-      "class_name": "GridFrontend",
-      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
+      "class_name": "ShaderFrontend",
+      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
       "relation_count": 4,
       "referenced_type_count": 3
-    },
-    {
-      "class_name": "Coord",
-      "file_id": "TrollyFindMine/Assets/Scripts/Definition.cs",
-      "relation_count": 1,
-      "referenced_type_count": 1
     }
   ],
   "high_risk_classes": [
@@ -144,6 +144,23 @@
       "risk_score": 63
     },
     {
+      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
+      "class_name": "GridFrontend",
+      "risk_flags": [
+        "getcomponent-heavy",
+        "save-load-sensitive",
+        "ui-runtime-mixed",
+        "state-owner"
+      ],
+      "risk_reasons": [
+        "GetComponent/TryGetComponent 호출이 많음",
+        "저장/불러오기 관련 로직 포함",
+        "UI와 런타임 책임이 한 파일에 섞였을 가능성",
+        "상태 중심 또는 관리 중심 클래스일 가능성"
+      ],
+      "risk_score": 42
+    },
+    {
       "file_id": "TrollyFindMine/Assets/Scripts/HCH_SquareProceed.cs",
       "class_name": "HCH_SquareProceed",
       "risk_flags": [
@@ -157,19 +174,6 @@
         "상태 중심 또는 관리 중심 클래스일 가능성"
       ],
       "risk_score": 28
-    },
-    {
-      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ButtonFrontend.cs",
-      "class_name": "ButtonFrontend",
-      "risk_flags": [
-        "update-heavy",
-        "ui-runtime-mixed"
-      ],
-      "risk_reasons": [
-        "Unity 업데이트 루프 사용",
-        "UI와 런타임 책임이 한 파일에 섞였을 가능성"
-      ],
-      "risk_score": 20
     },
     {
       "file_id": "TrollyFindMine/Assets/Scripts/UI/UIView.cs",
@@ -196,8 +200,30 @@
       "risk_score": 10
     },
     {
-      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
-      "class_name": "GridFrontend",
+      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
+      "class_name": "GridCell",
+      "risk_flags": [
+        "ui-runtime-mixed"
+      ],
+      "risk_reasons": [
+        "UI와 런타임 책임이 한 파일에 섞였을 가능성"
+      ],
+      "risk_score": 10
+    },
+    {
+      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+      "class_name": "ShaderCell",
+      "risk_flags": [
+        "ui-runtime-mixed"
+      ],
+      "risk_reasons": [
+        "UI와 런타임 책임이 한 파일에 섞였을 가능성"
+      ],
+      "risk_score": 10
+    },
+    {
+      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
+      "class_name": "ShaderFrontend",
       "risk_flags": [
         "update-heavy"
       ],
@@ -205,20 +231,6 @@
         "Unity 업데이트 루프 사용"
       ],
       "risk_score": 10
-    },
-    {
-      "file_id": "TrollyFindMine/Assets/Scripts/Definition.cs",
-      "class_name": "Coord",
-      "risk_flags": [],
-      "risk_reasons": [],
-      "risk_score": 0
-    },
-    {
-      "file_id": "TrollyFindMine/Assets/Scripts/UI/UIViewStackable.cs",
-      "class_name": "UIViewStackable",
-      "risk_flags": [],
-      "risk_reasons": [],
-      "risk_score": 0
     }
   ],
   "common_patterns": [
