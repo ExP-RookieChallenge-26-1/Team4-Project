@@ -1,0 +1,9 @@
+using UnityEngine;
+
+public class GridCell : MonoBehaviour
+{
+    public void ChangeCellImage(int id)
+    {
+        //TODO : GridCell ID 대로 변경
+    }
+}

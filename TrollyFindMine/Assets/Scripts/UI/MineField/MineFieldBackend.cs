@@ -12,8 +12,8 @@ public class MineFieldBackend : MonoBehaviour
     
     #region Field
 
-    [SerializeField] private ButtonFrontend buttonController;
-    [SerializeField] private GridFrontend gridController;
+    [SerializeField] private ShaderFrontend shaderFrontend;
+    [SerializeField] private GridFrontend gridFrontend;
     
     private int[,] grid; //-1이 지뢰 0은 빈칸 나머지 [1-8]는 숫자를 의미 -2는 초기값
     private bool[,] openedCells;
@@ -94,7 +94,8 @@ public class MineFieldBackend : MonoBehaviour
             }
         }
         
-        //TODO : Frontend에 변경사항 적용하기
+        //TODO: Frontend에 변경사항 적용하기
+        gridFrontend.InitializeGrid(row,col,grid);
     }
 
     private void OpenCellSequence(Coord coord)
