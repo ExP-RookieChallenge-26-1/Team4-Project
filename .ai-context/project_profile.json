@@ -2,21 +2,21 @@
   "project_name": "unknown",
   "language": "C#",
   "engine_guess": "Unity",
-  "total_cs_files": 13,
-  "mono_behaviour_files": 9,
+  "total_cs_files": 14,
+  "mono_behaviour_files": 6,
   "scriptable_object_files": 0,
-  "files_with_update": 2,
+  "files_with_update": 1,
   "files_with_fixed_update": 2,
   "files_with_late_update": 0,
   "singleton_candidates": 1,
   "manager_like_classes": 2,
-  "ui_related_classes": 8,
-  "save_load_related_classes": 4,
+  "ui_related_classes": 9,
+  "save_load_related_classes": 6,
   "role_counts": {
-    "runtime": 11,
+    "runtime": 10,
     "manager": 2,
-    "ui": 8,
-    "save-load": 4,
+    "ui": 9,
+    "save-load": 6,
     "player": 2
   },
   "high_coupling_classes": [
@@ -29,14 +29,26 @@
     {
       "class_name": "MineFieldBackend",
       "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
-      "relation_count": 41,
-      "referenced_type_count": 38
+      "relation_count": 43,
+      "referenced_type_count": 40
     },
     {
       "class_name": "GridFrontend",
       "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
-      "relation_count": 17,
-      "referenced_type_count": 13
+      "relation_count": 23,
+      "referenced_type_count": 18
+    },
+    {
+      "class_name": "Frontend",
+      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/Frontend.cs",
+      "relation_count": 20,
+      "referenced_type_count": 17
+    },
+    {
+      "class_name": "ShaderFrontend",
+      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
+      "relation_count": 18,
+      "referenced_type_count": 15
     },
     {
       "class_name": "UIView",
@@ -63,22 +75,10 @@
       "referenced_type_count": 8
     },
     {
-      "class_name": "UIViewStackable",
-      "file_id": "TrollyFindMine/Assets/Scripts/UI/UIViewStackable.cs",
-      "relation_count": 6,
-      "referenced_type_count": 5
-    },
-    {
-      "class_name": "GridCell",
-      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
-      "relation_count": 5,
-      "referenced_type_count": 4
-    },
-    {
-      "class_name": "ShaderFrontend",
-      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
-      "relation_count": 4,
-      "referenced_type_count": 3
+      "class_name": "Cell",
+      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/Cell.cs",
+      "relation_count": 10,
+      "referenced_type_count": 8
     }
   ],
   "high_risk_classes": [
@@ -125,40 +125,72 @@
       "risk_score": 67
     },
     {
-      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
-      "class_name": "MineFieldBackend",
-      "risk_flags": [
-        "high-coupling",
-        "large-class",
-        "save-load-sensitive",
-        "ui-runtime-mixed",
-        "state-owner"
-      ],
-      "risk_reasons": [
-        "참조 타입 또는 관계 수가 많음",
-        "파일/메서드/필드 수가 많아 책임이 커질 가능성",
-        "저장/불러오기 관련 로직 포함",
-        "UI와 런타임 책임이 한 파일에 섞였을 가능성",
-        "상태 중심 또는 관리 중심 클래스일 가능성"
-      ],
-      "risk_score": 63
-    },
-    {
       "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
       "class_name": "GridFrontend",
       "risk_flags": [
+        "high-coupling",
         "getcomponent-heavy",
         "save-load-sensitive",
         "ui-runtime-mixed",
         "state-owner"
       ],
       "risk_reasons": [
+        "참조 타입 또는 관계 수가 많음",
         "GetComponent/TryGetComponent 호출이 많음",
         "저장/불러오기 관련 로직 포함",
         "UI와 런타임 책임이 한 파일에 섞였을 가능성",
         "상태 중심 또는 관리 중심 클래스일 가능성"
       ],
-      "risk_score": 42
+      "risk_score": 60
+    },
+    {
+      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+      "class_name": "MineFieldBackend",
+      "risk_flags": [
+        "high-coupling",
+        "large-class",
+        "save-load-sensitive",
+        "state-owner"
+      ],
+      "risk_reasons": [
+        "참조 타입 또는 관계 수가 많음",
+        "파일/메서드/필드 수가 많아 책임이 커질 가능성",
+        "저장/불러오기 관련 로직 포함",
+        "상태 중심 또는 관리 중심 클래스일 가능성"
+      ],
+      "risk_score": 53
+    },
+    {
+      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/Frontend.cs",
+      "class_name": "Frontend",
+      "risk_flags": [
+        "high-coupling",
+        "init-order-sensitive",
+        "save-load-sensitive",
+        "state-owner"
+      ],
+      "risk_reasons": [
+        "참조 타입 또는 관계 수가 많음",
+        "초기화 순서에 민감할 가능성",
+        "저장/불러오기 관련 로직 포함",
+        "상태 중심 또는 관리 중심 클래스일 가능성"
+      ],
+      "risk_score": 48
+    },
+    {
+      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
+      "class_name": "ShaderFrontend",
+      "risk_flags": [
+        "save-load-sensitive",
+        "ui-runtime-mixed",
+        "state-owner"
+      ],
+      "risk_reasons": [
+        "저장/불러오기 관련 로직 포함",
+        "UI와 런타임 책임이 한 파일에 섞였을 가능성",
+        "상태 중심 또는 관리 중심 클래스일 가능성"
+      ],
+      "risk_score": 30
     },
     {
       "file_id": "TrollyFindMine/Assets/Scripts/HCH_SquareProceed.cs",
@@ -200,42 +232,18 @@
       "risk_score": 10
     },
     {
-      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
-      "class_name": "GridCell",
+      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/Cell.cs",
+      "class_name": "Cell",
       "risk_flags": [
         "ui-runtime-mixed"
       ],
       "risk_reasons": [
         "UI와 런타임 책임이 한 파일에 섞였을 가능성"
-      ],
-      "risk_score": 10
-    },
-    {
-      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
-      "class_name": "ShaderCell",
-      "risk_flags": [
-        "ui-runtime-mixed"
-      ],
-      "risk_reasons": [
-        "UI와 런타임 책임이 한 파일에 섞였을 가능성"
-      ],
-      "risk_score": 10
-    },
-    {
-      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
-      "class_name": "ShaderFrontend",
-      "risk_flags": [
-        "update-heavy"
-      ],
-      "risk_reasons": [
-        "Unity 업데이트 루프 사용"
       ],
       "risk_score": 10
     }
   ],
   "common_patterns": [
-    "MonoBehaviour 중심 구조",
-    "Update 사용 빈도 높음",
     "고결합 클래스 존재"
   ]
 }
