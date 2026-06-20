@@ -5908,6 +5908,279 @@
     "strength": 1
   },
   {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "StageButtonRenderer",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "Application",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "ApplyGridSettings",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "bool",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "Buttons",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "ClearExistingButtons",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "Constraint",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "ContextMenu",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "Destroy",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "DestroyImmediate",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "EnsureClearArraySize",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "FixedColumnCount",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "Generate",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "GenerateStageButtons",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "GetChild",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "GetComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "GetComponentInChildren",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "GridLayoutGroup",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "Initialize",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "Instantiate",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "IsStageUnlocked",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "Labels",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "Layout",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "Length",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "LogError",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "Min",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "Progress",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "SetStageLabel",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "Stage",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "StageButton_",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "StageButtonRenderer",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "TextMeshProUGUI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "TMPro",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "ToString",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "UI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "from_class": "StageManager",
+    "to_type": "ValidateReferences",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/UIManager.cs",
     "from_class": "UIManager",
     "to_type": "T",
@@ -7129,6 +7402,111 @@
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
     "from_class": "ShaderFrontend",
     "to_type": "Vector2",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
+    "from_class": "StageButtonRenderer",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
+    "from_class": "StageButtonRenderer",
+    "to_type": "bool",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
+    "from_class": "StageButtonRenderer",
+    "to_type": "Button",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
+    "from_class": "StageButtonRenderer",
+    "to_type": "Initialize",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
+    "from_class": "StageButtonRenderer",
+    "to_type": "int",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
+    "from_class": "StageButtonRenderer",
+    "to_type": "IsLocked",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
+    "from_class": "StageButtonRenderer",
+    "to_type": "SetActive",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
+    "from_class": "StageButtonRenderer",
+    "to_type": "SetLocked",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
+    "from_class": "StageButtonRenderer",
+    "to_type": "SetStageNumber",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
+    "from_class": "StageButtonRenderer",
+    "to_type": "StageIndex",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
+    "from_class": "StageButtonRenderer",
+    "to_type": "TextMeshProUGUI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
+    "from_class": "StageButtonRenderer",
+    "to_type": "TMPro",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
+    "from_class": "StageButtonRenderer",
+    "to_type": "ToString",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
+    "from_class": "StageButtonRenderer",
+    "to_type": "UI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
+    "from_class": "StageButtonRenderer",
+    "to_type": "UnityEngine",
     "relation_type": "uses",
     "strength": 1
   },

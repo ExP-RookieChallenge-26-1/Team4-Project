@@ -2708,6 +2708,150 @@
     ]
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "path": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
+    "file_name": "StageManager.cs",
+    "content_hash": "994f046fdf08f7cb2477b28864a863cf17973f24",
+    "size": 4355,
+    "line_count": 155,
+    "namespace": "",
+    "using_list": [
+      "TMPro",
+      "UnityEngine",
+      "UnityEngine.UI"
+    ],
+    "classes": [
+      {
+        "name": "StageManager",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "StageManager",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start",
+      "GenerateStageButtons",
+      "ValidateReferences",
+      "ApplyGridSettings",
+      "ClearExistingButtons",
+      "DestroyImmediate",
+      "SetStageLabel",
+      "IsStageUnlocked",
+      "EnsureClearArraySize"
+    ],
+    "fields": [
+      {
+        "name": "resizedArray",
+        "type": "bool[]",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 1,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "bool",
+      "TMPro",
+      "UnityEngine",
+      "UI",
+      "Stage",
+      "Layout",
+      "GridLayoutGroup",
+      "Progress",
+      "Labels",
+      "Start",
+      "GenerateStageButtons",
+      "ContextMenu",
+      "Generate",
+      "Buttons",
+      "ValidateReferences",
+      "ClearExistingButtons",
+      "ApplyGridSettings",
+      "Instantiate",
+      "StageButton_",
+      "StageButtonRenderer",
+      "GetComponent",
+      "IsStageUnlocked",
+      "Initialize",
+      "SetStageLabel",
+      "LogError",
+      "EnsureClearArraySize",
+      "Constraint",
+      "FixedColumnCount",
+      "GetChild",
+      "Application",
+      "Destroy",
+      "DestroyImmediate",
+      "TextMeshProUGUI",
+      "GetComponentInChildren",
+      "ToString",
+      "Length",
+      "Min"
+    ],
+    "component_access_types": [
+      "StageButtonRenderer"
+    ],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [
+      "Stage Layout",
+      "Stage Progress",
+      "Stage Labels",
+      "Generate Stage Buttons",
+      "StageButton_{i + 1}",
+      "StageManager: stageButtonPrefab is not assigned.",
+      "StageManager: stageButtonParent is not assigned.",
+      "StageManager: gridLayoutGroup is not assigned.",
+      "StageManager: stageCount cannot be negative.",
+      "StageManager: columnCount must be at least 1."
+    ],
+    "numeric_literals": [
+      12,
+      3
+    ],
+    "guessed_roles": [
+      "ui",
+      "runtime",
+      "combat",
+      "manager",
+      "save-load"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "UI 관련 로직 포함",
+      "전투 계열 로직 포함",
+      "저장/불러오기 관련 로직 포함",
+      "컴포넌트 조회 사용"
+    ]
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/UIManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/UIManager.cs",
     "file_name": "UIManager.cs",
@@ -3695,6 +3839,109 @@
       "UI 관련 로직 포함",
       "저장/불러오기 관련 로직 포함",
       "컴포넌트 조회 사용"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
+    "file_name": "StageButtonRenderer.cs",
+    "content_hash": "8347b9778a527774821343b1e2162716410bb043",
+    "size": 1044,
+    "line_count": 47,
+    "namespace": "",
+    "using_list": [
+      "TMPro",
+      "UnityEngine",
+      "UnityEngine.UI"
+    ],
+    "classes": [
+      {
+        "name": "StageButtonRenderer",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "StageButtonRenderer",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Initialize",
+      "SetStageNumber",
+      "SetLocked"
+    ],
+    "fields": [
+      {
+        "name": "_stageIndex",
+        "type": "int",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_isLocked",
+        "type": "bool",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "int",
+      "bool",
+      "TMPro",
+      "UnityEngine",
+      "UI",
+      "Button",
+      "TextMeshProUGUI",
+      "StageIndex",
+      "IsLocked",
+      "Initialize",
+      "SetStageNumber",
+      "SetLocked",
+      "ToString",
+      "SetActive"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "ui",
+      "combat",
+      "save-load",
+      "data",
+      "runtime"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "UI 관련 로직 포함",
+      "전투 계열 로직 포함",
+      "저장/불러오기 관련 로직 포함"
     ]
   },
   {
