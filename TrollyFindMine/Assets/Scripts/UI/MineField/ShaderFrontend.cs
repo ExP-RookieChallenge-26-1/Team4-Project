@@ -6,6 +6,7 @@ public class ShaderFrontend : Frontend
 
     private GameObject[,] shaderCells;
     [SerializeField] private GameObject shaderCellPrefab;
+    [SerializeField] private GameObject shaderCellAngryPrefab;
 
     #endregion
 
