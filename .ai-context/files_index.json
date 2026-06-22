@@ -2407,11 +2407,169 @@
     ]
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
+    "path": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
+    "file_name": "GameManager.cs",
+    "content_hash": "92ec128e1118a20db553dc0207a091c320a4d3f4",
+    "size": 1027,
+    "line_count": 42,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "GameManager",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "Singleton"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "GameManager",
+    "unity_type": "None",
+    "methods": [
+      "stageClear",
+      "Awake"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Awake"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": true,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "UnityEngine",
+      "Singleton",
+      "Stage",
+      "Information",
+      "ClearedStages",
+      "StageCount",
+      "Public",
+      "Method",
+      "LogError",
+      "Awake"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [
+      "Stage Information",
+      "0���� �۰ų� ���� �������� Ŭ����",
+      "12���� ū �������� Ŭ����"
+    ],
+    "numeric_literals": [
+      12
+    ],
+    "guessed_roles": [
+      "manager",
+      "runtime",
+      "save-load"
+    ],
+    "summary_signals": [
+      "저장/불러오기 관련 로직 포함"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/Managers/SceneManager.cs",
+    "path": "TrollyFindMine/Assets/Scripts/Managers/SceneManager.cs",
+    "file_name": "SceneManager.cs",
+    "content_hash": "005a23338aacf24dd7d403cdf95d5491d180efaa",
+    "size": 270,
+    "line_count": 22,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine",
+      "UnityEngine.SceneManagement"
+    ],
+    "classes": [
+      {
+        "name": "SceneManager",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "Singleton"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "SceneManager",
+    "unity_type": "None",
+    "methods": [
+      "Awake"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Awake"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": true,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "UnityEngine",
+      "SceneManagement",
+      "Singleton",
+      "Unity",
+      "Cycle",
+      "Awake",
+      "Public",
+      "Function"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "scene",
+      "manager",
+      "runtime"
+    ],
+    "summary_signals": []
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/Singleton.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/Singleton.cs",
     "file_name": "Singleton.cs",
-    "content_hash": "9f73c4936f2c888ac19dfebe439de7c97a6682bc",
-    "size": 941,
+    "content_hash": "71fcd4318969059beeeed05595f698063c591b62",
+    "size": 944,
     "line_count": 43,
     "namespace": "",
     "using_list": [
@@ -2470,7 +2628,7 @@
     "referenced_types": [
       "UnityEngine",
       "Instance",
-      "FindObjectOfType",
+      "FindAnyObjectByType",
       "Name",
       "AddComponent",
       "DontDestroyOnLoad",
@@ -2708,12 +2866,12 @@
     ]
   },
   {
-    "file_id": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
-    "path": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
-    "file_name": "StageManager.cs",
-    "content_hash": "994f046fdf08f7cb2477b28864a863cf17973f24",
-    "size": 4355,
-    "line_count": 155,
+    "file_id": "TrollyFindMine/Assets/Scripts/Managers/StageButtonRenderer.cs",
+    "path": "TrollyFindMine/Assets/Scripts/Managers/StageButtonRenderer.cs",
+    "file_name": "StageButtonRenderer.cs",
+    "content_hash": "2770d3837f06ee39faf34288abd0bce3167ee957",
+    "size": 3680,
+    "line_count": 131,
     "namespace": "",
     "using_list": [
       "TMPro",
@@ -2722,7 +2880,7 @@
     ],
     "classes": [
       {
-        "name": "StageManager",
+        "name": "StageButtonRenderer",
         "kind": "class",
         "access": "public",
         "base_types": [
@@ -2734,7 +2892,7 @@
         "is_generic": false
       }
     ],
-    "main_class_name": "StageManager",
+    "main_class_name": "StageButtonRenderer",
     "unity_type": "MonoBehaviour",
     "methods": [
       "Start",
@@ -2744,14 +2902,20 @@
       "ClearExistingButtons",
       "DestroyImmediate",
       "SetStageLabel",
-      "IsStageUnlocked",
-      "EnsureClearArraySize"
+      "IsStageUnlocked"
     ],
     "fields": [
       {
-        "name": "resizedArray",
+        "name": "stageCount",
+        "type": "int",
+        "access": "private",
+        "serialized": true,
+        "is_static": false
+      },
+      {
+        "name": "clearedStages",
         "type": "bool[]",
-        "access": "internal",
+        "access": "private",
         "serialized": false,
         "is_static": false
       }
@@ -2768,7 +2932,7 @@
     "has_start": true,
     "has_on_enable": false,
     "has_on_disable": false,
-    "serialize_field_count": 0,
+    "serialize_field_count": 1,
     "public_field_count": 0,
     "get_component_count": 1,
     "find_call_count": 0,
@@ -2777,6 +2941,7 @@
     "singleton_candidate": false,
     "dont_destroy_on_load": false,
     "referenced_types": [
+      "int",
       "bool",
       "TMPro",
       "UnityEngine",
@@ -2784,9 +2949,12 @@
       "Stage",
       "Layout",
       "GridLayoutGroup",
-      "Progress",
       "Labels",
       "Start",
+      "GameManager",
+      "Instance",
+      "StageCount",
+      "ClearedStages",
       "GenerateStageButtons",
       "ContextMenu",
       "Generate",
@@ -2796,13 +2964,13 @@
       "ApplyGridSettings",
       "Instantiate",
       "StageButton_",
-      "StageButtonRenderer",
+      "StageButtonImageController",
       "GetComponent",
       "IsStageUnlocked",
       "Initialize",
       "SetStageLabel",
       "LogError",
-      "EnsureClearArraySize",
+      "StageManager",
       "Constraint",
       "FixedColumnCount",
       "GetChild",
@@ -2812,17 +2980,17 @@
       "TextMeshProUGUI",
       "GetComponentInChildren",
       "ToString",
-      "Length",
-      "Min"
+      "Length"
     ],
     "component_access_types": [
-      "StageButtonRenderer"
+      "StageButtonImageController"
     ],
     "created_types": [],
-    "singleton_access_types": [],
+    "singleton_access_types": [
+      "GameManager"
+    ],
     "string_literals": [
       "Stage Layout",
-      "Stage Progress",
       "Stage Labels",
       "Generate Stage Buttons",
       "StageButton_{i + 1}",
@@ -2833,18 +3001,19 @@
       "StageManager: columnCount must be at least 1."
     ],
     "numeric_literals": [
-      12,
-      3
+      3,
+      12
     ],
     "guessed_roles": [
       "ui",
+      "manager",
       "runtime",
       "combat",
-      "manager",
       "save-load"
     ],
     "summary_signals": [
       "런타임 컴포넌트",
+      "인스펙터 직렬화 필드 사용",
       "UI 관련 로직 포함",
       "전투 계열 로직 포함",
       "저장/불러오기 관련 로직 포함",
@@ -3717,9 +3886,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
     "file_name": "ShaderFrontend.cs",
-    "content_hash": "3b73f6f135b7a9dc2410e2c5b95154cb733330f6",
-    "size": 2266,
-    "line_count": 68,
+    "content_hash": "5a7d69ec65d2c8dc56f572d7eadc817fb85d11df",
+    "size": 2329,
+    "line_count": 69,
     "namespace": "",
     "using_list": [
       "UnityEngine"
@@ -3842,11 +4011,11 @@
     ]
   },
   {
-    "file_id": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
-    "path": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonRenderer.cs",
-    "file_name": "StageButtonRenderer.cs",
-    "content_hash": "8347b9778a527774821343b1e2162716410bb043",
-    "size": 1044,
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonImageController.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonImageController.cs",
+    "file_name": "StageButtonImageController.cs",
+    "content_hash": "8fba21661af145cd1f34a9f955adef92aa612126",
+    "size": 1051,
     "line_count": 47,
     "namespace": "",
     "using_list": [
@@ -3856,7 +4025,7 @@
     ],
     "classes": [
       {
-        "name": "StageButtonRenderer",
+        "name": "StageButtonImageController",
         "kind": "class",
         "access": "public",
         "base_types": [
@@ -3868,7 +4037,7 @@
         "is_generic": false
       }
     ],
-    "main_class_name": "StageButtonRenderer",
+    "main_class_name": "StageButtonImageController",
     "unity_type": "MonoBehaviour",
     "methods": [
       "Initialize",

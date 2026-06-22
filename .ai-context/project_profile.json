@@ -2,24 +2,25 @@
   "project_name": "unknown",
   "language": "C#",
   "engine_guess": "Unity",
-  "total_cs_files": 27,
+  "total_cs_files": 29,
   "mono_behaviour_files": 9,
   "scriptable_object_files": 0,
   "files_with_update": 1,
   "files_with_fixed_update": 2,
   "files_with_late_update": 0,
   "singleton_candidates": 2,
-  "manager_like_classes": 5,
+  "manager_like_classes": 7,
   "ui_related_classes": 17,
-  "save_load_related_classes": 11,
+  "save_load_related_classes": 12,
   "role_counts": {
     "ui": 17,
-    "runtime": 20,
-    "save-load": 11,
+    "runtime": 22,
+    "save-load": 12,
     "player": 7,
     "combat": 4,
     "network": 2,
-    "manager": 5,
+    "manager": 7,
+    "scene": 1,
     "data": 1
   },
   "high_coupling_classes": [
@@ -246,8 +247,8 @@
       "risk_score": 59
     },
     {
-      "file_id": "TrollyFindMine/Assets/Scripts/Managers/StageManager.cs",
-      "class_name": "StageManager",
+      "file_id": "TrollyFindMine/Assets/Scripts/Managers/StageButtonRenderer.cs",
+      "class_name": "StageButtonRenderer",
       "risk_flags": [
         "high-coupling",
         "init-order-sensitive",
