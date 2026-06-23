@@ -14,6 +14,8 @@ public class ShaderFrontend : Frontend
     {
         //gridCells 할당
         shaderCells = new GameObject[row, col];
+        //highlight를 위한 할당
+        Cells = new GameObject[row, col];
 
         RectTransform thisRectTransform = gameObject.GetComponent<RectTransform>();
         //cell의 부모 오브젝트의 width와 height
