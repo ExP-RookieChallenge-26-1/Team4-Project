@@ -3532,6 +3532,157 @@
     ]
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/Resolution/PreserveAspectContainer.cs",
+    "path": "TrollyFindMine/Assets/Scripts/Resolution/PreserveAspectContainer.cs",
+    "file_name": "PreserveAspectContainer.cs",
+    "content_hash": "4ed17b094ddae85a348c481a01203e902d43bae7",
+    "size": 1977,
+    "line_count": 67,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine",
+      "UnityEngine.UI"
+    ],
+    "classes": [
+      {
+        "name": "PreserveAspectContainer",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "PreserveAspectContainer",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Awake",
+      "Update",
+      "Vector2",
+      "GetParentVisualSize"
+    ],
+    "fields": [
+      {
+        "name": "myRect",
+        "type": "RectTransform",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "parentRect",
+        "type": "RectTransform",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "parentImage",
+        "type": "Image",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "parentWidth",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "parentHeight",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "spriteAspect",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "rectAspect",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "visualSize",
+        "type": "Vector2",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Awake",
+      "Update"
+    ],
+    "has_update": true,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": true,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 3,
+    "find_call_count": 0,
+    "new_keyword_count": 4,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "RectTransform",
+      "Image",
+      "float",
+      "Vector2",
+      "UnityEngine",
+      "UI",
+      "ExecuteAlways",
+      "RequireComponent",
+      "Awake",
+      "GetComponent",
+      "Update",
+      "GetParentVisualSize",
+      "Vector3"
+    ],
+    "component_access_types": [
+      "RectTransform",
+      "Image"
+    ],
+    "created_types": [
+      "Vector2"
+    ],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [
+      0.5
+    ],
+    "guessed_roles": [
+      "ui",
+      "runtime"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "Update 기반 처리 존재",
+      "UI 관련 로직 포함",
+      "컴포넌트 조회 사용"
+    ]
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
     "path": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
     "file_name": "DialogueEnums.cs",

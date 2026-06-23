@@ -232,6 +232,25 @@
     "risk_score": 51
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/Resolution/PreserveAspectContainer.cs",
+    "class_name": "PreserveAspectContainer",
+    "risk_flags": [
+      "update-heavy",
+      "getcomponent-heavy",
+      "init-order-sensitive",
+      "ui-runtime-mixed",
+      "state-owner"
+    ],
+    "risk_reasons": [
+      "Unity 업데이트 루프 사용",
+      "GetComponent/TryGetComponent 호출이 많음",
+      "초기화 순서에 민감할 가능성",
+      "UI와 런타임 책임이 한 파일에 섞였을 가능성",
+      "상태 중심 또는 관리 중심 클래스일 가능성"
+    ],
+    "risk_score": 50
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "class_name": "DialogueManager",
     "risk_flags": [
