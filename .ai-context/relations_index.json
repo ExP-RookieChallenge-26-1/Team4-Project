@@ -5355,6 +5355,335 @@
     "strength": 1
   },
   {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "bool",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "CurrentDirection",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "FlagCellWithRightClick",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "float",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "MineFieldBackend",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "OnFlagPressed",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "OnOpenPressed",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "OpenCellWithLeftClick",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "ResetRepeatState",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "SelectedCellMove",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "TriggerMove",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "Update",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "Vector2",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "VirtualJoystick",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "Vector2",
+    "relation_type": "creates",
+    "strength": 2
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "IDragHandler",
+    "relation_type": "implements",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "IPointerDownHandler",
+    "relation_type": "implements",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "IPointerUpHandler",
+    "relation_type": "implements",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "Abs",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "Awake",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "Camera",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "Canvas",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "ClampMagnitude",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "CurrentDirection",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "EventSystems",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "GetComponentInParent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "HasDirection",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "IDragHandler",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "IPointerDownHandler",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "IPointerUpHandler",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "OnDrag",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "OnPointerDown",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "OnPointerUp",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "PointerEventData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "QuantizeDirection",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "RectTransform",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "RectTransformUtility",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "RenderMode",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "ScreenPointToLocalPointInRectangle",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "ScreenSpaceOverlay",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "Sign",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "UpdateJoystick",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "Vector2",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
     "from_file": "TrollyFindMine/Assets/Scripts/KGB_SquareProceed.cs",
     "from_class": "KGB_SquareProceed",
     "to_type": "Rigidbody2D",
