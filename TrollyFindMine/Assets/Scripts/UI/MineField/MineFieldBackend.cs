@@ -215,11 +215,11 @@ public class MineFieldBackend : MonoBehaviour
 
     #region 입력 시스템과 연결
 
-    public void SelectedCellMove(Vector2 dir) //dir은 normalize된 Vector2;
+    public void SelectedCellMove(int dx, int dy) //dir은 normalize된 Vector2;
     {
         // 배열좌표계로 Vector2 변환
-        int nx = selectedCoord.x - (int)dir.y;
-        int ny = selectedCoord.y + (int)dir.x;
+        int nx = selectedCoord.x - dy;
+        int ny = selectedCoord.y + dx;
         Coord nc = new Coord(nx, ny);
         if (IsInRange(nc))
         {
