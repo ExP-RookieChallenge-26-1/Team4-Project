@@ -28,6 +28,11 @@ public class GameManager : Singleton<GameManager>
         
     }
 
+    public void ResetData()
+    {
+        clearedStages = new bool[stageCount];
+    }
+
     #endregion
 
     #region unity cycle
