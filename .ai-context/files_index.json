@@ -2674,6 +2674,109 @@
     ]
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "path": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "file_name": "DialogueManager.cs",
+    "content_hash": "fd77b58d839da6d779aa919d63e6cc3ff93d3199",
+    "size": 2115,
+    "line_count": 74,
+    "namespace": "",
+    "using_list": [
+      "System.Collections.Generic",
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "DialogueManager",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "Singleton"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "DialogueManager",
+    "unity_type": "None",
+    "methods": [
+      "Awake",
+      "GetSequence",
+      "HasSequence",
+      "AddSequence"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Awake"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": true,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 1,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "System",
+      "Collections",
+      "Generic",
+      "UnityEngine",
+      "DialogueKey",
+      "None",
+      "Stage1_Tutorial",
+      "Stage1_Hint_01",
+      "Stage1_Clear",
+      "Stage2_Tutorial",
+      "Stage2_Hint_01",
+      "Stage2_Clear",
+      "Singleton",
+      "Stage",
+      "DialogueSequenceData",
+      "Awake",
+      "Instance",
+      "AddSequence",
+      "GetSequence",
+      "TryGetValue",
+      "LogError",
+      "HasSequence",
+      "ContainsKey"
+    ],
+    "component_access_types": [],
+    "created_types": [
+      "Dictionary"
+    ],
+    "singleton_access_types": [],
+    "string_literals": [
+      "Stage 1",
+      "Stage 2",
+      "{key}에 연결된 대화 시퀀스가 없습니다."
+    ],
+    "numeric_literals": [
+      2
+    ],
+    "guessed_roles": [
+      "manager",
+      "data",
+      "runtime",
+      "save-load"
+    ],
+    "summary_signals": [
+      "저장/불러오기 관련 로직 포함"
+    ]
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
     "file_name": "GameManager.cs",
@@ -3426,6 +3529,231 @@
       "UI 관련 로직 포함",
       "저장/불러오기 관련 로직 포함",
       "컴포넌트 조회 사용"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
+    "path": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
+    "file_name": "DialogueEnums.cs",
+    "content_hash": "4f7946afd07f36851354db60d46adf46388fa527",
+    "size": 251,
+    "line_count": 23,
+    "namespace": "",
+    "using_list": [],
+    "classes": [],
+    "main_class_name": "DialogueEnums",
+    "unity_type": "None",
+    "methods": [],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "DialogueCharacterExpression",
+      "Neutral",
+      "Happy",
+      "Sad",
+      "Angry",
+      "Crying",
+      "Surprised",
+      "DialogueBubbleColor",
+      "Default",
+      "Purple",
+      "Green",
+      "DialogueEventType",
+      "None",
+      "ButtonHighlight"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "ui"
+    ],
+    "summary_signals": [
+      "UI 관련 로직 포함"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueLineData.cs",
+    "path": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueLineData.cs",
+    "file_name": "DialogueLineData.cs",
+    "content_hash": "40f5751a3ef95fd70adbaeeabe28fdd7071298ae",
+    "size": 259,
+    "line_count": 12,
+    "namespace": "",
+    "using_list": [
+      "System",
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "DialogueLineData",
+        "kind": "class",
+        "access": "public",
+        "base_types": [],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "DialogueLineData",
+    "unity_type": "None",
+    "methods": [],
+    "fields": [
+      {
+        "name": "expression",
+        "type": "DialogueCharacterExpression",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "bubbleColor",
+        "type": "DialogueBubbleColor",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "eventType",
+        "type": "DialogueEventType",
+        "access": "public",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 3,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "DialogueCharacterExpression",
+      "DialogueBubbleColor",
+      "DialogueEventType",
+      "System",
+      "UnityEngine",
+      "Serializable",
+      "TextArea"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [
+      2,
+      5
+    ],
+    "guessed_roles": [
+      "data"
+    ],
+    "summary_signals": []
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueSequenceData.cs",
+    "path": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueSequenceData.cs",
+    "file_name": "DialogueSequenceData.cs",
+    "content_hash": "bca7e8f8ba15e65c85e285f541dc404c8dc44250",
+    "size": 246,
+    "line_count": 9,
+    "namespace": "",
+    "using_list": [
+      "System.Collections.Generic",
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "DialogueSequenceData",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "ScriptableObject"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "DialogueSequenceData",
+    "unity_type": "ScriptableObject",
+    "methods": [],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "System",
+      "Collections",
+      "Generic",
+      "UnityEngine",
+      "CreateAssetMenu",
+      "DialogueSequence",
+      "Dialogue",
+      "Sequence",
+      "Data",
+      "DialogueLineData"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [
+      "DialogueSequence",
+      "Dialogue/Sequence Data"
+    ],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "data"
+    ],
+    "summary_signals": [
+      "데이터 자산 중심 구조"
     ]
   },
   {

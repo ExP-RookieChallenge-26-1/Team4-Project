@@ -5754,6 +5754,181 @@
     "strength": 1
   },
   {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Dictionary",
+    "relation_type": "creates",
+    "strength": 2
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Singleton",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "AddSequence",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Awake",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Collections",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "ContainsKey",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "DialogueKey",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "DialogueSequenceData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Generic",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "GetSequence",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "HasSequence",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "LogError",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "None",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Singleton",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Stage",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Stage1_Clear",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Stage1_Hint_01",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Stage1_Tutorial",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Stage2_Clear",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Stage2_Hint_01",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Stage2_Tutorial",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "System",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "TryGetValue",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
     "from_class": "GameManager",
     "to_type": "Singleton",
@@ -7037,6 +7212,230 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/UIManager.cs",
     "from_class": "UIManager",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
+    "from_class": "DialogueEnums",
+    "to_type": "Angry",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
+    "from_class": "DialogueEnums",
+    "to_type": "ButtonHighlight",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
+    "from_class": "DialogueEnums",
+    "to_type": "Crying",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
+    "from_class": "DialogueEnums",
+    "to_type": "Default",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
+    "from_class": "DialogueEnums",
+    "to_type": "DialogueBubbleColor",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
+    "from_class": "DialogueEnums",
+    "to_type": "DialogueCharacterExpression",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
+    "from_class": "DialogueEnums",
+    "to_type": "DialogueEventType",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
+    "from_class": "DialogueEnums",
+    "to_type": "Green",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
+    "from_class": "DialogueEnums",
+    "to_type": "Happy",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
+    "from_class": "DialogueEnums",
+    "to_type": "Neutral",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
+    "from_class": "DialogueEnums",
+    "to_type": "None",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
+    "from_class": "DialogueEnums",
+    "to_type": "Purple",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
+    "from_class": "DialogueEnums",
+    "to_type": "Sad",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueEnums.cs",
+    "from_class": "DialogueEnums",
+    "to_type": "Surprised",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueLineData.cs",
+    "from_class": "DialogueLineData",
+    "to_type": "DialogueBubbleColor",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueLineData.cs",
+    "from_class": "DialogueLineData",
+    "to_type": "DialogueCharacterExpression",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueLineData.cs",
+    "from_class": "DialogueLineData",
+    "to_type": "DialogueEventType",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueLineData.cs",
+    "from_class": "DialogueLineData",
+    "to_type": "Serializable",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueLineData.cs",
+    "from_class": "DialogueLineData",
+    "to_type": "System",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueLineData.cs",
+    "from_class": "DialogueLineData",
+    "to_type": "TextArea",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueLineData.cs",
+    "from_class": "DialogueLineData",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueSequenceData.cs",
+    "from_class": "DialogueSequenceData",
+    "to_type": "ScriptableObject",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueSequenceData.cs",
+    "from_class": "DialogueSequenceData",
+    "to_type": "Collections",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueSequenceData.cs",
+    "from_class": "DialogueSequenceData",
+    "to_type": "CreateAssetMenu",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueSequenceData.cs",
+    "from_class": "DialogueSequenceData",
+    "to_type": "Data",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueSequenceData.cs",
+    "from_class": "DialogueSequenceData",
+    "to_type": "Dialogue",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueSequenceData.cs",
+    "from_class": "DialogueSequenceData",
+    "to_type": "DialogueLineData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueSequenceData.cs",
+    "from_class": "DialogueSequenceData",
+    "to_type": "DialogueSequence",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueSequenceData.cs",
+    "from_class": "DialogueSequenceData",
+    "to_type": "Generic",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueSequenceData.cs",
+    "from_class": "DialogueSequenceData",
+    "to_type": "Sequence",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueSequenceData.cs",
+    "from_class": "DialogueSequenceData",
+    "to_type": "System",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueSequenceData.cs",
+    "from_class": "DialogueSequenceData",
     "to_type": "UnityEngine",
     "relation_type": "uses",
     "strength": 1
