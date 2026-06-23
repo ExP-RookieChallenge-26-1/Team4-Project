@@ -3242,9 +3242,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/Cell.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/Cell.cs",
     "file_name": "Cell.cs",
-    "content_hash": "6327db22c9344f66d057c6c974dcbeb03a1670f4",
-    "size": 366,
-    "line_count": 22,
+    "content_hash": "5c134066adba3c67ac29bd05dd908e368cd8d2d6",
+    "size": 495,
+    "line_count": 25,
     "namespace": "",
     "using_list": [
       "System",
@@ -3295,7 +3295,7 @@
     "has_on_disable": false,
     "serialize_field_count": 0,
     "public_field_count": 0,
-    "get_component_count": 1,
+    "get_component_count": 2,
     "find_call_count": 0,
     "new_keyword_count": 0,
     "coroutine_count": 0,
@@ -3309,18 +3309,21 @@
       "Awake",
       "GetComponent",
       "HighLightCell",
+      "RectTransform",
+      "SetAsLastSibling",
       "DeHighLightCell"
     ],
     "component_access_types": [
-      "Outline"
+      "Outline",
+      "RectTransform"
     ],
     "created_types": [],
     "singleton_access_types": [],
     "string_literals": [],
     "numeric_literals": [],
     "guessed_roles": [
-      "runtime",
-      "ui"
+      "ui",
+      "runtime"
     ],
     "summary_signals": [
       "런타임 컴포넌트",
@@ -3502,9 +3505,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
     "file_name": "GridFrontend.cs",
-    "content_hash": "7a82cca8d73846ee588882b46b3439683b546674",
-    "size": 2391,
-    "line_count": 75,
+    "content_hash": "76801bb986d304046266dc4a1423c981b0625ff1",
+    "size": 2573,
+    "line_count": 79,
     "namespace": "",
     "using_list": [
       "UnityEngine"
@@ -3581,7 +3584,7 @@
     "public_field_count": 0,
     "get_component_count": 3,
     "find_call_count": 0,
-    "new_keyword_count": 7,
+    "new_keyword_count": 9,
     "coroutine_count": 0,
     "singleton_candidate": false,
     "dont_destroy_on_load": false,
@@ -3599,6 +3602,7 @@
       "Cells",
       "RectTransform",
       "GetComponent",
+      "Log",
       "Instantiate",
       "HighLight",
       "Vector3",
@@ -3980,9 +3984,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
     "file_name": "ShaderFrontend.cs",
-    "content_hash": "9b2b042ace9738fd1b6ddf0ca1e6bed003fcd256",
-    "size": 2408,
-    "line_count": 71,
+    "content_hash": "c4f46263348b251274d81ec1380662eb67d9f61c",
+    "size": 2598,
+    "line_count": 75,
     "namespace": "",
     "using_list": [
       "UnityEngine"
@@ -4006,6 +4010,7 @@
     "methods": [
       "InitializeGrid",
       "Vector2",
+      "Vector3",
       "ShaderClicked",
       "SetFlag"
     ],
@@ -4060,7 +4065,7 @@
     "public_field_count": 0,
     "get_component_count": 2,
     "find_call_count": 0,
-    "new_keyword_count": 7,
+    "new_keyword_count": 9,
     "coroutine_count": 0,
     "singleton_candidate": false,
     "dont_destroy_on_load": false,
@@ -4075,6 +4080,7 @@
       "RectTransform",
       "GetComponent",
       "Instantiate",
+      "Vector3",
       "ShaderClicked",
       "Coord",
       "Destroy",
@@ -4085,7 +4091,8 @@
       "RectTransform"
     ],
     "created_types": [
-      "Vector2"
+      "Vector2",
+      "Vector3"
     ],
     "singleton_access_types": [],
     "string_literals": [],
