@@ -6713,6 +6713,48 @@
     "strength": 1
   },
   {
+    "from_file": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
+    "from_class": "MineFieldTestStarter",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
+    "from_class": "MineFieldTestStarter",
+    "to_type": "InitGrid",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
+    "from_class": "MineFieldTestStarter",
+    "to_type": "LogError",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
+    "from_class": "MineFieldTestStarter",
+    "to_type": "MineFieldBackend",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
+    "from_class": "MineFieldTestStarter",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
+    "from_class": "MineFieldTestStarter",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/Cell.cs",
     "from_class": "Cell",
     "to_type": "Outline",
