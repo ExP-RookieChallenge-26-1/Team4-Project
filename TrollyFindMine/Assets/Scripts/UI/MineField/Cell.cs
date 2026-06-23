@@ -14,6 +14,9 @@ public class Cell : MonoBehaviour
     public void HighLightCell()
     {
         outline.enabled = true;
+        RectTransform rect = GetComponent<RectTransform>();
+        //윤곽선이 보이도록
+        rect.SetAsLastSibling();
     } 
     public void DeHighLightCell()
     {

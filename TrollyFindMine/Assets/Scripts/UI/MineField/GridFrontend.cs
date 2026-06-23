@@ -19,12 +19,14 @@ public class GridFrontend : Frontend
     {
         //gridCells 할당
         Cells = new GameObject[row, col];
+        gridCells = new GridCell[row, col];
         
         RectTransform thisRectTransform = gameObject.GetComponent<RectTransform>();
         //cell의 부모 오브젝트의 width와 height
-        float width = thisRectTransform.localScale.x;
-        float height = thisRectTransform.localScale.y;
-        
+        float width = thisRectTransform.rect.width;
+        float height = thisRectTransform.rect.height;
+        Debug.Log(width);
+        Debug.Log(height);
         //instantiate 시작 위치
         Vector2 instantiateStartPos;
         float prefabWidth;
@@ -43,6 +45,7 @@ public class GridFrontend : Frontend
         {
             for (int j = 0; j < col; j++)
             {
+                Debug.Log(prefabWidth);
                 Vector2 offset = new Vector2(prefabWidth*j,-prefabWidth*i);
                 GameObject cell = Instantiate(gridCellPrefab, thisRectTransform, false);
                 
@@ -54,10 +57,11 @@ public class GridFrontend : Frontend
                 //cell의 pivot을 좌상단으로 설정
                 RectTransform cellRectTransform = cell.GetComponent<RectTransform>();
                 cellRectTransform.anchorMax = new Vector2(0,1);
-                cellRectTransform.anchorMin = new Vector2(0,1);
-                
+                cellRectTransform.anchorMin = new Vector2(0, 1);
+                cellRectTransform.pivot = new Vector2(0, 1);
+
                 //cell의 크기를 설정
-                cellRectTransform.localScale = new Vector3(width, width, 1);
+                cellRectTransform.sizeDelta = new Vector3(prefabWidth, prefabWidth, 1);
                 
                 //좌표 계산해서 채워넣기
                 cellRectTransform.anchoredPosition = instantiateStartPos + offset;
