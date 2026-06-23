@@ -3558,8 +3558,8 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "file_name": "MineFieldBackend.cs",
-    "content_hash": "7097417a3276ce4b3b9cd0f7298b2ee679bbfb8a",
-    "size": 7380,
+    "content_hash": "338f9a18193f2ceb78cd392844cb040a102beb31",
+    "size": 7367,
     "line_count": 234,
     "namespace": "",
     "using_list": [
@@ -3731,6 +3731,20 @@
       {
         "name": "coord",
         "type": "Coord",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "nx",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "ny",
+        "type": "int",
         "access": "internal",
         "serialized": false,
         "is_static": false
