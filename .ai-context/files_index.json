@@ -2410,9 +2410,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
     "file_name": "GameManager.cs",
-    "content_hash": "92ec128e1118a20db553dc0207a091c320a4d3f4",
-    "size": 1027,
-    "line_count": 42,
+    "content_hash": "ddafbc86830f9e2b723dc8a0e3811938a2dcada7",
+    "size": 1114,
+    "line_count": 47,
     "namespace": "",
     "using_list": [
       "UnityEngine"
@@ -2435,6 +2435,7 @@
     "unity_type": "None",
     "methods": [
       "stageClear",
+      "ResetData",
       "Awake"
     ],
     "fields": [],
@@ -2468,6 +2469,7 @@
       "Public",
       "Method",
       "LogError",
+      "ResetData",
       "Awake"
     ],
     "component_access_types": [],
@@ -2483,6 +2485,7 @@
     ],
     "guessed_roles": [
       "manager",
+      "data",
       "runtime",
       "save-load"
     ],

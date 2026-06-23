@@ -20,8 +20,8 @@
     "combat": 4,
     "network": 2,
     "manager": 7,
-    "scene": 1,
-    "data": 1
+    "data": 2,
+    "scene": 1
   },
   "high_coupling_classes": [
     {

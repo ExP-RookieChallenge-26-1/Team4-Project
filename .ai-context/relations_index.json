@@ -5476,6 +5476,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
     "from_class": "GameManager",
+    "to_type": "ResetData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
+    "from_class": "GameManager",
     "to_type": "Singleton",
     "relation_type": "uses",
     "strength": 1
