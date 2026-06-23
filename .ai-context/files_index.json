@@ -2316,6 +2316,273 @@
     ]
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "path": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "file_name": "MineFieldInputController.cs",
+    "content_hash": "20ea9078ef488a908e609efc87895ba228972483",
+    "size": 1806,
+    "line_count": 71,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "MineFieldInputController",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "MineFieldInputController",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Update",
+      "OnOpenPressed",
+      "OnFlagPressed",
+      "TriggerMove",
+      "ResetRepeatState"
+    ],
+    "fields": [
+      {
+        "name": "_lastDirection",
+        "type": "Vector2",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_nextMoveTime",
+        "type": "float",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_waitingFirstRepeat",
+        "type": "bool",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "direction",
+        "type": "Vector2",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Update"
+    ],
+    "has_update": true,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "Vector2",
+      "float",
+      "bool",
+      "UnityEngine",
+      "MineFieldBackend",
+      "VirtualJoystick",
+      "Update",
+      "CurrentDirection",
+      "ResetRepeatState",
+      "TriggerMove",
+      "OnOpenPressed",
+      "OpenCellWithLeftClick",
+      "OnFlagPressed",
+      "FlagCellWithRightClick",
+      "SelectedCellMove"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [
+      0.35,
+      0.18,
+      0
+    ],
+    "guessed_roles": [
+      "player",
+      "runtime",
+      "save-load"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "Update 기반 처리 존재",
+      "저장/불러오기 관련 로직 포함"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "path": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "file_name": "VirtualJoystick.cs",
+    "content_hash": "5b50f466be383b4c516d6aaa7d6afb1279f76b2c",
+    "size": 2181,
+    "line_count": 80,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine",
+      "UnityEngine.EventSystems"
+    ],
+    "classes": [
+      {
+        "name": "VirtualJoystick",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour",
+          "IPointerDownHandler",
+          "IDragHandler",
+          "IPointerUpHandler"
+        ],
+        "interfaces": [
+          "IPointerDownHandler",
+          "IDragHandler",
+          "IPointerUpHandler"
+        ],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "VirtualJoystick",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Awake",
+      "OnPointerDown",
+      "OnDrag",
+      "OnPointerUp",
+      "UpdateJoystick",
+      "QuantizeDirection",
+      "Vector2"
+    ],
+    "fields": [
+      {
+        "name": "_inputVector",
+        "type": "Vector2",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_currentDirection",
+        "type": "Vector2",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_parentCanvas",
+        "type": "Canvas",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_uiCamera",
+        "type": "Camera",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Awake"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": true,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 2,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "Vector2",
+      "Canvas",
+      "Camera",
+      "UnityEngine",
+      "EventSystems",
+      "IPointerDownHandler",
+      "IDragHandler",
+      "IPointerUpHandler",
+      "RectTransform",
+      "CurrentDirection",
+      "HasDirection",
+      "Awake",
+      "GetComponentInParent",
+      "RenderMode",
+      "ScreenSpaceOverlay",
+      "OnPointerDown",
+      "PointerEventData",
+      "UpdateJoystick",
+      "OnDrag",
+      "OnPointerUp",
+      "RectTransformUtility",
+      "ScreenPointToLocalPointInRectangle",
+      "ClampMagnitude",
+      "QuantizeDirection",
+      "Abs",
+      "Sign"
+    ],
+    "component_access_types": [],
+    "created_types": [
+      "Vector2"
+    ],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [
+      240,
+      60,
+      0
+    ],
+    "guessed_roles": [
+      "ui",
+      "runtime",
+      "data",
+      "player",
+      "save-load"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함"
+    ]
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/KGB_SquareProceed.cs",
     "path": "TrollyFindMine/Assets/Scripts/KGB_SquareProceed.cs",
     "file_name": "KGB_SquareProceed.cs",
