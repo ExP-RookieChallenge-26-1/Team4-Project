@@ -2316,12 +2316,97 @@
     ]
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/Input/ButtonPointerEvents.cs",
+    "path": "TrollyFindMine/Assets/Scripts/Input/ButtonPointerEvents.cs",
+    "file_name": "ButtonPointerEvents.cs",
+    "content_hash": "d128b4368fa109417c9afb26d23dab4ceac575b6",
+    "size": 429,
+    "line_count": 20,
+    "namespace": "",
+    "using_list": [
+      "System",
+      "UnityEngine",
+      "UnityEngine.EventSystems"
+    ],
+    "classes": [
+      {
+        "name": "ButtonPointerEvents",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour",
+          "IPointerDownHandler",
+          "IPointerUpHandler"
+        ],
+        "interfaces": [
+          "IPointerDownHandler",
+          "IPointerUpHandler"
+        ],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "ButtonPointerEvents",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "OnPointerDown",
+      "OnPointerUp"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "System",
+      "UnityEngine",
+      "EventSystems",
+      "IPointerDownHandler",
+      "IPointerUpHandler",
+      "OnPressed",
+      "OnReleased",
+      "OnPointerDown",
+      "PointerEventData",
+      "Invoke",
+      "OnPointerUp"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "ui",
+      "data",
+      "runtime"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "UI 관련 로직 포함"
+    ]
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "path": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "file_name": "MineFieldInputController.cs",
-    "content_hash": "e5e3ab92276b41283df67b868fe48fe16bbba701",
-    "size": 2269,
-    "line_count": 88,
+    "content_hash": "214db66dc28adf0ed6c2eb4a999e0c428781f79c",
+    "size": 3763,
+    "line_count": 118,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -2345,6 +2430,7 @@
     "unity_type": "MonoBehaviour",
     "methods": [
       "Start",
+      "SetupPressExpression",
       "Update",
       "OnOpenPressed",
       "OnFlagPressed",
@@ -2396,7 +2482,7 @@
     "has_on_disable": false,
     "serialize_field_count": 0,
     "public_field_count": 0,
-    "get_component_count": 0,
+    "get_component_count": 1,
     "find_call_count": 0,
     "new_keyword_count": 0,
     "coroutine_count": 0,
@@ -2410,12 +2496,26 @@
       "UI",
       "MineFieldBackend",
       "VirtualJoystick",
+      "MineCharacterController",
       "Button",
       "Start",
       "Event",
       "AddListener",
       "OpenCellWithLeftClick",
       "FlagCellWithRightClick",
+      "SuperAngry",
+      "Angry",
+      "LogWarning",
+      "SetupPressExpression",
+      "ShowSuperAngry",
+      "ResetExpression",
+      "OnPressed",
+      "ShowAngry",
+      "OnReleased",
+      "System",
+      "ButtonPointerEvents",
+      "GetComponent",
+      "AddComponent",
       "Update",
       "CurrentDirection",
       "ResetRepeatState",
@@ -2424,37 +2524,44 @@
       "OnFlagPressed",
       "SelectedCellMove"
     ],
-    "component_access_types": [],
+    "component_access_types": [
+      "ButtonPointerEvents"
+    ],
     "created_types": [],
     "singleton_access_types": [],
-    "string_literals": [],
+    "string_literals": [
+      "MineFieldInputController에 mineCharacterController가 연결되어 있지 않습니다.",
+      "MineFieldInputController에 virtualJoystick이 연결되어 있지 않습니다."
+    ],
     "numeric_literals": [
       0.35,
       0.18,
       0
     ],
     "guessed_roles": [
+      "player",
       "runtime",
       "ui",
-      "player",
       "save-load"
     ],
     "summary_signals": [
       "런타임 컴포넌트",
       "Update 기반 처리 존재",
       "UI 관련 로직 포함",
-      "저장/불러오기 관련 로직 포함"
+      "저장/불러오기 관련 로직 포함",
+      "컴포넌트 조회 사용"
     ]
   },
   {
     "file_id": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "path": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "file_name": "VirtualJoystick.cs",
-    "content_hash": "61069e50bbebd011585c457668fa5d5b67e79855",
-    "size": 2992,
-    "line_count": 110,
+    "content_hash": "c9e3564a2e195a0588d845d7310f94a79c9bb866",
+    "size": 3137,
+    "line_count": 116,
     "namespace": "",
     "using_list": [
+      "System",
       "UnityEngine",
       "UnityEngine.EventSystems",
       "UnityEngine.UI"
@@ -2554,12 +2661,15 @@
       "Canvas",
       "Camera",
       "Sprite",
+      "System",
       "UnityEngine",
       "EventSystems",
       "UI",
       "IPointerDownHandler",
       "IDragHandler",
       "IPointerUpHandler",
+      "OnPressed",
+      "OnReleased",
       "RectTransform",
       "Image",
       "CurrentDirection",
@@ -2573,6 +2683,7 @@
       "PointerEventData",
       "SetPressedVisual",
       "UpdateJoystick",
+      "Invoke",
       "OnDrag",
       "OnPointerUp",
       "RectTransformUtility",
@@ -4363,9 +4474,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
     "file_name": "GridFrontend.cs",
-    "content_hash": "194332a5b908d3ab96b7e6c20d37b07bd3175dac",
-    "size": 2537,
-    "line_count": 77,
+    "content_hash": "eeb7e3c5e4dcca537e7c97830254ef25edd102ce",
+    "size": 2444,
+    "line_count": 74,
     "namespace": "",
     "using_list": [
       "UnityEngine"
@@ -4460,7 +4571,6 @@
       "Cells",
       "RectTransform",
       "GetComponent",
-      "Log",
       "Instantiate",
       "HighLight",
       "Vector3",
@@ -4493,11 +4603,117 @@
     ]
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "file_name": "MineCharacterController.cs",
+    "content_hash": "0dcf764a70d1b99df86108bdfc6ce3c6a2401f63",
+    "size": 1601,
+    "line_count": 77,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine",
+      "UnityEngine.UI"
+    ],
+    "classes": [
+      {
+        "name": "MineCharacterController",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "MineCharacterController",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "ShowAngry",
+      "ShowSuperAngry",
+      "ResetExpression",
+      "SetExpression",
+      "HandleGameOver",
+      "Start",
+      "OnEnable",
+      "OnDisable"
+    ],
+    "fields": [
+      {
+        "name": "isGameOver",
+        "type": "bool",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start",
+      "OnEnable",
+      "OnDisable"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": true,
+    "has_on_disable": true,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "bool",
+      "UnityEngine",
+      "UI",
+      "Image",
+      "MineFieldBackend",
+      "Sprite",
+      "Public",
+      "Methods",
+      "ShowAngry",
+      "SetExpression",
+      "ShowSuperAngry",
+      "ResetExpression",
+      "Private",
+      "HandleGameOver",
+      "Start",
+      "OnEnable",
+      "OnGameOver",
+      "OnDisable"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "ui",
+      "runtime",
+      "player",
+      "save-load"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함"
+    ]
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "file_name": "MineFieldBackend.cs",
-    "content_hash": "29a707880184257bc7fb4dee5b5dbcbeac4f9c73",
-    "size": 9613,
+    "content_hash": "c06205bc6ec60a00f68e26d5ea651de142cdfcf2",
+    "size": 9616,
     "line_count": 291,
     "namespace": "",
     "using_list": [

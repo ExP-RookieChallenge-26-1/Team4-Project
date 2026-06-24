@@ -5355,6 +5355,111 @@
     "strength": 1
   },
   {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/ButtonPointerEvents.cs",
+    "from_class": "ButtonPointerEvents",
+    "to_type": "IPointerDownHandler",
+    "relation_type": "implements",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/ButtonPointerEvents.cs",
+    "from_class": "ButtonPointerEvents",
+    "to_type": "IPointerUpHandler",
+    "relation_type": "implements",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/ButtonPointerEvents.cs",
+    "from_class": "ButtonPointerEvents",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/ButtonPointerEvents.cs",
+    "from_class": "ButtonPointerEvents",
+    "to_type": "EventSystems",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/ButtonPointerEvents.cs",
+    "from_class": "ButtonPointerEvents",
+    "to_type": "Invoke",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/ButtonPointerEvents.cs",
+    "from_class": "ButtonPointerEvents",
+    "to_type": "IPointerDownHandler",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/ButtonPointerEvents.cs",
+    "from_class": "ButtonPointerEvents",
+    "to_type": "IPointerUpHandler",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/ButtonPointerEvents.cs",
+    "from_class": "ButtonPointerEvents",
+    "to_type": "OnPointerDown",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/ButtonPointerEvents.cs",
+    "from_class": "ButtonPointerEvents",
+    "to_type": "OnPointerUp",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/ButtonPointerEvents.cs",
+    "from_class": "ButtonPointerEvents",
+    "to_type": "OnPressed",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/ButtonPointerEvents.cs",
+    "from_class": "ButtonPointerEvents",
+    "to_type": "OnReleased",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/ButtonPointerEvents.cs",
+    "from_class": "ButtonPointerEvents",
+    "to_type": "PointerEventData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/ButtonPointerEvents.cs",
+    "from_class": "ButtonPointerEvents",
+    "to_type": "System",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/ButtonPointerEvents.cs",
+    "from_class": "ButtonPointerEvents",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "ButtonPointerEvents",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
     "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "from_class": "MineFieldInputController",
     "to_type": "MonoBehaviour",
@@ -5364,7 +5469,21 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "from_class": "MineFieldInputController",
+    "to_type": "AddComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
     "to_type": "AddListener",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "Angry",
     "relation_type": "uses",
     "strength": 1
   },
@@ -5379,6 +5498,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "from_class": "MineFieldInputController",
     "to_type": "Button",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "ButtonPointerEvents",
     "relation_type": "uses",
     "strength": 1
   },
@@ -5413,6 +5539,27 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "from_class": "MineFieldInputController",
+    "to_type": "GetComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "LogWarning",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "MineCharacterController",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
     "to_type": "MineFieldBackend",
     "relation_type": "uses",
     "strength": 1
@@ -5434,7 +5581,28 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "from_class": "MineFieldInputController",
+    "to_type": "OnPressed",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "OnReleased",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
     "to_type": "OpenCellWithLeftClick",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "ResetExpression",
     "relation_type": "uses",
     "strength": 1
   },
@@ -5455,7 +5623,42 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "from_class": "MineFieldInputController",
+    "to_type": "SetupPressExpression",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "ShowAngry",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "ShowSuperAngry",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
     "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "SuperAngry",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "System",
     "relation_type": "uses",
     "strength": 1
   },
@@ -5630,6 +5833,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "from_class": "VirtualJoystick",
+    "to_type": "Invoke",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
     "to_type": "IPointerDownHandler",
     "relation_type": "uses",
     "strength": 1
@@ -5659,6 +5869,20 @@
     "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "from_class": "VirtualJoystick",
     "to_type": "OnPointerUp",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "OnPressed",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "OnReleased",
     "relation_type": "uses",
     "strength": 1
   },
@@ -5729,6 +5953,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "from_class": "VirtualJoystick",
     "to_type": "Sprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "System",
     "relation_type": "uses",
     "strength": 1
   },
@@ -8290,13 +8521,6 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
     "from_class": "GridFrontend",
-    "to_type": "Log",
-    "relation_type": "uses",
-    "strength": 1
-  },
-  {
-    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
-    "from_class": "GridFrontend",
     "to_type": "Methods",
     "relation_type": "uses",
     "strength": 1
@@ -8333,6 +8557,139 @@
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
     "from_class": "GridFrontend",
     "to_type": "Vector3",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "bool",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "HandleGameOver",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "Image",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "Methods",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "MineFieldBackend",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "OnDisable",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "OnEnable",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "OnGameOver",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "Private",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "Public",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "ResetExpression",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "SetExpression",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "ShowAngry",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "ShowSuperAngry",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "Sprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "UI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineCharacterController.cs",
+    "from_class": "MineCharacterController",
+    "to_type": "UnityEngine",
     "relation_type": "uses",
     "strength": 1
   },
