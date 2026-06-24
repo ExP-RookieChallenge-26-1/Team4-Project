@@ -3896,6 +3896,75 @@
     ]
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
+    "path": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
+    "file_name": "Stage1.cs",
+    "content_hash": "90593e349c5171c7376e2d6632c43fcfe70502e4",
+    "size": 120,
+    "line_count": 11,
+    "namespace": "",
+    "using_list": [
+      "System",
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "Stage1",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "Stage1",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "System",
+      "UnityEngine",
+      "Start"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "runtime"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트"
+    ]
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
     "path": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
     "file_name": "Starter.cs",
@@ -4427,9 +4496,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "file_name": "MineFieldBackend.cs",
-    "content_hash": "33ea5ce38dbcaa710a710cb25dd1078d88bb0338",
-    "size": 8245,
-    "line_count": 255,
+    "content_hash": "74a086bddd1a8836c2688af477c1b500b36c4b23",
+    "size": 9612,
+    "line_count": 291,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -4578,6 +4647,48 @@
         "is_static": false
       },
       {
+        "name": "number",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "flagNum",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "nx",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "ny",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "nx",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "ny",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
         "name": "chk",
         "type": "bool[,]",
         "access": "internal",
@@ -4634,7 +4745,7 @@
     "public_field_count": 0,
     "get_component_count": 0,
     "find_call_count": 0,
-    "new_keyword_count": 6,
+    "new_keyword_count": 8,
     "coroutine_count": 0,
     "singleton_candidate": false,
     "dont_destroy_on_load": false,

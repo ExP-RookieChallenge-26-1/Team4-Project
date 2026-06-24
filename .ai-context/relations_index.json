@@ -7644,6 +7644,34 @@
     "strength": 1
   },
   {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
+    "from_class": "Stage1",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
+    "from_class": "Stage1",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
+    "from_class": "Stage1",
+    "to_type": "System",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
+    "from_class": "Stage1",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
     "from_file": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
     "from_class": "MineFieldTestStarter",
     "to_type": "MonoBehaviour",

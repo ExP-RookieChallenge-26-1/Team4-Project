@@ -572,6 +572,13 @@
     "risk_score": 0
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
+    "class_name": "Stage1",
+    "risk_flags": [],
+    "risk_reasons": [],
+    "risk_score": 0
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/UI/UIViewStackable.cs",
     "class_name": "UIViewStackable",
     "risk_flags": [],
