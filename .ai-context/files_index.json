@@ -2701,6 +2701,94 @@
     ]
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "path": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "file_name": "MainMenuButtonEvent.cs",
+    "content_hash": "9711bf4541cefa70917ae884ceec28d20197fc7e",
+    "size": 556,
+    "line_count": 26,
+    "namespace": "",
+    "using_list": [
+      "System",
+      "Unity.VectorGraphics",
+      "UnityEngine",
+      "UnityEngine.UI"
+    ],
+    "classes": [
+      {
+        "name": "MainMenuButtonEvent",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "MainMenuButtonEvent",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "System",
+      "Unity",
+      "VectorGraphics",
+      "UnityEngine",
+      "UI",
+      "Button",
+      "Start",
+      "AddListener",
+      "SceneManager",
+      "Instance",
+      "GoToStageSelectScene",
+      "TODO"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [
+      "SceneManager"
+    ],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "ui",
+      "manager",
+      "scene",
+      "runtime",
+      "save-load"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함"
+    ]
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "file_name": "DialogueManager.cs",
@@ -2920,9 +3008,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/SceneManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/SceneManager.cs",
     "file_name": "SceneManager.cs",
-    "content_hash": "005a23338aacf24dd7d403cdf95d5491d180efaa",
-    "size": 270,
-    "line_count": 22,
+    "content_hash": "faa1f74f66573bb3f388e455f242bd24681684b4",
+    "size": 400,
+    "line_count": 25,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -2945,7 +3033,8 @@
     "main_class_name": "SceneManager",
     "unity_type": "None",
     "methods": [
-      "Awake"
+      "Awake",
+      "GoToStageSelectScene"
     ],
     "fields": [],
     "properties": [],
@@ -2976,19 +3065,27 @@
       "Cycle",
       "Awake",
       "Public",
-      "Function"
+      "Function",
+      "GoToStageSelectScene",
+      "LoadScene",
+      "StageSelectScene"
     ],
     "component_access_types": [],
     "created_types": [],
     "singleton_access_types": [],
-    "string_literals": [],
+    "string_literals": [
+      "StageSelectScene"
+    ],
     "numeric_literals": [],
     "guessed_roles": [
       "scene",
+      "save-load",
       "manager",
       "runtime"
     ],
-    "summary_signals": []
+    "summary_signals": [
+      "저장/불러오기 관련 로직 포함"
+    ]
   },
   {
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/Singleton.cs",

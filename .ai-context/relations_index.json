@@ -5831,6 +5831,104 @@
     "strength": 1
   },
   {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
+    "to_type": "SceneManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
+    "to_type": "AddListener",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
+    "to_type": "Button",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
+    "to_type": "GoToStageSelectScene",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
+    "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
+    "to_type": "SceneManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
+    "to_type": "System",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
+    "to_type": "TODO",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
+    "to_type": "UI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
+    "to_type": "Unity",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
+    "to_type": "VectorGraphics",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "from_class": "DialogueManager",
     "to_type": "Dictionary",
@@ -6169,6 +6267,20 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/SceneManager.cs",
     "from_class": "SceneManager",
+    "to_type": "GoToStageSelectScene",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/SceneManager.cs",
+    "from_class": "SceneManager",
+    "to_type": "LoadScene",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/SceneManager.cs",
+    "from_class": "SceneManager",
     "to_type": "Public",
     "relation_type": "uses",
     "strength": 1
@@ -6184,6 +6296,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/SceneManager.cs",
     "from_class": "SceneManager",
     "to_type": "Singleton",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/SceneManager.cs",
+    "from_class": "SceneManager",
+    "to_type": "StageSelectScene",
     "relation_type": "uses",
     "strength": 1
   },
