@@ -8409,6 +8409,20 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "from_class": "MineFieldBackend",
+    "to_type": "OnGameOver",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "OnGameWin",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
     "to_type": "OnSelectedCoordChanged",
     "relation_type": "uses",
     "strength": 1
@@ -8458,6 +8472,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "from_class": "MineFieldBackend",
+    "to_type": "Reflection",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
     "to_type": "SelectedCellMove",
     "relation_type": "uses",
     "strength": 1
@@ -8494,13 +8515,6 @@
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "from_class": "MineFieldBackend",
     "to_type": "System",
-    "relation_type": "uses",
-    "strength": 1
-  },
-  {
-    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
-    "from_class": "MineFieldBackend",
-    "to_type": "TODO",
     "relation_type": "uses",
     "strength": 1
   },
