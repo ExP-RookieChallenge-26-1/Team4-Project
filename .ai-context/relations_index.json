@@ -5511,6 +5511,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "from_class": "VirtualJoystick",
+    "to_type": "Image",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
     "to_type": "Vector2",
     "relation_type": "creates",
     "strength": 2
@@ -5595,6 +5602,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "from_class": "VirtualJoystick",
+    "to_type": "GetComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
     "to_type": "GetComponentInParent",
     "relation_type": "uses",
     "strength": 1
@@ -5610,6 +5624,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "from_class": "VirtualJoystick",
     "to_type": "IDragHandler",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "Image",
     "relation_type": "uses",
     "strength": 1
   },
@@ -5700,7 +5721,28 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "from_class": "VirtualJoystick",
+    "to_type": "SetPressedVisual",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
     "to_type": "Sign",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "Sprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "UI",
     "relation_type": "uses",
     "strength": 1
   },
