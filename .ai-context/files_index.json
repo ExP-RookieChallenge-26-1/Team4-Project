@@ -2404,9 +2404,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "path": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "file_name": "MineFieldInputController.cs",
-    "content_hash": "214db66dc28adf0ed6c2eb4a999e0c428781f79c",
-    "size": 3763,
-    "line_count": 118,
+    "content_hash": "07d6fba44efc83956aad8ea298aa08937bfb1d24",
+    "size": 4858,
+    "line_count": 139,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -2431,6 +2431,7 @@
     "methods": [
       "Start",
       "SetupPressExpression",
+      "SetInputActive",
       "Update",
       "OnOpenPressed",
       "OnFlagPressed",
@@ -2454,6 +2455,27 @@
       },
       {
         "name": "_waitingFirstRepeat",
+        "type": "bool",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_clickButtonPointerEvents",
+        "type": "ButtonPointerEvents",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_flagButtonPointerEvents",
+        "type": "ButtonPointerEvents",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_inputActive",
         "type": "bool",
         "access": "private",
         "serialized": false,
@@ -2492,6 +2514,7 @@
       "Vector2",
       "float",
       "bool",
+      "ButtonPointerEvents",
       "UnityEngine",
       "UI",
       "MineFieldBackend",
@@ -2512,13 +2535,17 @@
       "OnPressed",
       "ShowAngry",
       "OnReleased",
+      "InitGrid",
+      "SetInputActive",
+      "OnGridInitialized",
+      "OnGameOver",
+      "OnGameWin",
       "System",
-      "ButtonPointerEvents",
       "GetComponent",
       "AddComponent",
+      "ResetRepeatState",
       "Update",
       "CurrentDirection",
-      "ResetRepeatState",
       "TriggerMove",
       "OnOpenPressed",
       "OnFlagPressed",
@@ -2542,7 +2569,8 @@
       "player",
       "runtime",
       "ui",
-      "save-load"
+      "save-load",
+      "data"
     ],
     "summary_signals": [
       "런타임 컴포넌트",
@@ -4891,16 +4919,17 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "file_name": "MineFieldBackend.cs",
-    "content_hash": "c06205bc6ec60a00f68e26d5ea651de142cdfcf2",
-    "size": 9616,
-    "line_count": 291,
+    "content_hash": "226749b7bd57e9958a0ff6c567487c4eb2ec5107",
+    "size": 9965,
+    "line_count": 298,
     "namespace": "",
     "using_list": [
       "UnityEngine",
       "System.Collections.Generic",
       "System.Linq",
       "System",
-      "System.Reflection"
+      "System.Reflection",
+      "TMPro"
     ],
     "classes": [
       {
@@ -5155,12 +5184,16 @@
       "Generic",
       "Linq",
       "Reflection",
+      "TMPro",
       "OnSelectedCoordChanged",
       "Frontend",
       "Highlight",
+      "OnGridInitialized",
+      "InitGrid",
       "OnGameOver",
       "OnGameWin",
       "Field",
+      "TextMeshProUGUI",
       "ShaderFrontend",
       "GridFrontend",
       "Property",
@@ -5175,7 +5208,6 @@
       "OpenCellSequence",
       "ShaderClicked",
       "Public",
-      "InitGrid",
       "LogError",
       "Invoke",
       "OpenCellWithLeftClick",
@@ -5200,6 +5232,7 @@
     "singleton_access_types": [],
     "string_literals": [
       "올바르지 않은 생성입니다.",
+      "남은 지뢰 : {leftMineNumber}",
       "Map생성완료"
     ],
     "numeric_literals": [
@@ -5207,12 +5240,16 @@
       2
     ],
     "guessed_roles": [
+      "ui",
       "runtime",
       "player",
+      "combat",
       "save-load"
     ],
     "summary_signals": [
       "런타임 컴포넌트",
+      "UI 관련 로직 포함",
+      "전투 계열 로직 포함",
       "저장/불러오기 관련 로직 포함"
     ]
   },
