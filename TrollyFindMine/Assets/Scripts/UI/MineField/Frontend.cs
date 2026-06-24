@@ -30,12 +30,13 @@ public abstract class Frontend : MonoBehaviour
     {
         
         //이전 셀의 HighLight를 제거
-        if(selectedCoord.x!=-1 && selectedCoord.y!=-1) 
+        if(selectedCoord.x!=-1 && selectedCoord.y!=-1&& Cells!=null&& Cells[selectedCoord.x,selectedCoord.y] !=null) 
             Cells[selectedCoord.x,selectedCoord.y].GetComponent<Cell>().DeHighLightCell();    
         //selected coord 갱신
         selectedCoord = coord;
         //현제 셀을 HighLight
-        Cells[selectedCoord.x,selectedCoord.y].GetComponent<Cell>().HighLightCell();
+        if(Cells!=null && Cells[selectedCoord.x,selectedCoord.y] !=null)
+            Cells[selectedCoord.x,selectedCoord.y].GetComponent<Cell>().HighLightCell();
     }
     
     #endregion

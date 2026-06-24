@@ -286,6 +286,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MineFieldInputController
   mineFieldBackend: {fileID: 2491923578919709533}
   virtualJoystick: {fileID: 5425021550861398931}
+  clickButton: {fileID: 8893516129436383143}
+  flagButton: {fileID: 2318117479959189462}
   firstRepeatDelay: 0.35
   repeatInterval: 0.18
 --- !u!1 &3419756965655555803

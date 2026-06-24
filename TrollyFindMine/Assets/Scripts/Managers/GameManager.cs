@@ -1,12 +1,20 @@
 using UnityEngine;
+using System;
 
 public class GameManager : Singleton<GameManager>
 {
+    #region delegate
+
+    public event Action<bool> OnAtmoChanged;
+
+    #endregion
+    
     #region field
 
     [Header("Stage Information")]
     [SerializeField] private int stageCount = 12;
     [SerializeField] private bool[] clearedStages;
+    private bool angryAtmosphere = false;
 
     #endregion
 
@@ -19,11 +27,11 @@ public class GameManager : Singleton<GameManager>
 
     #region Public Method
 
-    //stage´Â 1ºÎÅÍ ½ÃÀÛ stageCount°¡ ¸¶Áö¸· stage
-    public void stageClear(int stageNumber)
+    //stageï¿½ï¿½ 1ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ stageCountï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ stage
+    public void StageClear(int stageNumber)
     {
-        if (stageNumber <= 0) Debug.LogError("0º¸´Ù ÀÛ°Å³ª °°Àº ½ºÅ×ÀÌÁö Å¬¸®¾î");
-        else if (stageNumber > stageCount) Debug.LogError("12º¸´Ù Å« ½ºÅ×ÀÌÁö Å¬¸®¾î");
+        if (stageNumber <= 0) Debug.LogError("0ï¿½ï¿½ï¿½ï¿½ ï¿½Û°Å³ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½");
+        else if (stageNumber > stageCount) Debug.LogError("12ï¿½ï¿½ï¿½ï¿½ Å« ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½");
         else clearedStages[stageNumber - 1] = true;
         
     }
@@ -31,6 +39,14 @@ public class GameManager : Singleton<GameManager>
     public void ResetData()
     {
         clearedStages = new bool[stageCount];
+    }
+    
+    //ê²Œìž„ ë¶„ìœ„ê¸° ì „í™˜ í•¨ìˆ˜
+    public void ChangeAtmosphere()
+    {
+        bool prevBool = angryAtmosphere;
+        angryAtmosphere = !angryAtmosphere;
+        OnAtmoChanged?.Invoke(prevBool);
     }
 
     #endregion

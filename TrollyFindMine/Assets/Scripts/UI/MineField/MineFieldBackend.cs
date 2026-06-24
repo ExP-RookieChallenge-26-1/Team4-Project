@@ -84,7 +84,7 @@ public class MineFieldBackend : MonoBehaviour
                         int ny = j + dy[k];
                         Coord nc = new Coord(nx, ny);
 
-                        if (IsInRange(nc) && grid[nc.x, nc.y] == -2)
+                        if (IsInRange(nc) && grid[nc.x, nc.y] == -1)
                         {
                             mineCount++;
                         }
@@ -127,7 +127,7 @@ public class MineFieldBackend : MonoBehaviour
         //shaderFrontend에서 N,M초기화
         shaderFrontend.InitializeGrid(row,col);
         //GridFrontend에서 N,M초기화
-        gridFrontend.InitializeGrid(row, col, grid);
+        //gridFrontend.InitializeGrid(row, col, grid);
         
         selectedCoord = new Coord(UnityEngine.Random.Range(0, row), UnityEngine.Random.Range(0, col)); //selectedCoord 초기화
         OnSelectedCoordChanged.Invoke(selectedCoord); //highlight
@@ -140,7 +140,7 @@ public class MineFieldBackend : MonoBehaviour
         Coord coord = selectedCoord;
         if (mapGeneratedFlag)
         {
-            if (grid[coord.x, coord.y] == -2) //지뢰를 클릭했을때
+            if (grid[coord.x, coord.y] == -1) //지뢰를 클릭했을때
             {
                 //TODO : 게임 오버 로직
                 //TODO : 프론트 엔드 변화
@@ -154,6 +154,7 @@ public class MineFieldBackend : MonoBehaviour
                     bool[,] chk = new bool[row, col];
                     queue.Enqueue(coord);
                     chk[coord.x, coord.y] = true;
+                    OpenCellSequence(coord);
                     while (queue.Count != 0)
                     {
                         Coord here = queue.Dequeue();
@@ -165,12 +166,12 @@ public class MineFieldBackend : MonoBehaviour
                                 int nx = here.x + dx[i];
                                 int ny = here.y + dy[i];
                                 Coord nc = new Coord(nx, ny);
-                                if (IsInRange(nc) && grid[nc.x,nc.y] != -1)
+                                if (IsInRange(nc) && grid[nc.x,nc.y] != -1 && !chk[nc.x, nc.y])
                                 {
                                     chk[nc.x, nc.y] = true;
                                     if (openedCells[nc.x, nc.y] == false)
                                     {
-                                        OpenCellSequence(nc);    
+                                        OpenCellSequence(nc);
                                     }
                                     if(grid[nc.x,nc.y]==0) queue.Enqueue(nc);
                                 }
@@ -195,6 +196,7 @@ public class MineFieldBackend : MonoBehaviour
         {
             GenerateMap();
             mapGeneratedFlag = true;
+            Debug.Log("Map생성완료");
             OpenCellWithLeftClick();
         }
     }

@@ -1,15 +1,27 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MineFieldInputController : MonoBehaviour
 {
     [SerializeField] private MineFieldBackend mineFieldBackend;
     [SerializeField] private VirtualJoystick virtualJoystick;
+    //Button 설정
+    [SerializeField] private Button clickButton;
+    [SerializeField] private Button flagButton;
     [SerializeField] private float firstRepeatDelay = 0.35f;
     [SerializeField] private float repeatInterval = 0.18f;
 
     private Vector2 _lastDirection;
     private float _nextMoveTime;
     private bool _waitingFirstRepeat;
+
+    #region unity cycle
+
+    private void Start()
+    {
+        clickButton.onClick.AddListener(mineFieldBackend.OpenCellWithLeftClick);
+        //TODO : flagButton의 Event도 연결할것 
+    }
 
     private void Update()
     {
@@ -39,6 +51,9 @@ public class MineFieldInputController : MonoBehaviour
             _nextMoveTime = Time.unscaledTime + repeatInterval;
         }
     }
+
+    #endregion
+    
 
     public void OnOpenPressed()
     {
