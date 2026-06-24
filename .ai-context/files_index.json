@@ -2451,13 +2451,14 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "path": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "file_name": "VirtualJoystick.cs",
-    "content_hash": "5b50f466be383b4c516d6aaa7d6afb1279f76b2c",
-    "size": 2181,
-    "line_count": 80,
+    "content_hash": "61069e50bbebd011585c457668fa5d5b67e79855",
+    "size": 2992,
+    "line_count": 110,
     "namespace": "",
     "using_list": [
       "UnityEngine",
-      "UnityEngine.EventSystems"
+      "UnityEngine.EventSystems",
+      "UnityEngine.UI"
     ],
     "classes": [
       {
@@ -2489,7 +2490,8 @@
       "OnPointerUp",
       "UpdateJoystick",
       "QuantizeDirection",
-      "Vector2"
+      "Vector2",
+      "SetPressedVisual"
     ],
     "fields": [
       {
@@ -2519,6 +2521,13 @@
         "access": "private",
         "serialized": false,
         "is_static": false
+      },
+      {
+        "name": "_defaultSprite",
+        "type": "Sprite",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
       }
     ],
     "properties": [],
@@ -2535,7 +2544,7 @@
     "has_on_disable": false,
     "serialize_field_count": 0,
     "public_field_count": 0,
-    "get_component_count": 0,
+    "get_component_count": 1,
     "find_call_count": 0,
     "new_keyword_count": 2,
     "coroutine_count": 0,
@@ -2545,20 +2554,25 @@
       "Vector2",
       "Canvas",
       "Camera",
+      "Sprite",
       "UnityEngine",
       "EventSystems",
+      "UI",
       "IPointerDownHandler",
       "IDragHandler",
       "IPointerUpHandler",
       "RectTransform",
+      "Image",
       "CurrentDirection",
       "HasDirection",
       "Awake",
+      "GetComponent",
       "GetComponentInParent",
       "RenderMode",
       "ScreenSpaceOverlay",
       "OnPointerDown",
       "PointerEventData",
+      "SetPressedVisual",
       "UpdateJoystick",
       "OnDrag",
       "OnPointerUp",
@@ -2569,7 +2583,9 @@
       "Abs",
       "Sign"
     ],
-    "component_access_types": [],
+    "component_access_types": [
+      "Image"
+    ],
     "created_types": [
       "Vector2"
     ],
@@ -2590,7 +2606,8 @@
     "summary_signals": [
       "런타임 컴포넌트",
       "UI 관련 로직 포함",
-      "저장/불러오기 관련 로직 포함"
+      "저장/불러오기 관련 로직 포함",
+      "컴포넌트 조회 사용"
     ]
   },
   {
