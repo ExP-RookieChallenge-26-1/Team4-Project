@@ -22,6 +22,7 @@ public class GameManager : Singleton<GameManager>
 
     public bool[] ClearedStages => clearedStages; 
     public int StageCount => stageCount;
+    public bool AngryAtmosphere => angryAtmosphere;
 
     #endregion
 

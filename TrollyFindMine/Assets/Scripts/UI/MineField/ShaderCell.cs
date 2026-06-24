@@ -2,8 +2,21 @@ using UnityEngine;
 
 public class ShaderCell : Cell
 {
-    public void ChangeCellImage(int id)
+    
+    
+    #region unity cycle
+
+    
+    
+    #endregion
+
+    #region public method
+
+    public void ChangeAtmoSphere(bool atmo)
     {
         
     }
+
+    #endregion
+    
 }

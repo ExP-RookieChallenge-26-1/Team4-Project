@@ -14,6 +14,20 @@ public class GridCell : Cell
 
     #region public Method
 
+    public override void HighLightCell()
+    {
+        base.HighLightCell();
+        Image thisImage = GetComponent<Image>();
+        thisImage.color = new Color(1f, 1f, 1f, 1f);
+    }
+
+    public override void DeHighLightCell()
+    {
+        base.DeHighLightCell();
+        Image thisImage = GetComponent<Image>();
+        thisImage.color = new Color(1f, 1f, 1f, 0f);
+    }
+
     public void ChangeCellImage(int id)
     {
         

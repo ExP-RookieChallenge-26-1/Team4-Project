@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3556246962584048918}
   - component: {fileID: 2562116192191999117}
   - component: {fileID: 5136029572215926964}
-  - component: {fileID: 6786324799838662524}
   m_Layer: 5
   m_Name: GridCell
   m_TagString: Untagged
@@ -61,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -90,6 +89,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e4b94fd7f64ce443a73e99c0c762935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GridCell
+  outlineNormal: {fileID: 5074258986118008582, guid: 1eed6a68d81824c4db013d9d5a4c7153, type: 3}
+  outlineAngry: {fileID: -1784345639039916354, guid: 100c199d7bcd8b846ad5bb487e84a1c8, type: 3}
+  cellNormal: {fileID: 0}
+  cellAngry: {fileID: 0}
   numbers:
   - {fileID: 0}
   - {fileID: -2439925375156650297, guid: f42cb068b2b750a44bc407d4121d8da3, type: 3}
@@ -102,21 +105,6 @@ MonoBehaviour:
   - {fileID: -9133047898879921985, guid: 4ee8ce4d7b06e114c8d1e01ce6b136c6, type: 3}
   mine: {fileID: -878876339617806247, guid: 8a42c20e081c7084bb90937968db1105, type: 3}
   image: {fileID: 3917831249877379545}
---- !u!114 &6786324799838662524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2496805231746779947}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Outline
-  m_EffectColor: {r: 0, g: 0, b: 1, a: 0.78431374}
-  m_EffectDistance: {x: 3, y: 3}
-  m_UseGraphicAlpha: 1
 --- !u!1 &8656660628238856884
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,7 +160,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

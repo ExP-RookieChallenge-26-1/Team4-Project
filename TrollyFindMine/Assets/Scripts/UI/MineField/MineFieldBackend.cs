@@ -197,6 +197,7 @@ public class MineFieldBackend : MonoBehaviour
             GenerateMap();
             mapGeneratedFlag = true;
             Debug.Log("Map생성완료");
+            OnSelectedCoordChanged.Invoke(selectedCoord);
             OpenCellWithLeftClick();
         }
     }

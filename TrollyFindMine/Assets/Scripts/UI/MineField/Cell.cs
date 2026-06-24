@@ -4,22 +4,42 @@ using UnityEngine.UI;
 
 public class Cell : MonoBehaviour
 {
-    protected Outline outline;
+    [SerializeField] protected Sprite outlineNormal;
+    [SerializeField] protected Sprite outlineAngry;
+    [SerializeField] protected Sprite cellNormal;
+    [SerializeField] protected Sprite cellAngry;
 
-    private void Awake()
+    public virtual void HighLightCell()
     {
-        outline = GetComponent<Outline>();
-    }
-
-    public void HighLightCell()
-    {
-        outline.enabled = true;
+        Image image = GetComponent<Image>();
+        if (GameManager.Instance.AngryAtmosphere == false)
+        {
+            image.sprite = outlineNormal;
+            
+        }
+        else
+        {
+            image.sprite = outlineAngry;
+        }
         RectTransform rect = GetComponent<RectTransform>();
         //윤곽선이 보이도록
         rect.SetAsLastSibling();
     } 
-    public void DeHighLightCell()
+    public virtual void DeHighLightCell()
     {
-        outline.enabled = false;
+        Image image = GetComponent<Image>();
+        if (cellNormal == null || cellAngry == null)
+        {
+            image.sprite = null;
+            return;
+        }
+        if (GameManager.Instance.AngryAtmosphere == false)
+        {
+            image.sprite = cellNormal;
+        }
+        else
+        {
+            image.sprite = cellAngry;
+        }
     } 
 }
