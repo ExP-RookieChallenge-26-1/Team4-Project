@@ -186,7 +186,7 @@ public class MineFieldBackend : MonoBehaviour
                 //프론트 엔드 변화
                 shaderFrontend.DestroyAllShaders();
                 //게임 오버 로직
-                OnGameOver.Invoke();
+                OnGameOver?.Invoke();
             }
             else
             {
