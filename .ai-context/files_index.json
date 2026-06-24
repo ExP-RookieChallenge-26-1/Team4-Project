@@ -2808,9 +2808,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
     "file_name": "GameManager.cs",
-    "content_hash": "dc524680e4272bf6e4683cce2889f4af89e68f42",
-    "size": 1472,
-    "line_count": 63,
+    "content_hash": "abd11a73ce7c1c08f8756df6650a98818f4d90d7",
+    "size": 1524,
+    "line_count": 64,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -2884,6 +2884,7 @@
       "Information",
       "ClearedStages",
       "StageCount",
+      "AngryAtmosphere",
       "Public",
       "Method",
       "StageClear",
@@ -3879,9 +3880,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/Cell.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/Cell.cs",
     "file_name": "Cell.cs",
-    "content_hash": "5c134066adba3c67ac29bd05dd908e368cd8d2d6",
-    "size": 495,
-    "line_count": 25,
+    "content_hash": "6ec9c7c11fc32bff2d318b617a9b07c3baaee946",
+    "size": 1151,
+    "line_count": 45,
     "namespace": "",
     "using_list": [
       "System",
@@ -3905,66 +3906,63 @@
     "main_class_name": "Cell",
     "unity_type": "MonoBehaviour",
     "methods": [
-      "Awake",
       "HighLightCell",
       "DeHighLightCell"
     ],
-    "fields": [
-      {
-        "name": "outline",
-        "type": "Outline",
-        "access": "protected",
-        "serialized": false,
-        "is_static": false
-      }
-    ],
+    "fields": [],
     "properties": [],
     "events": [],
-    "unity_messages": [
-      "Awake"
-    ],
+    "unity_messages": [],
     "has_update": false,
     "has_fixed_update": false,
     "has_late_update": false,
-    "has_awake": true,
+    "has_awake": false,
     "has_start": false,
     "has_on_enable": false,
     "has_on_disable": false,
     "serialize_field_count": 0,
     "public_field_count": 0,
-    "get_component_count": 2,
+    "get_component_count": 3,
     "find_call_count": 0,
     "new_keyword_count": 0,
     "coroutine_count": 0,
     "singleton_candidate": false,
     "dont_destroy_on_load": false,
     "referenced_types": [
-      "Outline",
       "System",
       "UnityEngine",
       "UI",
-      "Awake",
-      "GetComponent",
+      "Sprite",
       "HighLightCell",
+      "Image",
+      "GetComponent",
+      "GameManager",
+      "Instance",
+      "AngryAtmosphere",
       "RectTransform",
       "SetAsLastSibling",
       "DeHighLightCell"
     ],
     "component_access_types": [
-      "Outline",
+      "Image",
       "RectTransform"
     ],
     "created_types": [],
-    "singleton_access_types": [],
+    "singleton_access_types": [
+      "GameManager"
+    ],
     "string_literals": [],
     "numeric_literals": [],
     "guessed_roles": [
       "ui",
+      "manager",
+      "save-load",
       "runtime"
     ],
     "summary_signals": [
       "런타임 컴포넌트",
       "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함",
       "컴포넌트 조회 사용"
     ]
   },
@@ -4074,9 +4072,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
     "file_name": "GridCell.cs",
-    "content_hash": "4001d91bce1bb8c09673fd1a4b968264763cb4fa",
-    "size": 1137,
-    "line_count": 56,
+    "content_hash": "97574a7823fa3759b605826aad60d55fe89deeed",
+    "size": 1513,
+    "line_count": 70,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -4100,8 +4098,10 @@
     "main_class_name": "GridCell",
     "unity_type": "None",
     "methods": [
-      "ChangeCellImage",
-      "Color"
+      "HighLightCell",
+      "Color",
+      "DeHighLightCell",
+      "ChangeCellImage"
     ],
     "fields": [],
     "properties": [],
@@ -4116,9 +4116,9 @@
     "has_on_disable": false,
     "serialize_field_count": 0,
     "public_field_count": 0,
-    "get_component_count": 0,
+    "get_component_count": 2,
     "find_call_count": 0,
-    "new_keyword_count": 3,
+    "new_keyword_count": 5,
     "coroutine_count": 0,
     "singleton_candidate": false,
     "dont_destroy_on_load": false,
@@ -4132,14 +4132,19 @@
       "Sprite",
       "Image",
       "Method",
+      "HighLightCell",
+      "GetComponent",
+      "Color",
+      "DeHighLightCell",
       "ChangeCellImage",
       "LogError",
       "ID",
-      "Color",
       "Log",
       "Grid"
     ],
-    "component_access_types": [],
+    "component_access_types": [
+      "Image"
+    ],
     "created_types": [
       "Color"
     ],
@@ -4159,7 +4164,8 @@
     ],
     "summary_signals": [
       "UI 관련 로직 포함",
-      "저장/불러오기 관련 로직 포함"
+      "저장/불러오기 관련 로직 포함",
+      "컴포넌트 조회 사용"
     ]
   },
   {
@@ -4300,9 +4306,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "file_name": "MineFieldBackend.cs",
-    "content_hash": "7f50e50ecb976bf1f4063032b6eebf5ec79541eb",
-    "size": 7472,
-    "line_count": 236,
+    "content_hash": "94a5a732dd1a4c03828801d53cf5e6ca3a280a0f",
+    "size": 7530,
+    "line_count": 237,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -4582,9 +4588,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
     "file_name": "ShaderCell.cs",
-    "content_hash": "71566ae1246f99de0028ed1fe4b689d593faa85f",
-    "size": 116,
-    "line_count": 10,
+    "content_hash": "13cf73ff3c5bdbc7449c941c339ebc5a0f3a0781",
+    "size": 229,
+    "line_count": 23,
     "namespace": "",
     "using_list": [
       "UnityEngine"
@@ -4606,7 +4612,7 @@
     "main_class_name": "ShaderCell",
     "unity_type": "None",
     "methods": [
-      "ChangeCellImage"
+      "ChangeAtmoSphere"
     ],
     "fields": [],
     "properties": [],
@@ -4630,19 +4636,15 @@
     "referenced_types": [
       "UnityEngine",
       "Cell",
-      "ChangeCellImage"
+      "ChangeAtmoSphere"
     ],
     "component_access_types": [],
     "created_types": [],
     "singleton_access_types": [],
     "string_literals": [],
     "numeric_literals": [],
-    "guessed_roles": [
-      "ui"
-    ],
-    "summary_signals": [
-      "UI 관련 로직 포함"
-    ]
+    "guessed_roles": [],
+    "summary_signals": []
   },
   {
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
