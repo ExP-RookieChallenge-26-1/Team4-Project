@@ -2931,9 +2931,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "file_name": "DialogueManager.cs",
-    "content_hash": "f8eff09a0b4efc5bd17733fee80fb72d1fd58c86",
-    "size": 2994,
-    "line_count": 108,
+    "content_hash": "19529c2c2ef4f2b8cacf05a422ee32247f045c21",
+    "size": 2957,
+    "line_count": 104,
     "namespace": "",
     "using_list": [
       "System.Collections.Generic",
@@ -2957,7 +2957,6 @@
     "unity_type": "None",
     "methods": [
       "Awake",
-      "Start",
       "GetSequence",
       "HasSequence",
       "ShowDialogueView",
@@ -2968,14 +2967,13 @@
     "properties": [],
     "events": [],
     "unity_messages": [
-      "Awake",
-      "Start"
+      "Awake"
     ],
     "has_update": false,
     "has_fixed_update": false,
     "has_late_update": false,
     "has_awake": true,
-    "has_start": true,
+    "has_start": false,
     "has_on_enable": false,
     "has_on_disable": false,
     "serialize_field_count": 0,
@@ -3005,8 +3003,6 @@
       "Awake",
       "Instance",
       "AddSequence",
-      "Start",
-      "PlayDialogue",
       "GetSequence",
       "TryGetValue",
       "LogError",
@@ -3020,6 +3016,7 @@
       "DialogueView",
       "UIManager",
       "GetUIComponent",
+      "PlayDialogue",
       "PlaySequence"
     ],
     "component_access_types": [],
@@ -3041,9 +3038,9 @@
     ],
     "guessed_roles": [
       "manager",
-      "runtime",
       "ui",
       "data",
+      "runtime",
       "save-load"
     ],
     "summary_signals": [
@@ -3055,8 +3052,8 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
     "file_name": "GameManager.cs",
-    "content_hash": "abd11a73ce7c1c08f8756df6650a98818f4d90d7",
-    "size": 1524,
+    "content_hash": "ab654324da8e2d44cc4b258eb2883bcfe43f3f6a",
+    "size": 1503,
     "line_count": 64,
     "namespace": "",
     "using_list": [
@@ -3168,9 +3165,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/SceneManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/SceneManager.cs",
     "file_name": "SceneManager.cs",
-    "content_hash": "faa1f74f66573bb3f388e455f242bd24681684b4",
-    "size": 400,
-    "line_count": 25,
+    "content_hash": "5b918f47ff468417cece9cd956e63cecf105ed99",
+    "size": 681,
+    "line_count": 40,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -3194,7 +3191,10 @@
     "unity_type": "None",
     "methods": [
       "Awake",
-      "GoToStageSelectScene"
+      "GoToStageSelectScene",
+      "GoToMainMenu",
+      "GoToStage1",
+      "GoToStage2"
     ],
     "fields": [],
     "properties": [],
@@ -3228,20 +3228,27 @@
       "Function",
       "GoToStageSelectScene",
       "LoadScene",
-      "StageSelectScene"
+      "StageSelectScene",
+      "GoToMainMenu",
+      "StartScene",
+      "GoToStage1",
+      "Stage1",
+      "GoToStage2"
     ],
     "component_access_types": [],
     "created_types": [],
     "singleton_access_types": [],
     "string_literals": [
-      "StageSelectScene"
+      "StageSelectScene",
+      "StartScene",
+      "Stage1"
     ],
     "numeric_literals": [],
     "guessed_roles": [
       "scene",
+      "runtime",
       "save-load",
-      "manager",
-      "runtime"
+      "manager"
     ],
     "summary_signals": [
       "저장/불러오기 관련 로직 포함"
@@ -4061,9 +4068,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
     "path": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
     "file_name": "Stage1.cs",
-    "content_hash": "90593e349c5171c7376e2d6632c43fcfe70502e4",
-    "size": 120,
-    "line_count": 11,
+    "content_hash": "a0d3b5437dacf8c6874d0c8c3766e0087587c29a",
+    "size": 1284,
+    "line_count": 52,
     "namespace": "",
     "using_list": [
       "System",
@@ -4086,9 +4093,20 @@
     "main_class_name": "Stage1",
     "unity_type": "MonoBehaviour",
     "methods": [
-      "Start"
+      "Start",
+      "GameStart",
+      "WinSequence",
+      "WinSceneChange"
     ],
-    "fields": [],
+    "fields": [
+      {
+        "name": "dview",
+        "type": "DialogueView",
+        "access": "private",
+        "serialized": true,
+        "is_static": false
+      }
+    ],
     "properties": [],
     "events": [],
     "unity_messages": [
@@ -4101,7 +4119,7 @@
     "has_start": true,
     "has_on_enable": false,
     "has_on_disable": false,
-    "serialize_field_count": 0,
+    "serialize_field_count": 1,
     "public_field_count": 0,
     "get_component_count": 0,
     "find_call_count": 0,
@@ -4110,20 +4128,52 @@
     "singleton_candidate": false,
     "dont_destroy_on_load": false,
     "referenced_types": [
+      "DialogueView",
       "System",
       "UnityEngine",
-      "Start"
+      "Field",
+      "MineFieldBackend",
+      "Start",
+      "DialogueManager",
+      "Instance",
+      "PlayDialogue",
+      "DialogueKey",
+      "Stage1_Tutorial",
+      "OnSequenceFinished",
+      "GameStart",
+      "Dialogue",
+      "View",
+      "OnGameWin",
+      "WinSequence",
+      "InitGrid",
+      "GameManager",
+      "StageClear",
+      "Stage1_Clear",
+      "WinSceneChange",
+      "SceneManager",
+      "GoToStageSelectScene"
     ],
     "component_access_types": [],
     "created_types": [],
-    "singleton_access_types": [],
+    "singleton_access_types": [
+      "DialogueManager",
+      "GameManager",
+      "SceneManager"
+    ],
     "string_literals": [],
-    "numeric_literals": [],
+    "numeric_literals": [
+      5
+    ],
     "guessed_roles": [
-      "runtime"
+      "manager",
+      "scene",
+      "runtime",
+      "save-load"
     ],
     "summary_signals": [
-      "런타임 컴포넌트"
+      "런타임 컴포넌트",
+      "인스펙터 직렬화 필드 사용",
+      "저장/불러오기 관련 로직 포함"
     ]
   },
   {
@@ -4207,9 +4257,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
     "file_name": "DialogueView.cs",
-    "content_hash": "4fc3148786f356902dc6e2e6abb2562859dc643e",
-    "size": 4132,
-    "line_count": 164,
+    "content_hash": "4a6869464e3af30556d80cd08f96904c6a695c41",
+    "size": 4175,
+    "line_count": 165,
     "namespace": "",
     "using_list": [
       "System",
@@ -4322,6 +4372,7 @@
       "Count",
       "FinishSequence",
       "Show",
+      "Log",
       "ShowLine",
       "ApplyLine",
       "DialogueLineData",
@@ -4337,7 +4388,6 @@
       "DialogueEventType",
       "None",
       "ButtonHighlight",
-      "Log",
       "Dialogue",
       "Length"
     ],
@@ -4347,6 +4397,7 @@
     "string_literals": [
       "UI References",
       "Sprites",
+      "다음 라인 출력",
       "Dialogue event requested: ButtonHighlight"
     ],
     "numeric_literals": [],
@@ -4921,8 +4972,8 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "file_name": "MineFieldBackend.cs",
-    "content_hash": "226749b7bd57e9958a0ff6c567487c4eb2ec5107",
-    "size": 9965,
+    "content_hash": "7e3dc802b31f492d30e5fc097f8c9d5fabeb0e7d",
+    "size": 9933,
     "line_count": 298,
     "namespace": "",
     "using_list": [
@@ -5234,7 +5285,7 @@
     "singleton_access_types": [],
     "string_literals": [
       "올바르지 않은 생성입니다.",
-      "남은 지뢰 : {leftMineNumber}",
+      "{leftMineNumber}",
       "Map생성완료"
     ],
     "numeric_literals": [
