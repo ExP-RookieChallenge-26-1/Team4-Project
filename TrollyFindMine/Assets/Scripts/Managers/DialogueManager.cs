@@ -14,6 +14,9 @@ public enum DialogueKey
 
 public class DialogueManager : Singleton<DialogueManager>
 {
+    [Header("Debug")]
+    [SerializeField] private Transform dialogueViewParent;
+
     [Header("Stage 1")]
     [SerializeField] private DialogueSequenceData stage1Tutorial;
     [SerializeField] private DialogueSequenceData stage1Hint01;
@@ -45,6 +48,11 @@ public class DialogueManager : Singleton<DialogueManager>
         AddSequence(DialogueKey.Stage2_Clear, stage2Clear);
     }
 
+    private void Start()
+    {
+        PlayDialogue(DialogueKey.Stage1_Tutorial);
+    }
+
     public DialogueSequenceData GetSequence(DialogueKey key)
     {
         if (_sequenceDictionary != null && _sequenceDictionary.TryGetValue(key, out DialogueSequenceData sequence))
@@ -59,6 +67,32 @@ public class DialogueManager : Singleton<DialogueManager>
     public bool HasSequence(DialogueKey key)
     {
         return _sequenceDictionary != null && _sequenceDictionary.ContainsKey(key);
+    }
+
+    [ContextMenu("Show Dialogue View")]
+    public void ShowDialogueView()
+    {
+        DialogueView dialogueView = UIManager.Instance.GetUIComponent<DialogueView>(dialogueViewParent);
+        if (dialogueView == null)
+            return;
+
+        dialogueView.Show();
+    }
+
+    public void PlayDialogue(DialogueKey key)
+    {
+        if (key == DialogueKey.None)
+            return;
+
+        DialogueSequenceData sequence = GetSequence(key);
+        if (sequence == null)
+            return;
+
+        DialogueView dialogueView = UIManager.Instance.GetUIComponent<DialogueView>(dialogueViewParent);
+        if (dialogueView == null)
+            return;
+
+        dialogueView.PlaySequence(sequence);
     }
 
     private void AddSequence(DialogueKey key, DialogueSequenceData sequence)

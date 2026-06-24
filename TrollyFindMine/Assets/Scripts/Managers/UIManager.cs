@@ -54,6 +54,36 @@ public class UIManager : Singleton<UIManager>
         return  _uiDic[key] as T;
     }
 
+    public T GetUIComponent<T>(Transform parent) where T : UIView
+    {
+        string key = typeof(T).Name;
+        if (!_uiDic.ContainsKey(key))
+        {
+            GameObject prefab = Resources.Load<GameObject>($"UI/{key}");
+            if (!prefab)
+            {
+#if UNITY_EDITOR
+                Debug.LogError($"UI Prefab load failed: {key}");
+#endif
+                return null;
+            }
+
+            GameObject obj = parent == null ? Instantiate(prefab) : Instantiate(prefab, parent, false);
+            if (!obj.TryGetComponent<T>(out T component))
+            {
+#if UNITY_EDITOR
+                Debug.LogError($"Get UI Component failed: {key}");
+#endif
+                return null;
+            }
+
+            _uiDic.Add(key, component);
+            component.gameObject.SetActive(false);
+        }
+
+        return _uiDic[key] as T;
+    }
+
     public bool TryGetUIComponent<T>(out T uiComponent) where T : UIView
     {
         string key = typeof(T).Name;
@@ -87,6 +117,39 @@ public class UIManager : Singleton<UIManager>
     }
 
     // UIView 하위 타입에 따른 관리
+    public bool TryGetUIComponent<T>(Transform parent, out T uiComponent) where T : UIView
+    {
+        string key = typeof(T).Name;
+        if (!_uiDic.ContainsKey(key))
+        {
+            GameObject prefab = Resources.Load<GameObject>($"UI/{key}");
+            if (!prefab)
+            {
+#if UNITY_EDITOR
+                Debug.LogError($"UI Prefab load failed: {key}");
+#endif
+                uiComponent = null;
+                return false;
+            }
+
+            GameObject obj = parent == null ? Instantiate(prefab) : Instantiate(prefab, parent, false);
+            if (!obj.TryGetComponent<T>(out T component))
+            {
+#if UNITY_EDITOR
+                Debug.LogError($"Get UI Component failed: {key}");
+#endif
+                uiComponent = null;
+                return false;
+            }
+
+            _uiDic.Add(key, component);
+            component.gameObject.SetActive(false);
+        }
+
+        uiComponent = _uiDic[key] as T;
+        return true;
+    }
+
     private void OnShowUI(UIView view)
     {
         if (view is UIViewStackable stackable)
