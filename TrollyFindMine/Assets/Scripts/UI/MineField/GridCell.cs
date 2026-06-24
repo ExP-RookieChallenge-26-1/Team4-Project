@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
@@ -59,10 +60,36 @@ public class GridCell : Cell
         }
     }
 
+    public void ChangeAtmosphere(bool atmo)
+    {
+        Image thisImage = GetComponent<Image>();
+        if (selectedCell)
+        {
+            if (atmo == true)
+            {
+                thisImage.sprite = outlineAngry;
+            }
+            else
+            {
+                thisImage.sprite = outlineNormal;
+            }
+            
+        }
+    }
+
     #endregion
 
     #region unity cycle
-    
+
+    private void OnEnable()
+    {
+        GameManager.Instance.OnAtmoChanged += ChangeAtmosphere;
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.Instance.OnAtmoChanged -= ChangeAtmosphere;
+    }
 
     #endregion    
     

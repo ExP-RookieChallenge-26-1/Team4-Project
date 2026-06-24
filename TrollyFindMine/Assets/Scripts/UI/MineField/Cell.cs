@@ -8,9 +8,11 @@ public class Cell : MonoBehaviour
     [SerializeField] protected Sprite outlineAngry;
     [SerializeField] protected Sprite cellNormal;
     [SerializeField] protected Sprite cellAngry;
+    protected bool selectedCell = false;
 
     public virtual void HighLightCell()
     {
+        selectedCell = true;
         Image image = GetComponent<Image>();
         if (GameManager.Instance.AngryAtmosphere == false)
         {
@@ -27,6 +29,7 @@ public class Cell : MonoBehaviour
     } 
     public virtual void DeHighLightCell()
     {
+        selectedCell = false;
         Image image = GetComponent<Image>();
         if (cellNormal == null || cellAngry == null)
         {
@@ -41,5 +44,5 @@ public class Cell : MonoBehaviour
         {
             image.sprite = cellAngry;
         }
-    } 
+    }
 }
