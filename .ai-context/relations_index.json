@@ -7611,6 +7611,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/Cell.cs",
     "from_class": "Cell",
+    "to_type": "bool",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/Cell.cs",
+    "from_class": "Cell",
     "to_type": "DeHighLightCell",
     "relation_type": "uses",
     "strength": 1
@@ -7856,7 +7863,21 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
     "from_class": "GridCell",
+    "to_type": "GameManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
+    "from_class": "GridCell",
     "to_type": "Cell",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
+    "from_class": "GridCell",
+    "to_type": "ChangeAtmosphere",
     "relation_type": "uses",
     "strength": 1
   },
@@ -7885,6 +7906,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
     "from_class": "GridCell",
     "to_type": "DeHighLightCell",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
+    "from_class": "GridCell",
+    "to_type": "GameManager",
     "relation_type": "uses",
     "strength": 1
   },
@@ -7933,6 +7961,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
     "from_class": "GridCell",
+    "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
+    "from_class": "GridCell",
     "to_type": "Log",
     "relation_type": "uses",
     "strength": 1
@@ -7948,6 +7983,27 @@
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
     "from_class": "GridCell",
     "to_type": "Method",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
+    "from_class": "GridCell",
+    "to_type": "OnAtmoChanged",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
+    "from_class": "GridCell",
+    "to_type": "OnDestroy",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
+    "from_class": "GridCell",
+    "to_type": "OnEnable",
     "relation_type": "uses",
     "strength": 1
   },
@@ -8465,9 +8521,30 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
     "from_class": "ShaderCell",
+    "to_type": "Image",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "from_class": "ShaderCell",
     "to_type": "Cell",
     "relation_type": "inherits",
     "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "from_class": "ShaderCell",
+    "to_type": "GameManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "from_class": "ShaderCell",
+    "to_type": "bool",
+    "relation_type": "uses",
+    "strength": 1
   },
   {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
@@ -8480,6 +8557,97 @@
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
     "from_class": "ShaderCell",
     "to_type": "ChangeAtmoSphere",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "from_class": "ShaderCell",
+    "to_type": "Constraints",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "from_class": "ShaderCell",
+    "to_type": "Framework",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "from_class": "ShaderCell",
+    "to_type": "GameManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "from_class": "ShaderCell",
+    "to_type": "GetComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "from_class": "ShaderCell",
+    "to_type": "Image",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "from_class": "ShaderCell",
+    "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "from_class": "ShaderCell",
+    "to_type": "NUnit",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "from_class": "ShaderCell",
+    "to_type": "OnAtmoChanged",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "from_class": "ShaderCell",
+    "to_type": "OnDisable",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "from_class": "ShaderCell",
+    "to_type": "OnEnable",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "from_class": "ShaderCell",
+    "to_type": "Sprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "from_class": "ShaderCell",
+    "to_type": "System",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "from_class": "ShaderCell",
+    "to_type": "UI",
     "relation_type": "uses",
     "strength": 1
   },
