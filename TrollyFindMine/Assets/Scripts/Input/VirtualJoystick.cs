@@ -1,9 +1,13 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class VirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
 {
+    public event Action OnPressed;
+    public event Action OnReleased;
+
     [SerializeField] private RectTransform joystickBase;
     [SerializeField] private Image joystickBaseImage;
     [SerializeField] private Sprite pressedSprite;
@@ -42,6 +46,7 @@ public class VirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandler,
     {
         SetPressedVisual(true);
         UpdateJoystick(eventData);
+        OnPressed?.Invoke();
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -54,6 +59,7 @@ public class VirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandler,
         _inputVector = Vector2.zero;
         _currentDirection = Vector2.zero;
         SetPressedVisual(false);
+        OnReleased?.Invoke();
     }
 
     private void UpdateJoystick(PointerEventData eventData)

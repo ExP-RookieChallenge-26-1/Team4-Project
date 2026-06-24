@@ -25,8 +25,6 @@ public class GridFrontend : Frontend
         //cell의 부모 오브젝트의 width와 height
         float width = thisRectTransform.rect.width;
         float height = thisRectTransform.rect.height;
-        Debug.Log(width);
-        Debug.Log(height);
         //instantiate 시작 위치
         Vector2 instantiateStartPos;
         float prefabWidth;
@@ -45,7 +43,6 @@ public class GridFrontend : Frontend
         {
             for (int j = 0; j < col; j++)
             {
-                Debug.Log(prefabWidth);
                 Vector2 offset = new Vector2(prefabWidth*j,-prefabWidth*i);
                 GameObject cell = Instantiate(gridCellPrefab, thisRectTransform, false);
                 

@@ -5,6 +5,7 @@ public class MineFieldInputController : MonoBehaviour
 {
     [SerializeField] private MineFieldBackend mineFieldBackend;
     [SerializeField] private VirtualJoystick virtualJoystick;
+    [SerializeField] private MineCharacterController mineCharacterController;
     //Button 설정
     [SerializeField] private Button clickButton;
     [SerializeField] private Button flagButton;
@@ -23,6 +24,35 @@ public class MineFieldInputController : MonoBehaviour
         clickButton.onClick.AddListener(mineFieldBackend.OpenCellWithLeftClick);
         //flagButton의 Event도 연결
         flagButton.onClick.AddListener(mineFieldBackend.FlagCellWithRightClick);
+
+        //캐릭터 표정 연결 : 버튼을 누르는 동안만 SuperAngry, 조이스틱을 누르는 동안만 Angry
+        if (mineCharacterController == null)
+        {
+            Debug.LogWarning("MineFieldInputController에 mineCharacterController가 연결되어 있지 않습니다.");
+        }
+        else
+        {
+            SetupPressExpression(clickButton.gameObject, mineCharacterController.ShowSuperAngry, mineCharacterController.ResetExpression);
+            SetupPressExpression(flagButton.gameObject, mineCharacterController.ShowSuperAngry, mineCharacterController.ResetExpression);
+
+            if (virtualJoystick == null)
+            {
+                Debug.LogWarning("MineFieldInputController에 virtualJoystick이 연결되어 있지 않습니다.");
+            }
+            else
+            {
+                virtualJoystick.OnPressed += mineCharacterController.ShowAngry;
+                virtualJoystick.OnReleased += mineCharacterController.ResetExpression;
+            }
+        }
+    }
+
+    private void SetupPressExpression(GameObject target, System.Action onPressed, System.Action onReleased)
+    {
+        ButtonPointerEvents pointerEvents = target.GetComponent<ButtonPointerEvents>();
+        if (pointerEvents == null) pointerEvents = target.AddComponent<ButtonPointerEvents>();
+        pointerEvents.OnPressed += onPressed;
+        pointerEvents.OnReleased += onReleased;
     }
 
     private void Update()

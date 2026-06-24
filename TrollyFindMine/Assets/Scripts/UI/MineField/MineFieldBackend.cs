@@ -133,7 +133,7 @@ public class MineFieldBackend : MonoBehaviour
         //gridFrontend.InitializeGrid(row, col, grid);
         
         selectedCoord = new Coord(UnityEngine.Random.Range(0, row), UnityEngine.Random.Range(0, col)); //selectedCoord 초기화
-        OnSelectedCoordChanged.Invoke(selectedCoord); //highlight
+        OnSelectedCoordChanged?.Invoke(selectedCoord); //highlight
         leftMineNumber = numOfMine;
         totalMineNumber = numOfMine;
     }
@@ -240,7 +240,7 @@ public class MineFieldBackend : MonoBehaviour
             GenerateMap();
             mapGeneratedFlag = true;
             Debug.Log("Map생성완료");
-            OnSelectedCoordChanged.Invoke(selectedCoord);
+            OnSelectedCoordChanged?.Invoke(selectedCoord);
             OpenCellWithLeftClick();
         }
     }
@@ -281,7 +281,7 @@ public class MineFieldBackend : MonoBehaviour
         if (IsInRange(nc))
         {
             selectedCoord = nc;
-            OnSelectedCoordChanged.Invoke(selectedCoord);
+            OnSelectedCoordChanged?.Invoke(selectedCoord);
         }
         
     }
