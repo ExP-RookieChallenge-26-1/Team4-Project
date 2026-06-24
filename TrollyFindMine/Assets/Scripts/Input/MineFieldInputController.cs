@@ -15,6 +15,9 @@ public class MineFieldInputController : MonoBehaviour
     private Vector2 _lastDirection;
     private float _nextMoveTime;
     private bool _waitingFirstRepeat;
+    private ButtonPointerEvents _clickButtonPointerEvents;
+    private ButtonPointerEvents _flagButtonPointerEvents;
+    private bool _inputActive;
 
     #region unity cycle
 
@@ -32,8 +35,8 @@ public class MineFieldInputController : MonoBehaviour
         }
         else
         {
-            SetupPressExpression(clickButton.gameObject, mineCharacterController.ShowSuperAngry, mineCharacterController.ResetExpression);
-            SetupPressExpression(flagButton.gameObject, mineCharacterController.ShowSuperAngry, mineCharacterController.ResetExpression);
+            _clickButtonPointerEvents = SetupPressExpression(clickButton.gameObject, mineCharacterController.ShowSuperAngry, mineCharacterController.ResetExpression);
+            _flagButtonPointerEvents = SetupPressExpression(flagButton.gameObject, mineCharacterController.ShowSuperAngry, mineCharacterController.ResetExpression);
 
             if (virtualJoystick == null)
             {
@@ -45,19 +48,37 @@ public class MineFieldInputController : MonoBehaviour
                 virtualJoystick.OnReleased += mineCharacterController.ResetExpression;
             }
         }
+
+        //InitGrid 완료 전까지는 입력 비활성화, 완료되면 활성화, 게임이 끝나면 다시 비활성화
+        SetInputActive(false);
+        mineFieldBackend.OnGridInitialized += () => SetInputActive(true);
+        mineFieldBackend.OnGameOver += () => SetInputActive(false);
+        mineFieldBackend.OnGameWin += () => SetInputActive(false);
     }
 
-    private void SetupPressExpression(GameObject target, System.Action onPressed, System.Action onReleased)
+    private ButtonPointerEvents SetupPressExpression(GameObject target, System.Action onPressed, System.Action onReleased)
     {
         ButtonPointerEvents pointerEvents = target.GetComponent<ButtonPointerEvents>();
         if (pointerEvents == null) pointerEvents = target.AddComponent<ButtonPointerEvents>();
         pointerEvents.OnPressed += onPressed;
         pointerEvents.OnReleased += onReleased;
+        return pointerEvents;
+    }
+
+    public void SetInputActive(bool active)
+    {
+        _inputActive = active;
+        clickButton.interactable = active;
+        flagButton.interactable = active;
+        if (virtualJoystick != null) virtualJoystick.enabled = active;
+        if (_clickButtonPointerEvents != null) _clickButtonPointerEvents.enabled = active;
+        if (_flagButtonPointerEvents != null) _flagButtonPointerEvents.enabled = active;
+        if (!active) ResetRepeatState();
     }
 
     private void Update()
     {
-        if (mineFieldBackend == null || virtualJoystick == null)
+        if (!_inputActive || mineFieldBackend == null || virtualJoystick == null)
             return;
 
         Vector2 direction = virtualJoystick.CurrentDirection;

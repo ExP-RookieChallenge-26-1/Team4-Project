@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System;
 using System.Reflection;
+using TMPro;
 
 
 public class MineFieldBackend : MonoBehaviour
 {
     #region  event
     public event Action<Coord> OnSelectedCoordChanged; // Frontend에서 Highlight 변경시키는 함수 구독
+    public event Action OnGridInitialized; // InitGrid 완료 후 입력 활성화시키는 함수 구독
     public event Action OnGameOver;
     public event Action OnGameWin;
     #endregion
     
     #region Field
 
+    [SerializeField] private TextMeshProUGUI leftmineText;
     [SerializeField] private ShaderFrontend shaderFrontend;
     [SerializeField] private GridFrontend gridFrontend;
     
@@ -136,6 +139,9 @@ public class MineFieldBackend : MonoBehaviour
         OnSelectedCoordChanged?.Invoke(selectedCoord); //highlight
         leftMineNumber = numOfMine;
         totalMineNumber = numOfMine;
+
+        OnGridInitialized?.Invoke();
+        leftmineText.text = $"남은 지뢰 : {leftMineNumber}";
     }
 
     public void OpenCellWithLeftClick()
@@ -265,7 +271,8 @@ public class MineFieldBackend : MonoBehaviour
                 //frontend에서 깃발 제거 하는 로직
                 shaderFrontend.DestroyFlag(coord);
             }
-        } 
+            leftmineText.text = $"남은 지뢰 : {leftMineNumber}";
+        }
     }
 
     #endregion
