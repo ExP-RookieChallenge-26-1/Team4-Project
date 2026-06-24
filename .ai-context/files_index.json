@@ -2319,9 +2319,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "path": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "file_name": "MineFieldInputController.cs",
-    "content_hash": "6f639b6782cfde51e2201657824733dbc95e7c92",
-    "size": 2164,
-    "line_count": 86,
+    "content_hash": "e5e3ab92276b41283df67b868fe48fe16bbba701",
+    "size": 2269,
+    "line_count": 88,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -2412,17 +2412,16 @@
       "VirtualJoystick",
       "Button",
       "Start",
+      "Event",
       "AddListener",
       "OpenCellWithLeftClick",
-      "TODO",
-      "Event",
+      "FlagCellWithRightClick",
       "Update",
       "CurrentDirection",
       "ResetRepeatState",
       "TriggerMove",
       "OnOpenPressed",
       "OnFlagPressed",
-      "FlagCellWithRightClick",
       "SelectedCellMove"
     ],
     "component_access_types": [],
@@ -4198,9 +4197,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
     "file_name": "GridFrontend.cs",
-    "content_hash": "76801bb986d304046266dc4a1423c981b0625ff1",
-    "size": 2573,
-    "line_count": 79,
+    "content_hash": "194332a5b908d3ab96b7e6c20d37b07bd3175dac",
+    "size": 2537,
+    "line_count": 77,
     "namespace": "",
     "using_list": [
       "UnityEngine"
@@ -4299,8 +4298,7 @@
       "Instantiate",
       "HighLight",
       "Vector3",
-      "ChangeCellImage",
-      "TODO"
+      "ChangeCellImage"
     ],
     "component_access_types": [
       "RectTransform",
@@ -4332,9 +4330,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "file_name": "MineFieldBackend.cs",
-    "content_hash": "94a5a732dd1a4c03828801d53cf5e6ca3a280a0f",
-    "size": 7530,
-    "line_count": 237,
+    "content_hash": "2c4eb3655e34f20839fe30feb4a2378deee54269",
+    "size": 8128,
+    "line_count": 251,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -4575,6 +4573,7 @@
       "Invoke",
       "OpenCellWithLeftClick",
       "TODO",
+      "DestroyAllShaders",
       "BFS",
       "Enqueue",
       "Count",
@@ -4583,6 +4582,7 @@
       "Map",
       "FlagCellWithRightClick",
       "SetFlag",
+      "DestroyFlag",
       "SelectedCellMove",
       "Vector2"
     ],
@@ -4614,13 +4614,14 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
     "file_name": "ShaderCell.cs",
-    "content_hash": "42ddff9bcc9c3cc31d0abcd14842d6fa03e81ba3",
-    "size": 1455,
-    "line_count": 74,
+    "content_hash": "aca4adb435e44a847d37abcd186f61b56af81a35",
+    "size": 1880,
+    "line_count": 94,
     "namespace": "",
     "using_list": [
       "System",
       "NUnit.Framework.Constraints",
+      "UnityEditor.U2D.Aseprite",
       "UnityEngine",
       "UnityEngine.UI"
     ],
@@ -4641,6 +4642,9 @@
     "main_class_name": "ShaderCell",
     "unity_type": "None",
     "methods": [
+      "SetFlag",
+      "Color",
+      "DestroyFlag",
       "ChangeAtmoSphere",
       "OnEnable",
       "OnDisable"
@@ -4671,7 +4675,7 @@
     "public_field_count": 0,
     "get_component_count": 1,
     "find_call_count": 0,
-    "new_keyword_count": 0,
+    "new_keyword_count": 2,
     "coroutine_count": 0,
     "singleton_candidate": false,
     "dont_destroy_on_load": false,
@@ -4681,28 +4685,40 @@
       "NUnit",
       "Framework",
       "Constraints",
+      "UnityEditor",
+      "U2D",
+      "Aseprite",
       "UnityEngine",
       "UI",
       "Cell",
       "Image",
       "Sprite",
+      "SetFlag",
+      "Color",
+      "GameManager",
+      "Instance",
+      "AngryAtmosphere",
+      "DestroyFlag",
       "ChangeAtmoSphere",
       "GetComponent",
       "OnEnable",
-      "GameManager",
-      "Instance",
       "OnAtmoChanged",
       "OnDisable"
     ],
     "component_access_types": [
       "Image"
     ],
-    "created_types": [],
+    "created_types": [
+      "Color"
+    ],
     "singleton_access_types": [
       "GameManager"
     ],
     "string_literals": [],
-    "numeric_literals": [],
+    "numeric_literals": [
+      1,
+      0
+    ],
     "guessed_roles": [
       "ui",
       "manager",
@@ -4718,9 +4734,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
     "file_name": "ShaderFrontend.cs",
-    "content_hash": "c4f46263348b251274d81ec1380662eb67d9f61c",
-    "size": 2598,
-    "line_count": 75,
+    "content_hash": "031c4d2841838edef9e0288a34d86879cba85cd0",
+    "size": 3049,
+    "line_count": 92,
     "namespace": "",
     "using_list": [
       "UnityEngine"
@@ -4746,7 +4762,9 @@
       "Vector2",
       "Vector3",
       "ShaderClicked",
-      "SetFlag"
+      "SetFlag",
+      "DestroyFlag",
+      "DestroyAllShaders"
     ],
     "fields": [
       {
@@ -4797,7 +4815,7 @@
     "has_on_disable": false,
     "serialize_field_count": 0,
     "public_field_count": 0,
-    "get_component_count": 2,
+    "get_component_count": 4,
     "find_call_count": 0,
     "new_keyword_count": 9,
     "coroutine_count": 0,
@@ -4819,10 +4837,13 @@
       "Coord",
       "Destroy",
       "SetFlag",
-      "TODO"
+      "ShaderCell",
+      "DestroyFlag",
+      "DestroyAllShaders"
     ],
     "component_access_types": [
-      "RectTransform"
+      "RectTransform",
+      "ShaderCell"
     ],
     "created_types": [
       "Vector2",
