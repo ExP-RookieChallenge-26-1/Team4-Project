@@ -105,6 +105,25 @@
     "risk_score": 60
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
+    "class_name": "GridCell",
+    "risk_flags": [
+      "high-coupling",
+      "getcomponent-heavy",
+      "init-order-sensitive",
+      "save-load-sensitive",
+      "state-owner"
+    ],
+    "risk_reasons": [
+      "참조 타입 또는 관계 수가 많음",
+      "GetComponent/TryGetComponent 호출이 많음",
+      "초기화 순서에 민감할 가능성",
+      "저장/불러오기 관련 로직 포함",
+      "상태 중심 또는 관리 중심 클래스일 가능성"
+    ],
+    "risk_score": 60
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridFrontend.cs",
     "class_name": "GridFrontend",
     "risk_flags": [
@@ -287,6 +306,23 @@
     "risk_score": 48
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
+    "class_name": "ShaderCell",
+    "risk_flags": [
+      "high-coupling",
+      "init-order-sensitive",
+      "save-load-sensitive",
+      "state-owner"
+    ],
+    "risk_reasons": [
+      "참조 타입 또는 관계 수가 많음",
+      "초기화 순서에 민감할 가능성",
+      "저장/불러오기 관련 로직 포함",
+      "상태 중심 또는 관리 중심 클래스일 가능성"
+    ],
+    "risk_score": 48
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
     "class_name": "ShaderFrontend",
     "risk_flags": [
@@ -323,21 +359,6 @@
   {
     "file_id": "TrollyFindMine/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs",
     "class_name": "DOTweenModuleEPOOutline",
-    "risk_flags": [
-      "high-coupling",
-      "save-load-sensitive",
-      "state-owner"
-    ],
-    "risk_reasons": [
-      "참조 타입 또는 관계 수가 많음",
-      "저장/불러오기 관련 로직 포함",
-      "상태 중심 또는 관리 중심 클래스일 가능성"
-    ],
-    "risk_score": 38
-  },
-  {
-    "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
-    "class_name": "GridCell",
     "risk_flags": [
       "high-coupling",
       "save-load-sensitive",
@@ -523,13 +544,6 @@
   {
     "file_id": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueSequenceData.cs",
     "class_name": "DialogueSequenceData",
-    "risk_flags": [],
-    "risk_reasons": [],
-    "risk_score": 0
-  },
-  {
-    "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
-    "class_name": "ShaderCell",
     "risk_flags": [],
     "risk_reasons": [],
     "risk_score": 0
