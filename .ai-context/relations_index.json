@@ -6176,6 +6176,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "from_class": "DialogueManager",
+    "to_type": "UIManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
     "to_type": "AddSequence",
     "relation_type": "uses",
     "strength": 1
@@ -6204,6 +6211,20 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "from_class": "DialogueManager",
+    "to_type": "ContextMenu",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Dialogue",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
     "to_type": "DialogueKey",
     "relation_type": "uses",
     "strength": 1
@@ -6218,6 +6239,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "from_class": "DialogueManager",
+    "to_type": "DialogueView",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
     "to_type": "Generic",
     "relation_type": "uses",
     "strength": 1
@@ -6226,6 +6254,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "from_class": "DialogueManager",
     "to_type": "GetSequence",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "GetUIComponent",
     "relation_type": "uses",
     "strength": 1
   },
@@ -6254,6 +6289,34 @@
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "from_class": "DialogueManager",
     "to_type": "None",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "PlayDialogue",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "PlaySequence",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Show",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "ShowDialogueView",
     "relation_type": "uses",
     "strength": 1
   },
@@ -6316,6 +6379,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "from_class": "DialogueManager",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
     "to_type": "System",
     "relation_type": "uses",
     "strength": 1
@@ -6330,7 +6400,21 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "from_class": "DialogueManager",
+    "to_type": "UIManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
     "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "View",
     "relation_type": "uses",
     "strength": 1
   },
@@ -7940,6 +8024,293 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
     "from_class": "MineFieldTestStarter",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "UIViewStackable",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "AddListener",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "ApplyLine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "Awake",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "Button",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "ButtonHighlight",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "Count",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "Dialogue",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "DialogueBubbleColor",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "DialogueCharacterExpression",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "DialogueEventType",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "DialogueLineData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "DialogueSequenceData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "ExecuteDialogueEvent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "FinishSequence",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "Hide",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "Image",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "int",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "Invoke",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "Length",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "Log",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "None",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "OnSequenceFinished",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "PlaySequence",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "References",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "SetBubbleColor",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "SetCharacterExpression",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "SetImageSprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "SetText",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "Show",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "ShowLine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "ShowNextLine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "ShowPreviousLine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "Sprite",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "Sprites",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "System",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "TMP_Text",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "TMPro",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "UI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "UIViewStackable",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
     "to_type": "UnityEngine",
     "relation_type": "uses",
     "strength": 1

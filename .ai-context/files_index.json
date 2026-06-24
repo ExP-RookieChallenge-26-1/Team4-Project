@@ -2903,9 +2903,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "file_name": "DialogueManager.cs",
-    "content_hash": "fd77b58d839da6d779aa919d63e6cc3ff93d3199",
-    "size": 2115,
-    "line_count": 74,
+    "content_hash": "f8eff09a0b4efc5bd17733fee80fb72d1fd58c86",
+    "size": 2994,
+    "line_count": 108,
     "namespace": "",
     "using_list": [
       "System.Collections.Generic",
@@ -2929,21 +2929,25 @@
     "unity_type": "None",
     "methods": [
       "Awake",
+      "Start",
       "GetSequence",
       "HasSequence",
+      "ShowDialogueView",
+      "PlayDialogue",
       "AddSequence"
     ],
     "fields": [],
     "properties": [],
     "events": [],
     "unity_messages": [
-      "Awake"
+      "Awake",
+      "Start"
     ],
     "has_update": false,
     "has_fixed_update": false,
     "has_late_update": false,
     "has_awake": true,
-    "has_start": false,
+    "has_start": true,
     "has_on_enable": false,
     "has_on_disable": false,
     "serialize_field_count": 0,
@@ -2973,32 +2977,49 @@
       "Awake",
       "Instance",
       "AddSequence",
+      "Start",
+      "PlayDialogue",
       "GetSequence",
       "TryGetValue",
       "LogError",
       "HasSequence",
-      "ContainsKey"
+      "ContainsKey",
+      "ContextMenu",
+      "Show",
+      "Dialogue",
+      "View",
+      "ShowDialogueView",
+      "DialogueView",
+      "UIManager",
+      "GetUIComponent",
+      "PlaySequence"
     ],
     "component_access_types": [],
     "created_types": [
       "Dictionary"
     ],
-    "singleton_access_types": [],
+    "singleton_access_types": [
+      "UIManager"
+    ],
     "string_literals": [
+      "Debug",
       "Stage 1",
       "Stage 2",
-      "{key}에 연결된 대화 시퀀스가 없습니다."
+      "{key}에 연결된 대화 시퀀스가 없습니다.",
+      "Show Dialogue View"
     ],
     "numeric_literals": [
       2
     ],
     "guessed_roles": [
       "manager",
-      "data",
       "runtime",
+      "ui",
+      "data",
       "save-load"
     ],
     "summary_signals": [
+      "UI 관련 로직 포함",
       "저장/불러오기 관련 로직 포함"
     ]
   },
@@ -3647,9 +3668,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/UIManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/UIManager.cs",
     "file_name": "UIManager.cs",
-    "content_hash": "847c9c8ebfb8a48ea4b75cc74ac8c2bf01350e71",
-    "size": 4294,
-    "line_count": 155,
+    "content_hash": "e01d4ddba4eb0ca085640a6e6402bfbb045e6d14",
+    "size": 6132,
+    "line_count": 219,
     "namespace": "",
     "using_list": [
       "System.Collections.Generic",
@@ -3697,7 +3718,7 @@
     "has_on_disable": false,
     "serialize_field_count": 0,
     "public_field_count": 0,
-    "get_component_count": 3,
+    "get_component_count": 5,
     "find_call_count": 0,
     "new_keyword_count": 3,
     "coroutine_count": 0,
@@ -3765,7 +3786,9 @@
       "T",
       "UI/{key}",
       "UI Prefab 로드 실패 : {key}",
-      "Get UI Component 실패 : {key}"
+      "Get UI Component 실패 : {key}",
+      "UI Prefab load failed: {key}",
+      "Get UI Component failed: {key}"
     ],
     "numeric_literals": [],
     "guessed_roles": [
@@ -4149,6 +4172,162 @@
     ],
     "summary_signals": [
       "런타임 컴포넌트",
+      "저장/불러오기 관련 로직 포함"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "file_name": "DialogueView.cs",
+    "content_hash": "2ccf238386e47179c26795336d5fd7ccad876837",
+    "size": 3870,
+    "line_count": 153,
+    "namespace": "",
+    "using_list": [
+      "System",
+      "TMPro",
+      "UnityEngine",
+      "UnityEngine.UI"
+    ],
+    "classes": [
+      {
+        "name": "DialogueView",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "UIViewStackable"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "DialogueView",
+    "unity_type": "None",
+    "methods": [
+      "Awake",
+      "PlaySequence",
+      "ShowNextLine",
+      "ShowPreviousLine",
+      "ShowLine",
+      "ApplyLine",
+      "SetText",
+      "SetCharacterExpression",
+      "SetBubbleColor",
+      "FinishSequence",
+      "ExecuteDialogueEvent",
+      "SetImageSprite"
+    ],
+    "fields": [
+      {
+        "name": "_currentSequence",
+        "type": "DialogueSequenceData",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_currentLineIndex",
+        "type": "int",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "nextIndex",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "previousIndex",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Awake"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": true,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "DialogueSequenceData",
+      "int",
+      "System",
+      "TMPro",
+      "UnityEngine",
+      "UI",
+      "UIViewStackable",
+      "References",
+      "Image",
+      "TMP_Text",
+      "Button",
+      "Sprites",
+      "Sprite",
+      "OnSequenceFinished",
+      "Awake",
+      "AddListener",
+      "ShowNextLine",
+      "ShowPreviousLine",
+      "PlaySequence",
+      "Count",
+      "FinishSequence",
+      "Show",
+      "ShowLine",
+      "ApplyLine",
+      "DialogueLineData",
+      "SetCharacterExpression",
+      "SetBubbleColor",
+      "SetText",
+      "ExecuteDialogueEvent",
+      "DialogueCharacterExpression",
+      "SetImageSprite",
+      "DialogueBubbleColor",
+      "Hide",
+      "Invoke",
+      "DialogueEventType",
+      "None",
+      "ButtonHighlight",
+      "Log",
+      "Dialogue",
+      "Length"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [
+      "UI References",
+      "Sprites",
+      "Dialogue event requested: ButtonHighlight"
+    ],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "ui",
+      "data",
+      "runtime",
+      "save-load"
+    ],
+    "summary_signals": [
+      "UI 관련 로직 포함",
       "저장/불러오기 관련 로직 포함"
     ]
   },
