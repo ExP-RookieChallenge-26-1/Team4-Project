@@ -38,6 +38,7 @@ public class DialogueView : UIViewStackable
     {
         _currentSequence = sequence;
         _currentLineIndex = -1;
+        UpdateButtonStates();
 
         if (_currentSequence == null || _currentSequence.lines == null || _currentSequence.lines.Count == 0)
         {
@@ -86,6 +87,7 @@ public class DialogueView : UIViewStackable
 
         _currentLineIndex = lineIndex;
         ApplyLine(_currentSequence.lines[_currentLineIndex]);
+        UpdateButtonStates();
     }
 
     public void ApplyLine(DialogueLineData line)
@@ -120,6 +122,7 @@ public class DialogueView : UIViewStackable
     public void FinishSequence()
     {
         Hide();
+        UpdateButtonStates();
         OnSequenceFinished?.Invoke();
     }
 
@@ -148,5 +151,13 @@ public class DialogueView : UIViewStackable
 
         targetImage.sprite = sprites[spriteIndex];
         targetImage.enabled = true;
+    }
+
+    private void UpdateButtonStates()
+    {
+        if (previousButton != null)
+        {
+            previousButton.interactable = _currentLineIndex > 0;
+        }
     }
 }
