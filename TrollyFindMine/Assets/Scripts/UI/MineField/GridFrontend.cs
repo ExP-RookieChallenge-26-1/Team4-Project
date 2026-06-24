@@ -72,7 +72,5 @@ public class GridFrontend : Frontend
         }
     }
     
-    //TODO : highlight 구현 
-    
     #endregion
 }

@@ -140,10 +140,13 @@ public class MineFieldBackend : MonoBehaviour
         Coord coord = selectedCoord;
         if (mapGeneratedFlag)
         {
+            //이미 열려있는 셀이면 무시, 깃발 꽂혀있어도 무시
+            if (openedCells[coord.x, coord.y] || mineFlag[coord.x,coord.y]) return;
             if (grid[coord.x, coord.y] == -1) //지뢰를 클릭했을때
             {
                 //TODO : 게임 오버 로직
-                //TODO : 프론트 엔드 변화
+                //프론트 엔드 변화
+                shaderFrontend.DestroyAllShaders();
             }
             else
             {
@@ -205,12 +208,23 @@ public class MineFieldBackend : MonoBehaviour
     public void FlagCellWithRightClick()
     {
         Coord coord = selectedCoord;
+        //아직 닫혀있는 셀에만 적용
         if (openedCells[coord.x, coord.y] == false)
         {
-            leftMineNumber--;
-            mineFlag[coord.x, coord.y] = true;
-            //frontend에서 깃발 꽂는 로직
-            shaderFrontend.SetFlag(coord);
+            if (mineFlag[coord.x, coord.y] == false)
+            {
+                leftMineNumber--;
+                mineFlag[coord.x, coord.y] = true;
+                //frontend에서 깃발 꽂는 로직
+                shaderFrontend.SetFlag(coord);
+            }
+            else
+            {
+                leftMineNumber++;
+                mineFlag[coord.x, coord.y] = false;
+                //frontend에서 깃발 제거 하는 로직
+                shaderFrontend.DestroyFlag(coord);
+            }
         } 
     }
 

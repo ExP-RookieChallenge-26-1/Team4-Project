@@ -19,8 +19,10 @@ public class MineFieldInputController : MonoBehaviour
 
     private void Start()
     {
+        //clickButton의 Event 연결
         clickButton.onClick.AddListener(mineFieldBackend.OpenCellWithLeftClick);
-        //TODO : flagButton의 Event도 연결할것 
+        //flagButton의 Event도 연결
+        flagButton.onClick.AddListener(mineFieldBackend.FlagCellWithRightClick);
     }
 
     private void Update()

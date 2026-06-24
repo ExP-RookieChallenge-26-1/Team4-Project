@@ -1,5 +1,6 @@
 using System;
 using NUnit.Framework.Constraints;
+using UnityEditor.U2D.Aseprite;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +17,25 @@ public class ShaderCell : Cell
 
     #region public method
 
+    public void SetFlag()
+    {
+        image.color = new Color(1f, 1f, 1f, 1f);
+        if (GameManager.Instance.AngryAtmosphere)
+        {
+            image.sprite = angryFlag;
+        }
+        else
+        {
+            image.sprite = normalFlag;
+        }
+    }
+
+    public void DestroyFlag()
+    {
+        image.color = new Color(1f, 1f, 1f, 0f);
+        image.sprite = null;
+    }
+    
     public void ChangeAtmoSphere(bool atmo)
     {
         Image thisImage = GetComponent<Image>();

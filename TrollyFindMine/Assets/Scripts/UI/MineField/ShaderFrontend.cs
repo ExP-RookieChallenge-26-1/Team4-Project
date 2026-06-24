@@ -70,6 +70,23 @@ public class ShaderFrontend : Frontend
     //깃발 꽂는 메서드
     public void SetFlag(Coord coord)
     {
-        //TODO : 깃발 꽂는 imageChange 기능 만들기 
+        ShaderCell shaderCell = Cells[coord.x, coord.y].GetComponent<ShaderCell>();
+        shaderCell.SetFlag();
+    }
+    
+    //깃발 제거 메서드
+    public void DestroyFlag(Coord coord)
+    {
+        ShaderCell shaderCell = Cells[coord.x, coord.y].GetComponent<ShaderCell>();
+        shaderCell.DestroyFlag();
+    }
+    
+    //gameover시 실행 메서드
+    public void DestroyAllShaders()
+    {
+        foreach (var shader in Cells)
+        {
+            if(shader!=null) Destroy(shader);
+        }
     }
 }
