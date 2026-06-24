@@ -4207,9 +4207,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
     "file_name": "DialogueView.cs",
-    "content_hash": "2ccf238386e47179c26795336d5fd7ccad876837",
-    "size": 3870,
-    "line_count": 153,
+    "content_hash": "4fc3148786f356902dc6e2e6abb2562859dc643e",
+    "size": 4132,
+    "line_count": 164,
     "namespace": "",
     "using_list": [
       "System",
@@ -4245,7 +4245,8 @@
       "SetBubbleColor",
       "FinishSequence",
       "ExecuteDialogueEvent",
-      "SetImageSprite"
+      "SetImageSprite",
+      "UpdateButtonStates"
     ],
     "fields": [
       {
@@ -4317,6 +4318,7 @@
       "ShowNextLine",
       "ShowPreviousLine",
       "PlaySequence",
+      "UpdateButtonStates",
       "Count",
       "FinishSequence",
       "Show",
@@ -4350,8 +4352,8 @@
     "numeric_literals": [],
     "guessed_roles": [
       "ui",
-      "data",
       "runtime",
+      "data",
       "save-load"
     ],
     "summary_signals": [

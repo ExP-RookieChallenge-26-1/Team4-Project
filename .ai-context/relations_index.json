@@ -8351,6 +8351,13 @@
     "strength": 1
   },
   {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "UpdateButtonStates",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/Cell.cs",
     "from_class": "Cell",
     "to_type": "Image",
