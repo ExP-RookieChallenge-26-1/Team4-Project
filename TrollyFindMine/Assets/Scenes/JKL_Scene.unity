@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
   dialogueViewParent: {fileID: 1020592009}
-  stage1Tutorial: {fileID: 11400000, guid: f905b19c9d8bccf49b1c781c88309cbb, type: 2}
+  stage1Tutorial: {fileID: 11400000, guid: e349f15beee73a54c8ba957fd7bf3421, type: 2}
   stage1Hint01: {fileID: 0}
   stage1Clear: {fileID: 0}
   stage2Tutorial: {fileID: 0}

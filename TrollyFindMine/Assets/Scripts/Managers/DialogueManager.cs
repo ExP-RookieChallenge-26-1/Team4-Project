@@ -48,11 +48,6 @@ public class DialogueManager : Singleton<DialogueManager>
         AddSequence(DialogueKey.Stage2_Clear, stage2Clear);
     }
 
-    private void Start()
-    {
-        PlayDialogue(DialogueKey.Stage1_Tutorial);
-    }
-
     public DialogueSequenceData GetSequence(DialogueKey key)
     {
         if (_sequenceDictionary != null && _sequenceDictionary.TryGetValue(key, out DialogueSequenceData sequence))
@@ -79,20 +74,21 @@ public class DialogueManager : Singleton<DialogueManager>
         dialogueView.Show();
     }
 
-    public void PlayDialogue(DialogueKey key)
+    public DialogueView PlayDialogue(DialogueKey key)
     {
         if (key == DialogueKey.None)
-            return;
+            return null;
 
         DialogueSequenceData sequence = GetSequence(key);
         if (sequence == null)
-            return;
+            return null;
 
         DialogueView dialogueView = UIManager.Instance.GetUIComponent<DialogueView>(dialogueViewParent);
         if (dialogueView == null)
-            return;
+            return null;
 
         dialogueView.PlaySequence(sequence);
+        return dialogueView;
     }
 
     private void AddSequence(DialogueKey key, DialogueSequenceData sequence)

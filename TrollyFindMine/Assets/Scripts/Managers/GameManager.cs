@@ -28,7 +28,7 @@ public class GameManager : Singleton<GameManager>
 
     #region Public Method
 
-    //stage�� 1���� ���� stageCount�� ������ stage
+    //원래 stage number를 parameter로 넘겨서 사용할 것
     public void StageClear(int stageNumber)
     {
         if (stageNumber <= 0) Debug.LogError("0���� �۰ų� ���� �������� Ŭ����");

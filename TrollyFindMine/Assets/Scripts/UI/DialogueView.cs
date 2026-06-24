@@ -51,6 +51,7 @@ public class DialogueView : UIViewStackable
 
     public void ShowNextLine()
     {
+        Debug.Log("다음 라인 출력");
         if (_currentSequence == null || _currentSequence.lines == null)
             return;
 

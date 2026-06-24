@@ -141,7 +141,7 @@ public class MineFieldBackend : MonoBehaviour
         totalMineNumber = numOfMine;
 
         OnGridInitialized?.Invoke();
-        leftmineText.text = $"남은 지뢰 : {leftMineNumber}";
+        leftmineText.text = $"{leftMineNumber}";
     }
 
     public void OpenCellWithLeftClick()
@@ -271,7 +271,7 @@ public class MineFieldBackend : MonoBehaviour
                 //frontend에서 깃발 제거 하는 로직
                 shaderFrontend.DestroyFlag(coord);
             }
-            leftmineText.text = $"남은 지뢰 : {leftMineNumber}";
+            leftmineText.text = $"{leftMineNumber}";
         }
     }
 
