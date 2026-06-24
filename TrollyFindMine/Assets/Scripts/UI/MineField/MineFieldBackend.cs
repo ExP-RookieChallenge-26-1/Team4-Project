@@ -143,9 +143,45 @@ public class MineFieldBackend : MonoBehaviour
         Coord coord = selectedCoord;
         if (mapGeneratedFlag)
         {
-            //이미 열려있는 셀이면 무시, 깃발 꽂혀있어도 무시
-            if (openedCells[coord.x, coord.y] || mineFlag[coord.x,coord.y]) return;
-            if (grid[coord.x, coord.y] == -1) //지뢰를 클릭했을때
+            //깃발 꽂혀있는 셀이면 무시
+            if (mineFlag[coord.x,coord.y]) return;
+            
+            if (openedCells[coord.x, coord.y])
+            {
+                //열려있는 셀이면서 숫자이면
+                if (1 <= grid[coord.x, coord.y] && grid[coord.x, coord.y] <= 8)
+                {
+                    int number = grid[coord.x, coord.y];
+                    int flagNum = 0;
+                    for (int i = 0; i < 8; i++)
+                    {
+                        int nx = coord.x + dx[i];
+                        int ny = coord.y + dy[i];
+                        Coord nc = new Coord(nx, ny);
+                        if (IsInRange(nc))
+                        {
+                            if (mineFlag[nx, ny]) flagNum++;
+                        }
+                    }
+    
+                    if (number == flagNum)
+                    {
+                        for (int i = 0; i < 8; i++)
+                        {
+                            int nx = coord.x + dx[i];
+                            int ny = coord.y + dy[i];
+                            Coord nc = new Coord(nx, ny);
+                            if (IsInRange(nc)&&openedCells[nc.x,nc.y]==false)
+                            {
+                                selectedCoord = nc;
+                                OpenCellWithLeftClick();
+                                selectedCoord = coord;
+                            }
+                        }
+                    }
+                }     
+            }
+            else if (grid[coord.x, coord.y] == -1) //지뢰를 클릭했을때
             {
                 //프론트 엔드 변화
                 shaderFrontend.DestroyAllShaders();
