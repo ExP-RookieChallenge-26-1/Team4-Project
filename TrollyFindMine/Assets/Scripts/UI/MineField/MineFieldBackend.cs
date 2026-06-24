@@ -2,12 +2,15 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 using System;
+using System.Reflection;
 
 
 public class MineFieldBackend : MonoBehaviour
 {
     #region  event
     public event Action<Coord> OnSelectedCoordChanged; // Frontend에서 Highlight 변경시키는 함수 구독
+    public event Action OnGameOver;
+    public event Action OnGameWin;
     #endregion
     
     #region Field
@@ -144,9 +147,10 @@ public class MineFieldBackend : MonoBehaviour
             if (openedCells[coord.x, coord.y] || mineFlag[coord.x,coord.y]) return;
             if (grid[coord.x, coord.y] == -1) //지뢰를 클릭했을때
             {
-                //TODO : 게임 오버 로직
                 //프론트 엔드 변화
                 shaderFrontend.DestroyAllShaders();
+                //게임 오버 로직
+                OnGameOver.Invoke();
             }
             else
             {
@@ -189,7 +193,7 @@ public class MineFieldBackend : MonoBehaviour
                 //게임 승리 조건 확인 
                 if (row * col - openedCellNumber == totalMineNumber)
                 {
-                    //TODO : 게임 승리 로직
+                    OnGameWin?.Invoke();
                 }
             }
             
