@@ -14,7 +14,10 @@ public class SceneManager : Singleton<SceneManager>
 
     #region Public Function
 
-
+    public void GoToStageSelectScene()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("StageSelectScene");
+    }
 
     #endregion
 
