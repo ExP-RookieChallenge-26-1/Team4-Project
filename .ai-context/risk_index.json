@@ -44,6 +44,27 @@
     "risk_score": 70
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "class_name": "MineFieldInputController",
+    "risk_flags": [
+      "update-heavy",
+      "high-coupling",
+      "init-order-sensitive",
+      "save-load-sensitive",
+      "ui-runtime-mixed",
+      "state-owner"
+    ],
+    "risk_reasons": [
+      "Unity 업데이트 루프 사용",
+      "참조 타입 또는 관계 수가 많음",
+      "초기화 순서에 민감할 가능성",
+      "저장/불러오기 관련 로직 포함",
+      "UI와 런타임 책임이 한 파일에 섞였을 가능성",
+      "상태 중심 또는 관리 중심 클래스일 가능성"
+    ],
+    "risk_score": 68
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/Singleton.cs",
     "class_name": "Singleton",
     "risk_flags": [
@@ -232,25 +253,6 @@
     "risk_score": 51
   },
   {
-    "file_id": "TrollyFindMine/Assets/Scripts/Resolution/PreserveAspectContainer.cs",
-    "class_name": "PreserveAspectContainer",
-    "risk_flags": [
-      "update-heavy",
-      "getcomponent-heavy",
-      "init-order-sensitive",
-      "ui-runtime-mixed",
-      "state-owner"
-    ],
-    "risk_reasons": [
-      "Unity 업데이트 루프 사용",
-      "GetComponent/TryGetComponent 호출이 많음",
-      "초기화 순서에 민감할 가능성",
-      "UI와 런타임 책임이 한 파일에 섞였을 가능성",
-      "상태 중심 또는 관리 중심 클래스일 가능성"
-    ],
-    "risk_score": 50
-  },
-  {
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "class_name": "DialogueManager",
     "risk_flags": [
@@ -347,21 +349,6 @@
     "risk_score": 34
   },
   {
-    "file_id": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
-    "class_name": "MineFieldInputController",
-    "risk_flags": [
-      "update-heavy",
-      "save-load-sensitive",
-      "state-owner"
-    ],
-    "risk_reasons": [
-      "Unity 업데이트 루프 사용",
-      "저장/불러오기 관련 로직 포함",
-      "상태 중심 또는 관리 중심 클래스일 가능성"
-    ],
-    "risk_score": 30
-  },
-  {
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
     "class_name": "GameManager",
     "risk_flags": [
@@ -433,6 +420,19 @@
       "상태 중심 또는 관리 중심 클래스일 가능성"
     ],
     "risk_score": 26
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
+    "class_name": "GridCell",
+    "risk_flags": [
+      "save-load-sensitive",
+      "state-owner"
+    ],
+    "risk_reasons": [
+      "저장/불러오기 관련 로직 포함",
+      "상태 중심 또는 관리 중심 클래스일 가능성"
+    ],
+    "risk_score": 20
   },
   {
     "file_id": "TrollyFindMine/Assets/Scripts/UI/UIView.cs",
@@ -519,13 +519,6 @@
   {
     "file_id": "TrollyFindMine/Assets/Scripts/ScriptableObject/DialogData/DialogueSequenceData.cs",
     "class_name": "DialogueSequenceData",
-    "risk_flags": [],
-    "risk_reasons": [],
-    "risk_score": 0
-  },
-  {
-    "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
-    "class_name": "GridCell",
     "risk_flags": [],
     "risk_reasons": [],
     "risk_score": 0
