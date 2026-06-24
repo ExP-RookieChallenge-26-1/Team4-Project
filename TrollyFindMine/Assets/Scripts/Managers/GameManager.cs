@@ -12,7 +12,7 @@ public class GameManager : Singleton<GameManager>
     #region field
 
     [Header("Stage Information")]
-    [SerializeField] private int stageCount = 12;
+    [SerializeField] private int stageCount = 9;
     [SerializeField] private bool[] clearedStages;
     private bool angryAtmosphere = false;
 

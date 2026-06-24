@@ -1,4 +1,3 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,7 +5,8 @@ public class StageButtonImageController : MonoBehaviour
 {
     [SerializeField] private Button stageButton;
     [SerializeField] private GameObject lockIcon;
-    [SerializeField] private TextMeshProUGUI stageNumberLabel;
+    [SerializeField] private Image stageNumberImage;
+    [SerializeField] private Sprite[] stageNumberSprites;
 
     private int _stageIndex;
     private bool _isLocked;
@@ -23,10 +23,22 @@ public class StageButtonImageController : MonoBehaviour
 
     public void SetStageNumber(int stageNumber)
     {
-        if (stageNumberLabel != null)
+        if (stageNumberImage == null)
         {
-            stageNumberLabel.text = stageNumber.ToString();
+            return;
         }
+
+        int spriteIndex = stageNumber - 1;
+        if (stageNumberSprites == null || spriteIndex < 0 || spriteIndex >= stageNumberSprites.Length)
+        {
+            Debug.LogWarning($"Stage number sprite is not assigned for stage {stageNumber}.", this);
+            stageNumberImage.sprite = null;
+            stageNumberImage.enabled = false;
+            return;
+        }
+
+        stageNumberImage.sprite = stageNumberSprites[spriteIndex];
+        stageNumberImage.enabled = true;
     }
 
     public void SetLocked(bool isLocked)

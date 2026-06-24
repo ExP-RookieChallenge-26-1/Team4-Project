@@ -2319,12 +2319,13 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "path": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "file_name": "MineFieldInputController.cs",
-    "content_hash": "20ea9078ef488a908e609efc87895ba228972483",
-    "size": 1806,
-    "line_count": 71,
+    "content_hash": "6f639b6782cfde51e2201657824733dbc95e7c92",
+    "size": 2164,
+    "line_count": 86,
     "namespace": "",
     "using_list": [
-      "UnityEngine"
+      "UnityEngine",
+      "UnityEngine.UI"
     ],
     "classes": [
       {
@@ -2343,6 +2344,7 @@
     "main_class_name": "MineFieldInputController",
     "unity_type": "MonoBehaviour",
     "methods": [
+      "Start",
       "Update",
       "OnOpenPressed",
       "OnFlagPressed",
@@ -2382,13 +2384,14 @@
     "properties": [],
     "events": [],
     "unity_messages": [
+      "Start",
       "Update"
     ],
     "has_update": true,
     "has_fixed_update": false,
     "has_late_update": false,
     "has_awake": false,
-    "has_start": false,
+    "has_start": true,
     "has_on_enable": false,
     "has_on_disable": false,
     "serialize_field_count": 0,
@@ -2404,14 +2407,20 @@
       "float",
       "bool",
       "UnityEngine",
+      "UI",
       "MineFieldBackend",
       "VirtualJoystick",
+      "Button",
+      "Start",
+      "AddListener",
+      "OpenCellWithLeftClick",
+      "TODO",
+      "Event",
       "Update",
       "CurrentDirection",
       "ResetRepeatState",
       "TriggerMove",
       "OnOpenPressed",
-      "OpenCellWithLeftClick",
       "OnFlagPressed",
       "FlagCellWithRightClick",
       "SelectedCellMove"
@@ -2426,13 +2435,15 @@
       0
     ],
     "guessed_roles": [
-      "player",
       "runtime",
+      "ui",
+      "player",
       "save-load"
     ],
     "summary_signals": [
       "런타임 컴포넌트",
       "Update 기반 처리 존재",
+      "UI 관련 로직 포함",
       "저장/불러오기 관련 로직 포함"
     ]
   },
@@ -2440,13 +2451,14 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "path": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "file_name": "VirtualJoystick.cs",
-    "content_hash": "5b50f466be383b4c516d6aaa7d6afb1279f76b2c",
-    "size": 2181,
-    "line_count": 80,
+    "content_hash": "61069e50bbebd011585c457668fa5d5b67e79855",
+    "size": 2992,
+    "line_count": 110,
     "namespace": "",
     "using_list": [
       "UnityEngine",
-      "UnityEngine.EventSystems"
+      "UnityEngine.EventSystems",
+      "UnityEngine.UI"
     ],
     "classes": [
       {
@@ -2478,7 +2490,8 @@
       "OnPointerUp",
       "UpdateJoystick",
       "QuantizeDirection",
-      "Vector2"
+      "Vector2",
+      "SetPressedVisual"
     ],
     "fields": [
       {
@@ -2508,6 +2521,13 @@
         "access": "private",
         "serialized": false,
         "is_static": false
+      },
+      {
+        "name": "_defaultSprite",
+        "type": "Sprite",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
       }
     ],
     "properties": [],
@@ -2524,7 +2544,7 @@
     "has_on_disable": false,
     "serialize_field_count": 0,
     "public_field_count": 0,
-    "get_component_count": 0,
+    "get_component_count": 1,
     "find_call_count": 0,
     "new_keyword_count": 2,
     "coroutine_count": 0,
@@ -2534,20 +2554,25 @@
       "Vector2",
       "Canvas",
       "Camera",
+      "Sprite",
       "UnityEngine",
       "EventSystems",
+      "UI",
       "IPointerDownHandler",
       "IDragHandler",
       "IPointerUpHandler",
       "RectTransform",
+      "Image",
       "CurrentDirection",
       "HasDirection",
       "Awake",
+      "GetComponent",
       "GetComponentInParent",
       "RenderMode",
       "ScreenSpaceOverlay",
       "OnPointerDown",
       "PointerEventData",
+      "SetPressedVisual",
       "UpdateJoystick",
       "OnDrag",
       "OnPointerUp",
@@ -2558,7 +2583,9 @@
       "Abs",
       "Sign"
     ],
-    "component_access_types": [],
+    "component_access_types": [
+      "Image"
+    ],
     "created_types": [
       "Vector2"
     ],
@@ -2579,7 +2606,8 @@
     "summary_signals": [
       "런타임 컴포넌트",
       "UI 관련 로직 포함",
-      "저장/불러오기 관련 로직 포함"
+      "저장/불러오기 관련 로직 포함",
+      "컴포넌트 조회 사용"
     ]
   },
   {
@@ -2780,12 +2808,13 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
     "file_name": "GameManager.cs",
-    "content_hash": "ddafbc86830f9e2b723dc8a0e3811938a2dcada7",
-    "size": 1114,
-    "line_count": 47,
+    "content_hash": "dc524680e4272bf6e4683cce2889f4af89e68f42",
+    "size": 1472,
+    "line_count": 63,
     "namespace": "",
     "using_list": [
-      "UnityEngine"
+      "UnityEngine",
+      "System"
     ],
     "classes": [
       {
@@ -2804,11 +2833,27 @@
     "main_class_name": "GameManager",
     "unity_type": "None",
     "methods": [
-      "stageClear",
+      "StageClear",
       "ResetData",
+      "ChangeAtmosphere",
       "Awake"
     ],
-    "fields": [],
+    "fields": [
+      {
+        "name": "angryAtmosphere",
+        "type": "bool",
+        "access": "private",
+        "serialized": true,
+        "is_static": false
+      },
+      {
+        "name": "prevBool",
+        "type": "bool",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
     "properties": [],
     "events": [],
     "unity_messages": [
@@ -2821,7 +2866,7 @@
     "has_start": false,
     "has_on_enable": false,
     "has_on_disable": false,
-    "serialize_field_count": 0,
+    "serialize_field_count": 1,
     "public_field_count": 0,
     "get_component_count": 0,
     "find_call_count": 0,
@@ -2830,16 +2875,22 @@
     "singleton_candidate": false,
     "dont_destroy_on_load": false,
     "referenced_types": [
+      "bool",
       "UnityEngine",
+      "System",
       "Singleton",
+      "OnAtmoChanged",
       "Stage",
       "Information",
       "ClearedStages",
       "StageCount",
       "Public",
       "Method",
+      "StageClear",
       "LogError",
       "ResetData",
+      "ChangeAtmosphere",
+      "Invoke",
       "Awake"
     ],
     "component_access_types": [],
@@ -2851,6 +2902,7 @@
       "12���� ū �������� Ŭ����"
     ],
     "numeric_literals": [
+      9,
       12
     ],
     "guessed_roles": [
@@ -2860,6 +2912,7 @@
       "save-load"
     ],
     "summary_signals": [
+      "인스펙터 직렬화 필드 사용",
       "저장/불러오기 관련 로직 포함"
     ]
   },
@@ -3242,12 +3295,11 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/StageButtonRenderer.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/StageButtonRenderer.cs",
     "file_name": "StageButtonRenderer.cs",
-    "content_hash": "2770d3837f06ee39faf34288abd0bce3167ee957",
-    "size": 3680,
-    "line_count": 131,
+    "content_hash": "a2ab378af237f56f28df518779a43d059e276f40",
+    "size": 3169,
+    "line_count": 114,
     "namespace": "",
     "using_list": [
-      "TMPro",
       "UnityEngine",
       "UnityEngine.UI"
     ],
@@ -3274,7 +3326,6 @@
       "ApplyGridSettings",
       "ClearExistingButtons",
       "DestroyImmediate",
-      "SetStageLabel",
       "IsStageUnlocked"
     ],
     "fields": [
@@ -3316,13 +3367,11 @@
     "referenced_types": [
       "int",
       "bool",
-      "TMPro",
       "UnityEngine",
       "UI",
       "Stage",
       "Layout",
       "GridLayoutGroup",
-      "Labels",
       "Start",
       "GameManager",
       "Instance",
@@ -3341,7 +3390,6 @@
       "GetComponent",
       "IsStageUnlocked",
       "Initialize",
-      "SetStageLabel",
       "LogError",
       "StageManager",
       "Constraint",
@@ -3350,9 +3398,6 @@
       "Application",
       "Destroy",
       "DestroyImmediate",
-      "TextMeshProUGUI",
-      "GetComponentInChildren",
-      "ToString",
       "Length"
     ],
     "component_access_types": [
@@ -3364,7 +3409,6 @@
     ],
     "string_literals": [
       "Stage Layout",
-      "Stage Labels",
       "Generate Stage Buttons",
       "StageButton_{i + 1}",
       "StageManager: stageButtonPrefab is not assigned.",
@@ -3375,20 +3419,18 @@
     ],
     "numeric_literals": [
       3,
-      12
+      9
     ],
     "guessed_roles": [
       "ui",
       "manager",
       "runtime",
-      "combat",
       "save-load"
     ],
     "summary_signals": [
       "런타임 컴포넌트",
       "인스펙터 직렬화 필드 사용",
       "UI 관련 로직 포함",
-      "전투 계열 로직 포함",
       "저장/불러오기 관련 로직 포함",
       "컴포넌트 조회 사용"
     ]
@@ -3528,157 +3570,6 @@
     "summary_signals": [
       "UI 관련 로직 포함",
       "저장/불러오기 관련 로직 포함",
-      "컴포넌트 조회 사용"
-    ]
-  },
-  {
-    "file_id": "TrollyFindMine/Assets/Scripts/Resolution/PreserveAspectContainer.cs",
-    "path": "TrollyFindMine/Assets/Scripts/Resolution/PreserveAspectContainer.cs",
-    "file_name": "PreserveAspectContainer.cs",
-    "content_hash": "4ed17b094ddae85a348c481a01203e902d43bae7",
-    "size": 1977,
-    "line_count": 67,
-    "namespace": "",
-    "using_list": [
-      "UnityEngine",
-      "UnityEngine.UI"
-    ],
-    "classes": [
-      {
-        "name": "PreserveAspectContainer",
-        "kind": "class",
-        "access": "public",
-        "base_types": [
-          "MonoBehaviour"
-        ],
-        "interfaces": [],
-        "attributes": [],
-        "is_partial": false,
-        "is_generic": false
-      }
-    ],
-    "main_class_name": "PreserveAspectContainer",
-    "unity_type": "MonoBehaviour",
-    "methods": [
-      "Awake",
-      "Update",
-      "Vector2",
-      "GetParentVisualSize"
-    ],
-    "fields": [
-      {
-        "name": "myRect",
-        "type": "RectTransform",
-        "access": "private",
-        "serialized": false,
-        "is_static": false
-      },
-      {
-        "name": "parentRect",
-        "type": "RectTransform",
-        "access": "private",
-        "serialized": false,
-        "is_static": false
-      },
-      {
-        "name": "parentImage",
-        "type": "Image",
-        "access": "private",
-        "serialized": false,
-        "is_static": false
-      },
-      {
-        "name": "parentWidth",
-        "type": "float",
-        "access": "internal",
-        "serialized": false,
-        "is_static": false
-      },
-      {
-        "name": "parentHeight",
-        "type": "float",
-        "access": "internal",
-        "serialized": false,
-        "is_static": false
-      },
-      {
-        "name": "spriteAspect",
-        "type": "float",
-        "access": "internal",
-        "serialized": false,
-        "is_static": false
-      },
-      {
-        "name": "rectAspect",
-        "type": "float",
-        "access": "internal",
-        "serialized": false,
-        "is_static": false
-      },
-      {
-        "name": "visualSize",
-        "type": "Vector2",
-        "access": "internal",
-        "serialized": false,
-        "is_static": false
-      }
-    ],
-    "properties": [],
-    "events": [],
-    "unity_messages": [
-      "Awake",
-      "Update"
-    ],
-    "has_update": true,
-    "has_fixed_update": false,
-    "has_late_update": false,
-    "has_awake": true,
-    "has_start": false,
-    "has_on_enable": false,
-    "has_on_disable": false,
-    "serialize_field_count": 0,
-    "public_field_count": 0,
-    "get_component_count": 3,
-    "find_call_count": 0,
-    "new_keyword_count": 4,
-    "coroutine_count": 0,
-    "singleton_candidate": false,
-    "dont_destroy_on_load": false,
-    "referenced_types": [
-      "RectTransform",
-      "Image",
-      "float",
-      "Vector2",
-      "UnityEngine",
-      "UI",
-      "ExecuteAlways",
-      "RequireComponent",
-      "Awake",
-      "GetComponent",
-      "Update",
-      "GetParentVisualSize",
-      "Vector3"
-    ],
-    "component_access_types": [
-      "RectTransform",
-      "Image"
-    ],
-    "created_types": [
-      "Vector2"
-    ],
-    "singleton_access_types": [],
-    "string_literals": [],
-    "numeric_literals": [
-      0.5
-    ],
-    "guessed_roles": [
-      "ui",
-      "runtime"
-    ],
-    "summary_signals": [
-      "런타임 컴포넌트",
-      "Update 기반 처리 존재",
-      "UI 관련 로직 포함",
       "컴포넌트 조회 사용"
     ]
   },
@@ -4081,9 +3972,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/Frontend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/Frontend.cs",
     "file_name": "Frontend.cs",
-    "content_hash": "f17949cd569a69a19856d0b03cceae0fa4104db5",
-    "size": 1030,
-    "line_count": 43,
+    "content_hash": "41a7fe1d0f358fbfe39605b21e378863ca5764cc",
+    "size": 1169,
+    "line_count": 44,
     "namespace": "",
     "using_list": [
       "UnityEngine"
@@ -4183,12 +4074,14 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
     "file_name": "GridCell.cs",
-    "content_hash": "ad86b68e0a15902b3576df5bdec382411e7b59e3",
-    "size": 148,
-    "line_count": 10,
+    "content_hash": "4001d91bce1bb8c09673fd1a4b968264763cb4fa",
+    "size": 1137,
+    "line_count": 56,
     "namespace": "",
     "using_list": [
-      "UnityEngine"
+      "UnityEngine",
+      "System.Collections.Generic",
+      "UnityEngine.UI"
     ],
     "classes": [
       {
@@ -4207,7 +4100,8 @@
     "main_class_name": "GridCell",
     "unity_type": "None",
     "methods": [
-      "ChangeCellImage"
+      "ChangeCellImage",
+      "Color"
     ],
     "fields": [],
     "properties": [],
@@ -4224,27 +4118,48 @@
     "public_field_count": 0,
     "get_component_count": 0,
     "find_call_count": 0,
-    "new_keyword_count": 0,
+    "new_keyword_count": 3,
     "coroutine_count": 0,
     "singleton_candidate": false,
     "dont_destroy_on_load": false,
     "referenced_types": [
       "UnityEngine",
+      "System",
+      "Collections",
+      "Generic",
+      "UI",
       "Cell",
+      "Sprite",
+      "Image",
+      "Method",
       "ChangeCellImage",
-      "TODO",
-      "ID"
+      "LogError",
+      "ID",
+      "Color",
+      "Log",
+      "Grid"
     ],
     "component_access_types": [],
-    "created_types": [],
+    "created_types": [
+      "Color"
+    ],
     "singleton_access_types": [],
-    "string_literals": [],
-    "numeric_literals": [],
+    "string_literals": [
+      "Image가 없습니다!",
+      "알맞지 않은 Grid ID입니다: {id}"
+    ],
+    "numeric_literals": [
+      1,
+      0,
+      9
+    ],
     "guessed_roles": [
-      "ui"
+      "ui",
+      "save-load"
     ],
     "summary_signals": [
-      "UI 관련 로직 포함"
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함"
     ]
   },
   {
@@ -4385,9 +4300,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "file_name": "MineFieldBackend.cs",
-    "content_hash": "338f9a18193f2ceb78cd392844cb040a102beb31",
-    "size": 7367,
-    "line_count": 234,
+    "content_hash": "7f50e50ecb976bf1f4063032b6eebf5ec79541eb",
+    "size": 7472,
+    "line_count": 236,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -4632,6 +4547,8 @@
       "Enqueue",
       "Count",
       "Dequeue",
+      "Log",
+      "Map",
       "FlagCellWithRightClick",
       "SetFlag",
       "SelectedCellMove",
@@ -4644,7 +4561,8 @@
     ],
     "singleton_access_types": [],
     "string_literals": [
-      "올바르지 않은 생성입니다."
+      "올바르지 않은 생성입니다.",
+      "Map생성완료"
     ],
     "numeric_literals": [
       8,
@@ -4861,12 +4779,11 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonImageController.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonImageController.cs",
     "file_name": "StageButtonImageController.cs",
-    "content_hash": "8fba21661af145cd1f34a9f955adef92aa612126",
-    "size": 1051,
-    "line_count": 47,
+    "content_hash": "36423616cb515a423c57ca7458c892ac8108e633",
+    "size": 1533,
+    "line_count": 59,
     "namespace": "",
     "using_list": [
-      "TMPro",
       "UnityEngine",
       "UnityEngine.UI"
     ],
@@ -4905,6 +4822,13 @@
         "access": "private",
         "serialized": false,
         "is_static": false
+      },
+      {
+        "name": "spriteIndex",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
       }
     ],
     "properties": [],
@@ -4928,27 +4852,30 @@
     "referenced_types": [
       "int",
       "bool",
-      "TMPro",
       "UnityEngine",
       "UI",
       "Button",
-      "TextMeshProUGUI",
+      "Image",
+      "Sprite",
       "StageIndex",
       "IsLocked",
       "Initialize",
       "SetStageNumber",
       "SetLocked",
-      "ToString",
+      "Length",
+      "LogWarning",
+      "Stage",
       "SetActive"
     ],
     "component_access_types": [],
     "created_types": [],
     "singleton_access_types": [],
-    "string_literals": [],
+    "string_literals": [
+      "Stage number sprite is not assigned for stage {stageNumber}."
+    ],
     "numeric_literals": [],
     "guessed_roles": [
       "ui",
-      "combat",
       "save-load",
       "data",
       "runtime"
@@ -4956,7 +4883,6 @@
     "summary_signals": [
       "런타임 컴포넌트",
       "UI 관련 로직 포함",
-      "전투 계열 로직 포함",
       "저장/불러오기 관련 로직 포함"
     ]
   },

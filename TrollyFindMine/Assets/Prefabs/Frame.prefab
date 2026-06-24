@@ -923,5 +923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VirtualJoystick
   joystickBase: {fileID: 3045462075896884079}
+  joystickBaseImage: {fileID: 2768754012938537515}
+  pressedSprite: {fileID: -2561316727049655245, guid: 161033443fd4c264abea6c0d887ed3ea, type: 3}
   maxRadius: 240
   deadZone: 60
