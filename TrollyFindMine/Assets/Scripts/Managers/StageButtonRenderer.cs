@@ -1,4 +1,3 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,11 +8,8 @@ public class StageButtonRenderer : MonoBehaviour
     [SerializeField] private Transform stageButtonParent;
     [SerializeField] private GridLayoutGroup gridLayoutGroup;
     [SerializeField] private int columnCount = 3;
-    private int stageCount = 12;
+    private int stageCount = 9;
     private bool[] clearedStages;
-
-    [Header("Stage Labels")]
-    [SerializeField] private bool setStageNumberLabel = true;
 
     private void Start()
     {
@@ -42,10 +38,6 @@ public class StageButtonRenderer : MonoBehaviour
             if (buttonRenderer != null)
             {
                 buttonRenderer.Initialize(i, isLocked);
-            }
-            else if (setStageNumberLabel)
-            {
-                SetStageLabel(buttonObject, i + 1);
             }
         }
     }
@@ -104,15 +96,6 @@ public class StageButtonRenderer : MonoBehaviour
                 Destroy(child.gameObject);
             else
                 DestroyImmediate(child.gameObject);
-        }
-    }
-
-    private void SetStageLabel(GameObject buttonObject, int stageNumber)
-    {
-        TextMeshProUGUI tmpLabel = buttonObject.GetComponentInChildren<TextMeshProUGUI>(true);
-        if (tmpLabel != null)
-        {
-            tmpLabel.text = stageNumber.ToString();
         }
     }
 
