@@ -51,9 +51,11 @@ public class SoundManager : MonoBehaviour
 
     float _bgmvolume = 1.0f;
     float _sfxvolume = 1.0f;
+    bool _isMuted = false;
 
     public float BGMVolume { get { return _bgmvolume; } set { _bgmvolume = value; PlayerPrefs.SetFloat("BGMVolume", value >= 1 ? 1 : value); } }
     public float SFXVolume { get { return _sfxvolume; } set { _sfxvolume = value;  PlayerPrefs.SetFloat("SFXVolume", value >= 1 ? 1 : value); } }
+    public bool IsMuted => _isMuted;
 
     public void Init()
     {
@@ -87,9 +89,9 @@ public class SoundManager : MonoBehaviour
 
         _bgmvolume = PlayerPrefs.GetFloat("BGMVolume", 1f);
         _sfxvolume = PlayerPrefs.GetFloat("SFXVolume", 1f);
+        _isMuted = PlayerPrefs.GetInt("SoundMuted", 0) == 1;
 
-        SetVolume(Define.Sounds.BGM, _bgmvolume);
-        SetVolume(Define.Sounds.SFX, _sfxvolume);
+        ApplyVolume();
 
     }
 
@@ -171,6 +173,24 @@ public class SoundManager : MonoBehaviour
     public void SetVolume(Define.Sounds type, float volume )
     {
         _audioSources[(int)type].volume = volume;
+    }
+
+    public void ToggleMute()
+    {
+        SetMute(!_isMuted);
+    }
+
+    public void SetMute(bool isMuted)
+    {
+        _isMuted = isMuted;
+        PlayerPrefs.SetInt("SoundMuted", _isMuted ? 1 : 0);
+        ApplyVolume();
+    }
+
+    public void ApplyVolume()
+    {
+        SetVolume(Define.Sounds.BGM, _isMuted ? 0f : _bgmvolume);
+        SetVolume(Define.Sounds.SFX, _isMuted ? 0f : _sfxvolume);
     }
 
     public void Stop(Define.Sounds type)
