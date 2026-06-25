@@ -25,6 +25,11 @@ public class PauseView : UIViewStackable
         Hide();
     }
 
+    public void PlayButtonSound()
+    {
+        SoundManager.Instance.Play(Define.SFX.fx_00_button);
+    }
+
     public void ToggleSoundStyle()
     {
         SoundManager.Instance.ToggleMute();
