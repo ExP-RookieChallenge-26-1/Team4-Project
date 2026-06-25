@@ -25,8 +25,10 @@ public class MineFieldInputController : MonoBehaviour
     {
         //clickButton의 Event 연결
         clickButton.onClick.AddListener(mineFieldBackend.OpenCellWithLeftClick);
+        clickButton.onClick.AddListener(() => SoundManager.Instance.Play(Define.SFX.fx_00_button));
         //flagButton의 Event도 연결
         flagButton.onClick.AddListener(mineFieldBackend.FlagCellWithRightClick);
+        flagButton.onClick.AddListener(() => SoundManager.Instance.Play(Define.SFX.fx_00_button));
 
         //캐릭터 표정 연결 : 버튼을 누르는 동안만 SuperAngry, 조이스틱을 누르는 동안만 Angry
         if (mineCharacterController == null)

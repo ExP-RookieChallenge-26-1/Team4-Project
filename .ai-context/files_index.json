@@ -2100,9 +2100,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Define.cs",
     "path": "TrollyFindMine/Assets/Scripts/Define.cs",
     "file_name": "Define.cs",
-    "content_hash": "eeb595c2636d087571269cb685d39937191e7247",
-    "size": 189,
-    "line_count": 17,
+    "content_hash": "8142b0574d49b33bd372e35df22b84d64db2dfee",
+    "size": 345,
+    "line_count": 24,
     "namespace": "",
     "using_list": [],
     "classes": [
@@ -2151,8 +2151,13 @@
     "singleton_access_types": [],
     "string_literals": [],
     "numeric_literals": [],
-    "guessed_roles": [],
-    "summary_signals": []
+    "guessed_roles": [
+      "ui",
+      "player"
+    ],
+    "summary_signals": [
+      "UI 관련 로직 포함"
+    ]
   },
   {
     "file_id": "TrollyFindMine/Assets/Scripts/Definition.cs",
@@ -2404,9 +2409,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "path": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "file_name": "MineFieldInputController.cs",
-    "content_hash": "07d6fba44efc83956aad8ea298aa08937bfb1d24",
-    "size": 4858,
-    "line_count": 139,
+    "content_hash": "21bbfb0f65b50b2b14724d12ef81a95d31ff0efb",
+    "size": 5057,
+    "line_count": 141,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -2525,6 +2530,11 @@
       "Event",
       "AddListener",
       "OpenCellWithLeftClick",
+      "SoundManager",
+      "Instance",
+      "Play",
+      "Define",
+      "SFX",
       "FlagCellWithRightClick",
       "SuperAngry",
       "Angry",
@@ -2555,7 +2565,9 @@
       "ButtonPointerEvents"
     ],
     "created_types": [],
-    "singleton_access_types": [],
+    "singleton_access_types": [
+      "SoundManager"
+    ],
     "string_literals": [
       "MineFieldInputController에 mineCharacterController가 연결되어 있지 않습니다.",
       "MineFieldInputController에 virtualJoystick이 연결되어 있지 않습니다."
@@ -2569,8 +2581,8 @@
       "player",
       "runtime",
       "ui",
-      "save-load",
-      "data"
+      "manager",
+      "save-load"
     ],
     "summary_signals": [
       "런타임 컴포넌트",
@@ -2584,9 +2596,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "path": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "file_name": "VirtualJoystick.cs",
-    "content_hash": "c9e3564a2e195a0588d845d7310f94a79c9bb866",
-    "size": 3137,
-    "line_count": 116,
+    "content_hash": "67d370c07d9427d481d11bb573531262c9efe0fa",
+    "size": 3202,
+    "line_count": 117,
     "namespace": "",
     "using_list": [
       "System",
@@ -2711,6 +2723,11 @@
       "PointerEventData",
       "SetPressedVisual",
       "UpdateJoystick",
+      "SoundManager",
+      "Instance",
+      "Play",
+      "Define",
+      "SFX",
       "Invoke",
       "OnDrag",
       "OnPointerUp",
@@ -2727,7 +2744,9 @@
     "created_types": [
       "Vector2"
     ],
-    "singleton_access_types": [],
+    "singleton_access_types": [
+      "SoundManager"
+    ],
     "string_literals": [],
     "numeric_literals": [
       240,
@@ -2737,14 +2756,13 @@
     "guessed_roles": [
       "ui",
       "runtime",
-      "data",
+      "manager",
       "player",
-      "save-load"
+      "data"
     ],
     "summary_signals": [
       "런타임 컴포넌트",
       "UI 관련 로직 포함",
-      "저장/불러오기 관련 로직 포함",
       "컴포넌트 조회 사용"
     ]
   },
@@ -2843,9 +2861,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
     "path": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
     "file_name": "MainMenuButtonEvent.cs",
-    "content_hash": "9711bf4541cefa70917ae884ceec28d20197fc7e",
-    "size": 556,
-    "line_count": 26,
+    "content_hash": "ba2df5f637a64a192b8d317e148058d4cdafd6b4",
+    "size": 926,
+    "line_count": 31,
     "namespace": "",
     "using_list": [
       "System",
@@ -2901,15 +2919,21 @@
       "UI",
       "Button",
       "Start",
+      "SoundManager",
+      "Instance",
+      "Play",
+      "Define",
+      "BGM",
       "AddListener",
       "SceneManager",
-      "Instance",
       "GoToStageSelectScene",
+      "SFX",
       "TODO"
     ],
     "component_access_types": [],
     "created_types": [],
     "singleton_access_types": [
+      "SoundManager",
       "SceneManager"
     ],
     "string_literals": [],
@@ -3356,9 +3380,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
     "file_name": "SoundManager.cs",
-    "content_hash": "f2a1c6fc524831957aa97b28bbaddae8871d5efc",
-    "size": 6471,
-    "line_count": 206,
+    "content_hash": "496f97d113802d18de790dbc1d0b89e3fbb9d8d2",
+    "size": 6576,
+    "line_count": 207,
     "namespace": "",
     "using_list": [
       "DG.Tweening",
@@ -3452,7 +3476,7 @@
     "public_field_count": 0,
     "get_component_count": 1,
     "find_call_count": 1,
-    "new_keyword_count": 4,
+    "new_keyword_count": 5,
     "coroutine_count": 0,
     "singleton_candidate": true,
     "dont_destroy_on_load": true,
@@ -3482,6 +3506,7 @@
       "DontDestroyOnLoad",
       "Destroy",
       "Instance",
+      "AddComponent",
       "AudioSource",
       "BGMVolume",
       "PlayerPrefs",
@@ -3489,7 +3514,6 @@
       "SFXVolume",
       "Find",
       "Object",
-      "AddComponent",
       "GetFloat",
       "GetComponent",
       "SetVolume",
@@ -3519,6 +3543,7 @@
     ],
     "singleton_access_types": [],
     "string_literals": [
+      "SoundManager",
       "BGMVolume",
       "SFXVolume",
       "@Sound",
@@ -4187,6 +4212,130 @@
     ]
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "path": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "file_name": "Stage2.cs",
+    "content_hash": "3b18bd0994e27182c40e84adb322cf418a6a8070",
+    "size": 2106,
+    "line_count": 73,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "Stage2",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "Stage2",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start",
+      "GameStart",
+      "WinSequence",
+      "WinSceneChange",
+      "LoseSequence",
+      "LoseSceneChange",
+      "MiddleSequence"
+    ],
+    "fields": [
+      {
+        "name": "dview",
+        "type": "DialogueView",
+        "access": "private",
+        "serialized": true,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 1,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "DialogueView",
+      "UnityEngine",
+      "Field",
+      "MineFieldBackend",
+      "Start",
+      "DialogueManager",
+      "Instance",
+      "PlayDialogue",
+      "DialogueKey",
+      "Stage2_Tutorial",
+      "OnSequenceFinished",
+      "GameStart",
+      "Dialogue",
+      "View",
+      "OnGameWin",
+      "WinSequence",
+      "OnGameOver",
+      "LoseSequence",
+      "OnGameMiddle",
+      "MiddleSequence",
+      "InitGrid",
+      "GameManager",
+      "StageClear",
+      "Stage2_Clear",
+      "WinSceneChange",
+      "SceneManager",
+      "GoToStageSelectScene",
+      "ResetData",
+      "Stage2_GameOver",
+      "LoseSceneChange",
+      "Stage2_Hint_01"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [
+      "DialogueManager",
+      "GameManager",
+      "SceneManager"
+    ],
+    "string_literals": [],
+    "numeric_literals": [
+      10,
+      12,
+      2
+    ],
+    "guessed_roles": [
+      "manager",
+      "scene",
+      "runtime",
+      "data",
+      "save-load"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "인스펙터 직렬화 필드 사용",
+      "저장/불러오기 관련 로직 포함"
+    ]
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
     "path": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
     "file_name": "Starter.cs",
@@ -4267,9 +4416,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
     "file_name": "DialogueView.cs",
-    "content_hash": "4a6869464e3af30556d80cd08f96904c6a695c41",
-    "size": 4175,
-    "line_count": 165,
+    "content_hash": "ff2f3e2614f433516594b06f56ae476f1eac888d",
+    "size": 4342,
+    "line_count": 166,
     "namespace": "",
     "using_list": [
       "System",
@@ -4376,13 +4525,17 @@
       "Awake",
       "AddListener",
       "ShowNextLine",
+      "SoundManager",
+      "Instance",
+      "Play",
+      "Define",
+      "SFX",
       "ShowPreviousLine",
       "PlaySequence",
       "UpdateButtonStates",
       "Count",
       "FinishSequence",
       "Show",
-      "Log",
       "ShowLine",
       "ApplyLine",
       "DialogueLineData",
@@ -4398,21 +4551,24 @@
       "DialogueEventType",
       "None",
       "ButtonHighlight",
+      "Log",
       "Dialogue",
       "Length"
     ],
     "component_access_types": [],
     "created_types": [],
-    "singleton_access_types": [],
+    "singleton_access_types": [
+      "SoundManager"
+    ],
     "string_literals": [
       "UI References",
       "Sprites",
-      "다음 라인 출력",
       "Dialogue event requested: ButtonHighlight"
     ],
     "numeric_literals": [],
     "guessed_roles": [
       "ui",
+      "manager",
       "runtime",
       "data",
       "save-load"
@@ -4982,9 +5138,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "file_name": "MineFieldBackend.cs",
-    "content_hash": "7e3dc802b31f492d30e5fc097f8c9d5fabeb0e7d",
-    "size": 9933,
-    "line_count": 298,
+    "content_hash": "c8708f6ca6743b8bfba013659b99dcb685294cd7",
+    "size": 10468,
+    "line_count": 313,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -5031,6 +5187,13 @@
       {
         "name": "mineFlag",
         "type": "bool[,]",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "middleFlag",
+        "type": "bool",
         "access": "private",
         "serialized": false,
         "is_static": false
@@ -5238,8 +5401,8 @@
     "dont_destroy_on_load": false,
     "referenced_types": [
       "bool[,]",
-      "int",
       "bool",
+      "int",
       "Coord",
       "UnityEngine",
       "System",
@@ -5255,6 +5418,7 @@
       "InitGrid",
       "OnGameOver",
       "OnGameWin",
+      "OnGameMiddle",
       "Field",
       "TextMeshProUGUI",
       "ShaderFrontend",
@@ -5274,6 +5438,11 @@
       "LogError",
       "Invoke",
       "OpenCellWithLeftClick",
+      "SoundManager",
+      "Instance",
+      "Play",
+      "Define",
+      "SFX",
       "DestroyAllShaders",
       "BFS",
       "Enqueue",
@@ -5292,7 +5461,9 @@
       "Coord",
       "Queue"
     ],
-    "singleton_access_types": [],
+    "singleton_access_types": [
+      "SoundManager"
+    ],
     "string_literals": [
       "올바르지 않은 생성입니다.",
       "{leftMineNumber}",
@@ -5304,16 +5475,15 @@
     ],
     "guessed_roles": [
       "ui",
+      "manager",
       "runtime",
       "player",
-      "combat",
-      "save-load"
+      "combat"
     ],
     "summary_signals": [
       "런타임 컴포넌트",
       "UI 관련 로직 포함",
-      "전투 계열 로직 포함",
-      "저장/불러오기 관련 로직 포함"
+      "전투 계열 로직 포함"
     ]
   },
   {

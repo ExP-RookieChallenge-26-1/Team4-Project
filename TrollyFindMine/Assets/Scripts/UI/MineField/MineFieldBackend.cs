@@ -13,6 +13,7 @@ public class MineFieldBackend : MonoBehaviour
     public event Action OnGridInitialized; // InitGrid 완료 후 입력 활성화시키는 함수 구독
     public event Action OnGameOver;
     public event Action OnGameWin;
+    public event Action OnGameMiddle;
     #endregion
     
     #region Field
@@ -24,6 +25,7 @@ public class MineFieldBackend : MonoBehaviour
     private int[,] grid; //-1이 지뢰 0은 빈칸 나머지 [1-8]는 숫자를 의미 -2는 초기값
     private bool[,] openedCells;
     private bool[,] mineFlag;
+    private bool middleFlag = false;
     private int row;
     private int col;
     private int leftMineNumber;
@@ -189,6 +191,8 @@ public class MineFieldBackend : MonoBehaviour
             }
             else if (grid[coord.x, coord.y] == -1) //지뢰를 클릭했을때
             {
+                //지뢰 폭발 소리
+                SoundManager.Instance.Play(Define.SFX.fx_03_mine_small);
                 //프론트 엔드 변화
                 shaderFrontend.DestroyAllShaders();
                 //게임 오버 로직
@@ -232,6 +236,17 @@ public class MineFieldBackend : MonoBehaviour
                 {
                     OpenCellSequence(coord);
                 }
+                
+                //게임 중간 진입
+                if (!middleFlag)
+                {
+                    if (row * col - openedCellNumber <= row * col / 2)
+                    {
+                        middleFlag = true;
+                        OnGameMiddle?.Invoke();
+                    }
+                }
+                
                 //게임 승리 조건 확인 
                 if (row * col - openedCellNumber == totalMineNumber)
                 {

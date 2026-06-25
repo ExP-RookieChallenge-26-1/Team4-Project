@@ -26,11 +26,13 @@ public class DialogueView : UIViewStackable
         if (nextButton != null)
         {
             nextButton.onClick.AddListener(ShowNextLine);
+            nextButton.onClick.AddListener(() => SoundManager.Instance.Play(Define.SFX.fx_00_button));
         }
 
         if (previousButton != null)
         {
             previousButton.onClick.AddListener(ShowPreviousLine);
+            previousButton.onClick.AddListener(() => SoundManager.Instance.Play(Define.SFX.fx_00_button));
         }
     }
 
@@ -52,7 +54,6 @@ public class DialogueView : UIViewStackable
 
     public void ShowNextLine()
     {
-        Debug.Log("다음 라인 출력");
         if (_currentSequence == null || _currentSequence.lines == null)
             return;
 

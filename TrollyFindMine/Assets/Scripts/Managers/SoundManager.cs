@@ -39,7 +39,8 @@ public class SoundManager : MonoBehaviour
         {
             if (null == instance)
             {
-                return null;
+                GameObject go = new GameObject { name = "SoundManager" };
+                instance = go.AddComponent<SoundManager>();
             }
             return instance;
         }

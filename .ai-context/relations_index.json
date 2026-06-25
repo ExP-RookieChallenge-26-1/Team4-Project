@@ -5469,6 +5469,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "from_class": "MineFieldInputController",
+    "to_type": "SoundManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
     "to_type": "AddComponent",
     "relation_type": "uses",
     "strength": 1
@@ -5518,6 +5525,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "from_class": "MineFieldInputController",
+    "to_type": "Define",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
     "to_type": "Event",
     "relation_type": "uses",
     "strength": 1
@@ -5547,6 +5561,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "from_class": "MineFieldInputController",
     "to_type": "InitGrid",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "Instance",
     "relation_type": "uses",
     "strength": 1
   },
@@ -5630,6 +5651,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "from_class": "MineFieldInputController",
+    "to_type": "Play",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
     "to_type": "ResetExpression",
     "relation_type": "uses",
     "strength": 1
@@ -5665,6 +5693,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "from_class": "MineFieldInputController",
+    "to_type": "SFX",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
     "to_type": "ShowAngry",
     "relation_type": "uses",
     "strength": 1
@@ -5673,6 +5708,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
     "from_class": "MineFieldInputController",
     "to_type": "ShowSuperAngry",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/MineFieldInputController.cs",
+    "from_class": "MineFieldInputController",
+    "to_type": "SoundManager",
     "relation_type": "uses",
     "strength": 1
   },
@@ -5784,6 +5826,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "from_class": "VirtualJoystick",
+    "to_type": "SoundManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
     "to_type": "Abs",
     "relation_type": "uses",
     "strength": 1
@@ -5826,6 +5875,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "from_class": "VirtualJoystick",
+    "to_type": "Define",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
     "to_type": "EventSystems",
     "relation_type": "uses",
     "strength": 1
@@ -5862,6 +5918,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "from_class": "VirtualJoystick",
     "to_type": "Image",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "Instance",
     "relation_type": "uses",
     "strength": 1
   },
@@ -5924,6 +5987,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "from_class": "VirtualJoystick",
+    "to_type": "Play",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
     "to_type": "PointerEventData",
     "relation_type": "uses",
     "strength": 1
@@ -5980,7 +6050,21 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
     "from_class": "VirtualJoystick",
+    "to_type": "SFX",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
     "to_type": "Sign",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Input/VirtualJoystick.cs",
+    "from_class": "VirtualJoystick",
+    "to_type": "SoundManager",
     "relation_type": "uses",
     "strength": 1
   },
@@ -6113,6 +6197,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
     "from_class": "MainMenuButtonEvent",
+    "to_type": "SoundManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
     "to_type": "AddListener",
     "relation_type": "uses",
     "strength": 1
@@ -6120,7 +6211,21 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
     "from_class": "MainMenuButtonEvent",
+    "to_type": "BGM",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
     "to_type": "Button",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
+    "to_type": "Define",
     "relation_type": "uses",
     "strength": 1
   },
@@ -6141,7 +6246,28 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
     "from_class": "MainMenuButtonEvent",
+    "to_type": "Play",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
     "to_type": "SceneManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
+    "to_type": "SFX",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/MainMenuButtonEvent.cs",
+    "from_class": "MainMenuButtonEvent",
+    "to_type": "SoundManager",
     "relation_type": "uses",
     "strength": 1
   },
@@ -8267,6 +8393,251 @@
     "strength": 1
   },
   {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "DialogueManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "GameManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "SceneManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "Dialogue",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "DialogueKey",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "DialogueManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "DialogueView",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "Field",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "GameManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "GameStart",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "GoToStageSelectScene",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "InitGrid",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "LoseSceneChange",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "LoseSequence",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "MiddleSequence",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "MineFieldBackend",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "OnGameMiddle",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "OnGameOver",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "OnGameWin",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "OnSequenceFinished",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "PlayDialogue",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "ResetData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "SceneManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "Stage2_Clear",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "Stage2_GameOver",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "Stage2_Hint_01",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "Stage2_Tutorial",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "StageClear",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "View",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "WinSceneChange",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "WinSequence",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
     "from_file": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
     "from_class": "MineFieldTestStarter",
     "to_type": "MonoBehaviour",
@@ -8318,6 +8689,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
     "from_class": "DialogueView",
+    "to_type": "SoundManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
     "to_type": "AddListener",
     "relation_type": "uses",
     "strength": 1
@@ -8354,6 +8732,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
     "from_class": "DialogueView",
     "to_type": "Count",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "Define",
     "relation_type": "uses",
     "strength": 1
   },
@@ -8430,6 +8815,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
     "from_class": "DialogueView",
+    "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
     "to_type": "int",
     "relation_type": "uses",
     "strength": 1
@@ -8466,6 +8858,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
     "from_class": "DialogueView",
     "to_type": "OnSequenceFinished",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "Play",
     "relation_type": "uses",
     "strength": 1
   },
@@ -8514,6 +8913,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
     "from_class": "DialogueView",
+    "to_type": "SFX",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
     "to_type": "Show",
     "relation_type": "uses",
     "strength": 1
@@ -8536,6 +8942,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
     "from_class": "DialogueView",
     "to_type": "ShowPreviousLine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+    "from_class": "DialogueView",
+    "to_type": "SoundManager",
     "relation_type": "uses",
     "strength": 1
   },
@@ -9375,6 +9788,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "from_class": "MineFieldBackend",
+    "to_type": "SoundManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
     "to_type": "BFS",
     "relation_type": "uses",
     "strength": 1
@@ -9411,6 +9831,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "from_class": "MineFieldBackend",
     "to_type": "Count",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "Define",
     "relation_type": "uses",
     "strength": 1
   },
@@ -9508,6 +9935,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "from_class": "MineFieldBackend",
+    "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
     "to_type": "int",
     "relation_type": "uses",
     "strength": 1
@@ -9571,6 +10005,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "from_class": "MineFieldBackend",
+    "to_type": "OnGameMiddle",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
     "to_type": "OnGameOver",
     "relation_type": "uses",
     "strength": 1
@@ -9614,6 +10055,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "from_class": "MineFieldBackend",
     "to_type": "OpenedCellNumber",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "Play",
     "relation_type": "uses",
     "strength": 1
   },
@@ -9669,6 +10117,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "from_class": "MineFieldBackend",
+    "to_type": "SFX",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
     "to_type": "ShaderClicked",
     "relation_type": "uses",
     "strength": 1
@@ -9677,6 +10132,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "from_class": "MineFieldBackend",
     "to_type": "ShaderFrontend",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "SoundManager",
     "relation_type": "uses",
     "strength": 1
   },
