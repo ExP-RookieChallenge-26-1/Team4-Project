@@ -9,18 +9,18 @@
   "files_with_fixed_update": 2,
   "files_with_late_update": 0,
   "singleton_candidates": 2,
-  "manager_like_classes": 14,
-  "ui_related_classes": 26,
-  "save_load_related_classes": 25,
+  "manager_like_classes": 18,
+  "ui_related_classes": 27,
+  "save_load_related_classes": 23,
   "role_counts": {
-    "ui": 26,
+    "ui": 27,
     "runtime": 32,
-    "save-load": 25,
-    "player": 10,
+    "save-load": 23,
+    "player": 11,
     "combat": 3,
     "network": 2,
-    "manager": 14,
-    "data": 11,
+    "manager": 18,
+    "data": 10,
     "scene": 4
   },
   "high_coupling_classes": [
@@ -67,16 +67,16 @@
       "referenced_type_count": 57
     },
     {
+      "class_name": "MineFieldBackend",
+      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+      "relation_count": 59,
+      "referenced_type_count": 55
+    },
+    {
       "class_name": "SoundManager",
       "file_id": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
       "relation_count": 56,
       "referenced_type_count": 53
-    },
-    {
-      "class_name": "MineFieldBackend",
-      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
-      "relation_count": 53,
-      "referenced_type_count": 50
     },
     {
       "class_name": "UIManager",
@@ -173,25 +173,6 @@
       "risk_score": 67
     },
     {
-      "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
-      "class_name": "MineFieldBackend",
-      "risk_flags": [
-        "high-coupling",
-        "large-class",
-        "save-load-sensitive",
-        "ui-runtime-mixed",
-        "state-owner"
-      ],
-      "risk_reasons": [
-        "참조 타입 또는 관계 수가 많음",
-        "파일/메서드/필드 수가 많아 책임이 커질 가능성",
-        "저장/불러오기 관련 로직 포함",
-        "UI와 런타임 책임이 한 파일에 섞였을 가능성",
-        "상태 중심 또는 관리 중심 클래스일 가능성"
-      ],
-      "risk_score": 63
-    },
-    {
       "file_id": "TrollyFindMine/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs",
       "class_name": "DOTweenModuleUtils",
       "risk_flags": [
@@ -270,6 +251,25 @@
     {
       "file_id": "TrollyFindMine/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs",
       "class_name": "DOTweenModuleUI",
+      "risk_flags": [
+        "high-coupling",
+        "magic-number-heavy",
+        "large-class",
+        "ui-runtime-mixed",
+        "state-owner"
+      ],
+      "risk_reasons": [
+        "참조 타입 또는 관계 수가 많음",
+        "숫자 리터럴이 많아 의미 파악이 어려울 수 있음",
+        "파일/메서드/필드 수가 많아 책임이 커질 가능성",
+        "UI와 런타임 책임이 한 파일에 섞였을 가능성",
+        "상태 중심 또는 관리 중심 클래스일 가능성"
+      ],
+      "risk_score": 59
+    },
+    {
+      "file_id": "TrollyFindMine/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUIToolkit.cs",
+      "class_name": "DOTweenModuleUIToolkit",
       "risk_flags": [
         "high-coupling",
         "magic-number-heavy",
