@@ -116,6 +116,10 @@ public class SoundManager : MonoBehaviour
     /// <param name="volume"></param>
     public void Play(Define.BGM BGMSound, float volume = 1.0f)
     {
+        //이미 같은 BGM이 재생중이면 끊기지 않도록 재생하지 않음 (씬 재진입 등으로 중복 호출되는 경우 대비)
+        if (_currentBGM == BGMSound && _audioSources[(int)Define.Sounds.BGM].isPlaying)
+            return;
+
         string path = $"{BGMSound}";
         AudioClip audioClip = GetOrAddAudioClip(path, Define.Sounds.BGM);
         Play(audioClip, Define.Sounds.BGM, volume);

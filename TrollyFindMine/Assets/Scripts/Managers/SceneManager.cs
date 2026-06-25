@@ -31,7 +31,7 @@ public class SceneManager : Singleton<SceneManager>
 
     public void GoToStage2()
     {
-        
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Stage2");
     }
 
     #endregion

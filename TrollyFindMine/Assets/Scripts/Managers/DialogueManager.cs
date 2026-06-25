@@ -39,6 +39,10 @@ public class DialogueManager : Singleton<DialogueManager>
 
         if (Instance != this)
         {
+            // 씬마다 dialogueViewParent가 다름. 새 씬의 Parent를 살아있는 싱글톤에 넘기고,
+            // 이전 씬과 함께 파괴된 DialogueView의 캐시를 비워 새 Parent 아래에 다시 생성되도록 한다.
+            Instance.dialogueViewParent = dialogueViewParent;
+            UIManager.Instance.ClearCollections();
             return;
         }
 
