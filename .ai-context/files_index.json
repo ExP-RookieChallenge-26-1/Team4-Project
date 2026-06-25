@@ -3586,9 +3586,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/StageButtonRenderer.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/StageButtonRenderer.cs",
     "file_name": "StageButtonRenderer.cs",
-    "content_hash": "a2ab378af237f56f28df518779a43d059e276f40",
-    "size": 3169,
-    "line_count": 114,
+    "content_hash": "530f73a396aab5ee4579d49f817eaeb7bbce361e",
+    "size": 4133,
+    "line_count": 140,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -3613,6 +3613,7 @@
     "methods": [
       "Start",
       "GenerateStageButtons",
+      "AddStageButtonClickEvent",
       "ValidateReferences",
       "ApplyGridSettings",
       "ClearExistingButtons",
@@ -3633,6 +3634,13 @@
         "access": "private",
         "serialized": false,
         "is_static": false
+      },
+      {
+        "name": "stageNumber",
+        "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
       }
     ],
     "properties": [],
@@ -3649,7 +3657,7 @@
     "has_on_disable": false,
     "serialize_field_count": 1,
     "public_field_count": 0,
-    "get_component_count": 1,
+    "get_component_count": 2,
     "find_call_count": 0,
     "new_keyword_count": 0,
     "coroutine_count": 0,
@@ -3681,6 +3689,15 @@
       "GetComponent",
       "IsStageUnlocked",
       "Initialize",
+      "Button",
+      "StageButton",
+      "RemoveAllListeners",
+      "AddStageButtonClickEvent",
+      "AddListener",
+      "SceneManager",
+      "GoToStage1",
+      "GoToStage2",
+      "LogWarning",
       "LogError",
       "StageManager",
       "Constraint",
@@ -3692,16 +3709,19 @@
       "Length"
     ],
     "component_access_types": [
-      "StageButtonImageController"
+      "StageButtonImageController",
+      "Button"
     ],
     "created_types": [],
     "singleton_access_types": [
-      "GameManager"
+      "GameManager",
+      "SceneManager"
     ],
     "string_literals": [
       "Stage Layout",
       "Generate Stage Buttons",
       "StageButton_{i + 1}",
+      "Stage {stageNumber} scene is not connected yet.",
       "StageManager: stageButtonPrefab is not assigned.",
       "StageManager: stageButtonParent is not assigned.",
       "StageManager: gridLayoutGroup is not assigned.",
@@ -3710,19 +3730,20 @@
     ],
     "numeric_literals": [
       3,
-      9
+      9,
+      2
     ],
     "guessed_roles": [
       "ui",
       "manager",
+      "scene",
       "runtime",
-      "save-load"
+      "player"
     ],
     "summary_signals": [
       "런타임 컴포넌트",
       "인스펙터 직렬화 필드 사용",
       "UI 관련 로직 포함",
-      "저장/불러오기 관련 로직 포함",
       "컴포넌트 조회 사용"
     ]
   },
@@ -5746,9 +5767,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonImageController.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/StageButton/StageButtonImageController.cs",
     "file_name": "StageButtonImageController.cs",
-    "content_hash": "36423616cb515a423c57ca7458c892ac8108e633",
-    "size": 1533,
-    "line_count": 59,
+    "content_hash": "875057246171052e458b73e9a68cfd7e57673533",
+    "size": 1579,
+    "line_count": 60,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -5826,6 +5847,7 @@
       "Sprite",
       "StageIndex",
       "IsLocked",
+      "StageButton",
       "Initialize",
       "SetStageNumber",
       "SetLocked",
