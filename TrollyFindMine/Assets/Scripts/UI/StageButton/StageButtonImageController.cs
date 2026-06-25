@@ -13,6 +13,7 @@ public class StageButtonImageController : MonoBehaviour
 
     public int StageIndex => _stageIndex;
     public bool IsLocked => _isLocked;
+    public Button StageButton => stageButton;
 
     public void Initialize(int stageIndex, bool isLocked)
     {

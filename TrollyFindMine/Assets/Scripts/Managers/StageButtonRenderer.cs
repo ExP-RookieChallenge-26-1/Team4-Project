@@ -34,11 +34,37 @@ public class StageButtonRenderer : MonoBehaviour
 
             StageButtonImageController buttonRenderer = buttonObject.GetComponent<StageButtonImageController>();
             bool isLocked = !IsStageUnlocked(i);
+            int stageNumber = i + 1;
 
             if (buttonRenderer != null)
             {
                 buttonRenderer.Initialize(i, isLocked);
             }
+
+            Button button = buttonRenderer != null && buttonRenderer.StageButton != null
+                ? buttonRenderer.StageButton
+                : buttonObject.GetComponent<Button>();
+            if (button != null && !isLocked)
+            {
+                button.onClick.RemoveAllListeners();
+                AddStageButtonClickEvent(button, stageNumber);
+            }
+        }
+    }
+
+    private void AddStageButtonClickEvent(Button button, int stageNumber)
+    {
+        switch (stageNumber)
+        {
+            case 1:
+                button.onClick.AddListener(SceneManager.Instance.GoToStage1);
+                break;
+            case 2:
+                button.onClick.AddListener(SceneManager.Instance.GoToStage2);
+                break;
+            default:
+                button.onClick.AddListener(() => Debug.LogWarning($"Stage {stageNumber} scene is not connected yet.", this));
+                break;
         }
     }
 
