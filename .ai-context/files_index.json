@@ -4952,6 +4952,202 @@
     ]
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/GameExitPopup.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/GameExitPopup.cs",
+    "file_name": "GameExitPopup.cs",
+    "content_hash": "5dcd88e2cac26a2c47e6469854e54ce187d1c5c3",
+    "size": 1543,
+    "line_count": 63,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "GameExitPopup",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "UIViewStackable"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "GameExitPopup",
+    "unity_type": "None",
+    "methods": [
+      "Vector2",
+      "Awake",
+      "Show",
+      "ConfirmExit",
+      "Cancel",
+      "ApplyRootScale",
+      "CacheReferenceAnchoredPosition"
+    ],
+    "fields": [
+      {
+        "name": "_referenceAnchoredPosition",
+        "type": "Vector2",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Awake"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": true,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 1,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "Vector2",
+      "UnityEngine",
+      "UIViewStackable",
+      "Layout",
+      "Awake",
+      "CacheReferenceAnchoredPosition",
+      "Show",
+      "ApplyRootScale",
+      "ConfirmExit",
+      "SoundManager",
+      "Instance",
+      "Play",
+      "Define",
+      "SFX",
+      "Application",
+      "Quit",
+      "UNITY_EDITOR",
+      "UnityEditor",
+      "EditorApplication",
+      "Cancel",
+      "Hide",
+      "Screen",
+      "Min",
+      "Vector3",
+      "RectTransform"
+    ],
+    "component_access_types": [],
+    "created_types": [
+      "Vector2"
+    ],
+    "singleton_access_types": [
+      "SoundManager"
+    ],
+    "string_literals": [
+      "Layout"
+    ],
+    "numeric_literals": [
+      1440,
+      3200,
+      1,
+      0
+    ],
+    "guessed_roles": [
+      "ui",
+      "manager",
+      "runtime",
+      "save-load"
+    ],
+    "summary_signals": [
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/GameExitPopupButtonController.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/GameExitPopupButtonController.cs",
+    "file_name": "GameExitPopupButtonController.cs",
+    "content_hash": "6931c58ada07f845f5c4abbefbac221fcb209ae7",
+    "size": 348,
+    "line_count": 17,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "GameExitPopupButtonController",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "GameExitPopupButtonController",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "ShowGameExitPopup"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "UnityEngine",
+      "ShowGameExitPopup",
+      "GameExitPopup",
+      "UIManager",
+      "Instance",
+      "GetUIComponent",
+      "Show"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [
+      "UIManager"
+    ],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "ui",
+      "manager",
+      "save-load",
+      "runtime"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함"
+    ]
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/Cell.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/Cell.cs",
     "file_name": "Cell.cs",
@@ -5511,9 +5707,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "file_name": "MineFieldBackend.cs",
-    "content_hash": "c8708f6ca6743b8bfba013659b99dcb685294cd7",
-    "size": 10468,
-    "line_count": 313,
+    "content_hash": "35b83d0c4f3dd1558902e5cd4744bf760a462062",
+    "size": 11074,
+    "line_count": 321,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -5821,6 +6017,8 @@
       "Enqueue",
       "Count",
       "Dequeue",
+      "ShaderCell",
+      "Destroy",
       "Log",
       "Map",
       "FlagCellWithRightClick",
