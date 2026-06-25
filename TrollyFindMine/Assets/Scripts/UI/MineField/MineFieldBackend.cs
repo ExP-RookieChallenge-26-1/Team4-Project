@@ -224,6 +224,14 @@ public class MineFieldBackend : MonoBehaviour
                                     chk[nc.x, nc.y] = true;
                                     if (openedCells[nc.x, nc.y] == false)
                                     {
+                                        //BFS로 깃발 꽂힌 셀이 열릴 때 지뢰 카운트 복구
+                                        //ShaderCell은 OpenCellSequence에서 Destroy되므로 시각 처리는 별도 불필요
+                                        if (mineFlag[nc.x, nc.y])
+                                        {
+                                            mineFlag[nc.x, nc.y] = false;
+                                            leftMineNumber++;
+                                            leftmineText.text = $"{leftMineNumber}";
+                                        }
                                         OpenCellSequence(nc);
                                     }
                                     if(grid[nc.x,nc.y]==0) queue.Enqueue(nc);
