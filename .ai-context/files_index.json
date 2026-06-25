@@ -2955,9 +2955,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "file_name": "DialogueManager.cs",
-    "content_hash": "d3d689a83aad64fd99babea324357d78616fb65a",
-    "size": 3620,
-    "line_count": 114,
+    "content_hash": "327ad4c7fa7dafc619d9f6f5b502151515166078",
+    "size": 5011,
+    "line_count": 145,
     "namespace": "",
     "using_list": [
       "System.Collections.Generic",
@@ -3023,6 +3023,15 @@
       "Stage2_Hint_01",
       "Stage2_GameOver",
       "Stage2_Clear",
+      "Stage3_Tutorial",
+      "Stage3_Hint_01",
+      "Stage3_Clear",
+      "Stage3_GameOver",
+      "Stage4_Tutorial",
+      "Stage4_FirstG",
+      "Stage4_Hint_01",
+      "Stage4_Clear",
+      "Stage4_GameOver",
       "Singleton",
       "Stage",
       "DialogueSequenceData",
@@ -3058,11 +3067,15 @@
       "Debug",
       "Stage 1",
       "Stage 2",
+      "Stage 3",
+      "Stage 4",
       "{key}에 연결된 대화 시퀀스가 없습니다.",
       "Show Dialogue View"
     ],
     "numeric_literals": [
-      2
+      2,
+      3,
+      4
     ],
     "guessed_roles": [
       "manager",
@@ -3193,9 +3206,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/SceneManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/SceneManager.cs",
     "file_name": "SceneManager.cs",
-    "content_hash": "ecefc1fe981f9d87193fb7e8ebea78d4dbb88f67",
-    "size": 742,
-    "line_count": 40,
+    "content_hash": "209aa6b74a8eb2729cf38f689490c1e8bfb79680",
+    "size": 979,
+    "line_count": 51,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -3222,7 +3235,9 @@
       "GoToStageSelectScene",
       "GoToMainMenu",
       "GoToStage1",
-      "GoToStage2"
+      "GoToStage2",
+      "GoToStage3",
+      "GoToStage4"
     ],
     "fields": [],
     "properties": [],
@@ -3262,7 +3277,11 @@
       "GoToStage1",
       "Stage1",
       "GoToStage2",
-      "Stage2"
+      "Stage2",
+      "GoToStage3",
+      "Stage3",
+      "GoToStage4",
+      "Stage4"
     ],
     "component_access_types": [],
     "created_types": [],
@@ -3271,7 +3290,9 @@
       "StageSelectScene",
       "StartScene",
       "Stage1",
-      "Stage2"
+      "Stage2",
+      "Stage3",
+      "Stage4"
     ],
     "numeric_literals": [],
     "guessed_roles": [
@@ -3609,9 +3630,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/StageButtonRenderer.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/StageButtonRenderer.cs",
     "file_name": "StageButtonRenderer.cs",
-    "content_hash": "530f73a396aab5ee4579d49f817eaeb7bbce361e",
-    "size": 4133,
-    "line_count": 140,
+    "content_hash": "64baaf845e410f3aa6efa33912a847827174bc46",
+    "size": 4375,
+    "line_count": 146,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -3720,6 +3741,8 @@
       "SceneManager",
       "GoToStage1",
       "GoToStage2",
+      "GoToStage3",
+      "GoToStage4",
       "LogWarning",
       "LogError",
       "StageManager",
@@ -3754,7 +3777,8 @@
     "numeric_literals": [
       3,
       9,
-      2
+      2,
+      4
     ],
     "guessed_roles": [
       "ui",
@@ -4364,6 +4388,130 @@
     "numeric_literals": [
       10,
       12,
+      2
+    ],
+    "guessed_roles": [
+      "manager",
+      "scene",
+      "runtime",
+      "data",
+      "save-load"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "인스펙터 직렬화 필드 사용",
+      "저장/불러오기 관련 로직 포함"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/StageScripts/Stage3.cs",
+    "path": "TrollyFindMine/Assets/Scripts/StageScripts/Stage3.cs",
+    "file_name": "Stage3.cs",
+    "content_hash": "bc40c8d5644de966ea65eca310f8cd288a905e3b",
+    "size": 2101,
+    "line_count": 72,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "Stage3",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "Stage3",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start",
+      "GameStart",
+      "WinSequence",
+      "WinSceneChange",
+      "LoseSequence",
+      "LoseSceneChange",
+      "MiddleSequence"
+    ],
+    "fields": [
+      {
+        "name": "dview",
+        "type": "DialogueView",
+        "access": "private",
+        "serialized": true,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 1,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "DialogueView",
+      "UnityEngine",
+      "Field",
+      "MineFieldBackend",
+      "Start",
+      "DialogueManager",
+      "Instance",
+      "PlayDialogue",
+      "DialogueKey",
+      "Stage2_Tutorial",
+      "OnSequenceFinished",
+      "GameStart",
+      "Dialogue",
+      "View",
+      "OnGameWin",
+      "WinSequence",
+      "OnGameOver",
+      "LoseSequence",
+      "OnGameMiddle",
+      "MiddleSequence",
+      "InitGrid",
+      "GameManager",
+      "StageClear",
+      "Stage2_Clear",
+      "WinSceneChange",
+      "SceneManager",
+      "GoToStageSelectScene",
+      "ResetData",
+      "Stage2_GameOver",
+      "LoseSceneChange",
+      "Stage2_Hint_01"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [
+      "DialogueManager",
+      "GameManager",
+      "SceneManager"
+    ],
+    "string_literals": [],
+    "numeric_literals": [
+      15,
+      30,
       2
     ],
     "guessed_roles": [
@@ -6089,6 +6237,107 @@
       "data"
     ],
     "summary_signals": [
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/PreviousButtonController.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/PreviousButtonController.cs",
+    "file_name": "PreviousButtonController.cs",
+    "content_hash": "c95abba3c2a9f1388d27a2d794901eda9b292ff9",
+    "size": 839,
+    "line_count": 35,
+    "namespace": "",
+    "using_list": [
+      "System",
+      "UnityEngine",
+      "UnityEngine.UI",
+      "UnityEngine.SceneManagement"
+    ],
+    "classes": [
+      {
+        "name": "PreviousButtonController",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "PreviousButtonController",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start",
+      "PreviousButtonClick"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "System",
+      "UnityEngine",
+      "UI",
+      "SceneManagement",
+      "Button",
+      "Unity",
+      "Cycle",
+      "Start",
+      "AddListener",
+      "PreviousButtonClick",
+      "Public",
+      "Method",
+      "SceneManager",
+      "GetActiveScene",
+      "StageSelectScene",
+      "Instance",
+      "GoToMainMenu",
+      "Stage1",
+      "GoToStageSelectScene",
+      "Stage2"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [
+      "SceneManager"
+    ],
+    "string_literals": [
+      "StageSelectScene",
+      "Stage1",
+      "Stage2"
+    ],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "ui",
+      "manager",
+      "scene",
+      "runtime",
+      "save-load"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
       "UI 관련 로직 포함",
       "저장/불러오기 관련 로직 포함"
     ]
