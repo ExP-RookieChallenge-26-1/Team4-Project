@@ -683,19 +683,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &3400702609342498517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4172965730827277103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a48834d720c0d064481b6baca64996cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PreviousButtonController
-  previousButton: {fileID: 824620178267194447}
 --- !u!1 &5198723766486314142
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +695,7 @@ GameObject:
   - component: {fileID: 6513978990063329903}
   - component: {fileID: 657091942387387652}
   - component: {fileID: 729822251780572169}
-  - component: {fileID: 922860840840715421}
+  - component: {fileID: 5424107930818023759}
   m_Layer: 5
   m_Name: UpperRedButton
   m_TagString: Untagged
@@ -817,7 +804,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 922860840840715421}
+      - m_Target: {fileID: 5424107930818023759}
         m_TargetAssemblyTypeName: PauseButtonController, Assembly-CSharp
         m_MethodName: ShowPauseView
         m_Mode: 1
@@ -829,7 +816,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &922860840840715421
+--- !u!114 &5424107930818023759
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

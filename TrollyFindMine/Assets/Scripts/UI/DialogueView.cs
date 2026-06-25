@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class DialogueView : UIViewStackable
 {
+    [Header("Layout")]
+    [SerializeField] private Vector2 referenceResolution = new Vector2(1440f, 3200f);
+    [SerializeField] private float referenceScale = 1f;
+
     [Header("UI References")]
     [SerializeField] private Image characterImage;
     [SerializeField] private Image bubbleImage;
@@ -18,11 +22,14 @@ public class DialogueView : UIViewStackable
 
     private DialogueSequenceData _currentSequence;
     private int _currentLineIndex = -1;
+    private Vector2 _referenceAnchoredPosition;
 
     public event Action OnSequenceFinished;
 
     private void Awake()
     {
+        CacheReferenceAnchoredPosition();
+
         if (nextButton != null)
         {
             nextButton.onClick.AddListener(ShowNextLine);
@@ -34,6 +41,12 @@ public class DialogueView : UIViewStackable
             previousButton.onClick.AddListener(ShowPreviousLine);
             previousButton.onClick.AddListener(() => SoundManager.Instance.Play(Define.SFX.fx_00_button));
         }
+    }
+
+    public override void Show()
+    {
+        base.Show();
+        ApplyRootScale();
     }
 
     public void PlaySequence(DialogueSequenceData sequence)
@@ -153,6 +166,37 @@ public class DialogueView : UIViewStackable
 
         targetImage.sprite = sprites[spriteIndex];
         targetImage.enabled = true;
+    }
+
+    private void ApplyRootScale()
+    {
+        if (transform.parent is not RectTransform parentRectTransform)
+            return;
+
+        if (referenceResolution.x <= 0f || referenceResolution.y <= 0f)
+            return;
+
+        float parentWidth = parentRectTransform.rect.width;
+        float parentHeight = parentRectTransform.rect.height;
+
+        if (parentWidth <= 0f || parentHeight <= 0f)
+            return;
+
+        float scale = Mathf.Min(parentWidth / referenceResolution.x, parentHeight / referenceResolution.y);
+        transform.localScale = Vector3.one * scale * referenceScale;
+
+        if (transform is RectTransform rectTransform)
+        {
+            rectTransform.anchoredPosition = _referenceAnchoredPosition * scale;
+        }
+    }
+
+    private void CacheReferenceAnchoredPosition()
+    {
+        if (transform is RectTransform rectTransform)
+        {
+            _referenceAnchoredPosition = rectTransform.anchoredPosition;
+        }
     }
 
     private void UpdateButtonStates()

@@ -4460,9 +4460,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
     "file_name": "DialogueView.cs",
-    "content_hash": "ff2f3e2614f433516594b06f56ae476f1eac888d",
-    "size": 4342,
-    "line_count": 166,
+    "content_hash": "195c1815fa91f9b98c7d182315d23cd5495a35a1",
+    "size": 5663,
+    "line_count": 210,
     "namespace": "",
     "using_list": [
       "System",
@@ -4487,7 +4487,9 @@
     "main_class_name": "DialogueView",
     "unity_type": "None",
     "methods": [
+      "Vector2",
       "Awake",
+      "Show",
       "PlaySequence",
       "ShowNextLine",
       "ShowPreviousLine",
@@ -4499,6 +4501,8 @@
       "FinishSequence",
       "ExecuteDialogueEvent",
       "SetImageSprite",
+      "ApplyRootScale",
+      "CacheReferenceAnchoredPosition",
       "UpdateButtonStates"
     ],
     "fields": [
@@ -4517,6 +4521,13 @@
         "is_static": false
       },
       {
+        "name": "_referenceAnchoredPosition",
+        "type": "Vector2",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
         "name": "nextIndex",
         "type": "int",
         "access": "internal",
@@ -4526,6 +4537,20 @@
       {
         "name": "previousIndex",
         "type": "int",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "parentWidth",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "parentHeight",
+        "type": "float",
         "access": "internal",
         "serialized": false,
         "is_static": false
@@ -4547,18 +4572,21 @@
     "public_field_count": 0,
     "get_component_count": 0,
     "find_call_count": 0,
-    "new_keyword_count": 0,
+    "new_keyword_count": 1,
     "coroutine_count": 0,
     "singleton_candidate": false,
     "dont_destroy_on_load": false,
     "referenced_types": [
       "DialogueSequenceData",
       "int",
+      "Vector2",
+      "float",
       "System",
       "TMPro",
       "UnityEngine",
       "UI",
       "UIViewStackable",
+      "Layout",
       "References",
       "Image",
       "TMP_Text",
@@ -4567,6 +4595,7 @@
       "Sprite",
       "OnSequenceFinished",
       "Awake",
+      "CacheReferenceAnchoredPosition",
       "AddListener",
       "ShowNextLine",
       "SoundManager",
@@ -4575,11 +4604,12 @@
       "Define",
       "SFX",
       "ShowPreviousLine",
+      "Show",
+      "ApplyRootScale",
       "PlaySequence",
       "UpdateButtonStates",
       "Count",
       "FinishSequence",
-      "Show",
       "ShowLine",
       "ApplyLine",
       "DialogueLineData",
@@ -4597,19 +4627,30 @@
       "ButtonHighlight",
       "Log",
       "Dialogue",
-      "Length"
+      "Length",
+      "RectTransform",
+      "Min",
+      "Vector3"
     ],
     "component_access_types": [],
-    "created_types": [],
+    "created_types": [
+      "Vector2"
+    ],
     "singleton_access_types": [
       "SoundManager"
     ],
     "string_literals": [
+      "Layout",
       "UI References",
       "Sprites",
       "Dialogue event requested: ButtonHighlight"
     ],
-    "numeric_literals": [],
+    "numeric_literals": [
+      1440,
+      3200,
+      1,
+      0
+    ],
     "guessed_roles": [
       "ui",
       "manager",
@@ -5867,9 +5908,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
     "file_name": "PauseView.cs",
-    "content_hash": "2fee8a4b3b841e659a6da9fab6558af230de6a4c",
-    "size": 2931,
-    "line_count": 117,
+    "content_hash": "e0fb837f7b40a419809d6d12e66093fc21d1b68b",
+    "size": 4259,
+    "line_count": 160,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -5892,13 +5933,17 @@
     "main_class_name": "PauseView",
     "unity_type": "None",
     "methods": [
+      "Vector2",
       "Awake",
+      "Show",
       "Close",
       "PlayButtonSound",
       "ToggleSoundStyle",
       "InitializeSoundSlider",
       "SetSoundVolume",
       "ApplySoundStyle",
+      "ApplyRootScale",
+      "CacheReferenceAnchoredPosition",
       "CacheOriginalSliderBarColors",
       "ApplySliderBarStyle"
     ],
@@ -5914,6 +5959,27 @@
         "name": "_sliderBarOriginalColors",
         "type": "Color[]",
         "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_referenceAnchoredPosition",
+        "type": "Vector2",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "parentWidth",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "parentHeight",
+        "type": "float",
+        "access": "internal",
         "serialized": false,
         "is_static": false
       },
@@ -5948,27 +6014,33 @@
     "public_field_count": 0,
     "get_component_count": 0,
     "find_call_count": 0,
-    "new_keyword_count": 1,
+    "new_keyword_count": 2,
     "coroutine_count": 0,
     "singleton_candidate": false,
     "dont_destroy_on_load": false,
     "referenced_types": [
       "bool",
       "Color",
+      "Vector2",
+      "float",
       "Graphic",
       "UnityEngine",
       "UI",
       "UIViewStackable",
+      "Layout",
       "Sound",
       "Image",
       "Slider",
       "Awake",
+      "CacheReferenceAnchoredPosition",
       "CacheOriginalSliderBarColors",
       "InitializeSoundSlider",
       "SoundManager",
       "Instance",
       "IsMuted",
       "ApplySoundStyle",
+      "Show",
+      "ApplyRootScale",
       "Close",
       "Hide",
       "PlayButtonSound",
@@ -5986,17 +6058,27 @@
       "ApplyVolume",
       "SetActive",
       "ApplySliderBarStyle",
+      "RectTransform",
+      "Min",
+      "Vector3",
       "Length"
     ],
     "component_access_types": [],
-    "created_types": [],
+    "created_types": [
+      "Vector2"
+    ],
     "singleton_access_types": [
       "SoundManager"
     ],
     "string_literals": [
+      "Layout",
       "Sound UI"
     ],
     "numeric_literals": [
+      1440,
+      3200,
+      0.8333333,
+      0,
       0.4
     ],
     "guessed_roles": [
