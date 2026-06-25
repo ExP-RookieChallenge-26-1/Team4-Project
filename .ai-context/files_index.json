@@ -3093,9 +3093,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/GameManager.cs",
     "file_name": "GameManager.cs",
-    "content_hash": "ab654324da8e2d44cc4b258eb2883bcfe43f3f6a",
-    "size": 1503,
-    "line_count": 64,
+    "content_hash": "5b95318ecb86222f73da0f4123886ee8c1ad8b05",
+    "size": 1469,
+    "line_count": 63,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -3129,13 +3129,6 @@
         "type": "bool",
         "access": "private",
         "serialized": true,
-        "is_static": false
-      },
-      {
-        "name": "prevBool",
-        "type": "bool",
-        "access": "internal",
-        "serialized": false,
         "is_static": false
       }
     ],
@@ -4407,9 +4400,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/StageScripts/Stage3.cs",
     "path": "TrollyFindMine/Assets/Scripts/StageScripts/Stage3.cs",
     "file_name": "Stage3.cs",
-    "content_hash": "bc40c8d5644de966ea65eca310f8cd288a905e3b",
-    "size": 2101,
-    "line_count": 72,
+    "content_hash": "526be33d71601ff3bca06030766c79abe5c09d97",
+    "size": 2619,
+    "line_count": 80,
     "namespace": "",
     "using_list": [
       "UnityEngine"
@@ -4446,6 +4439,13 @@
         "access": "private",
         "serialized": true,
         "is_static": false
+      },
+      {
+        "name": "_screenBlinkEffect",
+        "type": "ScreenBlinkEffect",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
       }
     ],
     "properties": [],
@@ -4470,15 +4470,17 @@
     "dont_destroy_on_load": false,
     "referenced_types": [
       "DialogueView",
+      "ScreenBlinkEffect",
       "UnityEngine",
       "Field",
       "MineFieldBackend",
       "Start",
+      "AddComponent",
       "DialogueManager",
       "Instance",
       "PlayDialogue",
       "DialogueKey",
-      "Stage2_Tutorial",
+      "Stage3_Tutorial",
       "OnSequenceFinished",
       "GameStart",
       "Dialogue",
@@ -4491,15 +4493,18 @@
       "MiddleSequence",
       "InitGrid",
       "GameManager",
+      "ChangeAtmosphere",
+      "StartBlinking",
       "StageClear",
-      "Stage2_Clear",
+      "StopBlinking",
+      "Stage3_Clear",
       "WinSceneChange",
       "SceneManager",
       "GoToStageSelectScene",
       "ResetData",
-      "Stage2_GameOver",
+      "Stage3_GameOver",
       "LoseSceneChange",
-      "Stage2_Hint_01"
+      "Stage3_Hint_01"
     ],
     "component_access_types": [],
     "created_types": [],
@@ -4512,7 +4517,7 @@
     "numeric_literals": [
       15,
       30,
-      2
+      3
     ],
     "guessed_roles": [
       "manager",
@@ -5017,9 +5022,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/GridCell.cs",
     "file_name": "GridCell.cs",
-    "content_hash": "f503dbe380efa54761549fb2b951390085d2c10c",
-    "size": 2100,
-    "line_count": 97,
+    "content_hash": "77df62ca48274d8df77bf6dc82027caa2439d461",
+    "size": 2113,
+    "line_count": 94,
     "namespace": "",
     "using_list": [
       "System",
@@ -5723,9 +5728,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderCell.cs",
     "file_name": "ShaderCell.cs",
-    "content_hash": "aca4adb435e44a847d37abcd186f61b56af81a35",
-    "size": 1880,
-    "line_count": 94,
+    "content_hash": "3c6a01d3ff17ae990c7d9d15759271c8100484fa",
+    "size": 1933,
+    "line_count": 96,
     "namespace": "",
     "using_list": [
       "System",
@@ -6340,6 +6345,158 @@
       "런타임 컴포넌트",
       "UI 관련 로직 포함",
       "저장/불러오기 관련 로직 포함"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/ScreenBlinkEffect.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/ScreenBlinkEffect.cs",
+    "file_name": "ScreenBlinkEffect.cs",
+    "content_hash": "27b64fca634dce3e3cf31a16f2c5fd36c81c9b53",
+    "size": 2982,
+    "line_count": 105,
+    "namespace": "",
+    "using_list": [
+      "System.Collections",
+      "UnityEngine",
+      "UnityEngine.UI"
+    ],
+    "classes": [
+      {
+        "name": "ScreenBlinkEffect",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "ScreenBlinkEffect",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Color",
+      "Awake",
+      "CreateOverlay",
+      "GameObject",
+      "StartBlinking",
+      "StopBlinking",
+      "BlinkLoop",
+      "WaitForSeconds",
+      "Flash",
+      "SetAlpha",
+      "OnDisable"
+    ],
+    "fields": [
+      {
+        "name": "_overlayImage",
+        "type": "Image",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_blinkRoutine",
+        "type": "Coroutine",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "half",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Awake",
+      "OnDisable"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": true,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": true,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 2,
+    "find_call_count": 0,
+    "new_keyword_count": 6,
+    "coroutine_count": 3,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "Image",
+      "Coroutine",
+      "float",
+      "System",
+      "Collections",
+      "UnityEngine",
+      "UI",
+      "Canvas",
+      "Color",
+      "Awake",
+      "CreateOverlay",
+      "ScreenBlinkCanvas",
+      "RectTransform",
+      "SetParent",
+      "AddComponent",
+      "RenderMode",
+      "ScreenSpaceOverlay",
+      "MaxValue",
+      "Overlay",
+      "GetComponent",
+      "Vector2",
+      "StartBlinking",
+      "StopBlinking",
+      "StartCoroutine",
+      "BlinkLoop",
+      "StopCoroutine",
+      "SetAlpha",
+      "WaitForSeconds",
+      "Flash",
+      "Lerp",
+      "OnDisable"
+    ],
+    "component_access_types": [
+      "RectTransform",
+      "Image"
+    ],
+    "created_types": [
+      "Color",
+      "GameObject",
+      "WaitForSeconds"
+    ],
+    "singleton_access_types": [],
+    "string_literals": [
+      "ScreenBlinkCanvas",
+      "Overlay"
+    ],
+    "numeric_literals": [
+      3,
+      0.15,
+      1,
+      0.5,
+      0
+    ],
+    "guessed_roles": [
+      "ui",
+      "runtime",
+      "save-load"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함",
+      "컴포넌트 조회 사용"
     ]
   },
   {
