@@ -6988,6 +6988,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
     "from_class": "SoundManager",
+    "to_type": "ApplyVolume",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
+    "from_class": "SoundManager",
     "to_type": "AudioClip",
     "relation_type": "uses",
     "strength": 1
@@ -7024,6 +7031,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
     "from_class": "SoundManager",
     "to_type": "BGMVolume",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
+    "from_class": "SoundManager",
+    "to_type": "bool",
     "relation_type": "uses",
     "strength": 1
   },
@@ -7149,6 +7163,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
     "from_class": "SoundManager",
+    "to_type": "GetInt",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
+    "from_class": "SoundManager",
     "to_type": "GetOrAddAudioClip",
     "relation_type": "uses",
     "strength": 1
@@ -7164,6 +7185,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
     "from_class": "SoundManager",
     "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
+    "from_class": "SoundManager",
+    "to_type": "IsMuted",
     "relation_type": "uses",
     "strength": 1
   },
@@ -7254,6 +7282,20 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
     "from_class": "SoundManager",
+    "to_type": "SetInt",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
+    "from_class": "SoundManager",
+    "to_type": "SetMute",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
+    "from_class": "SoundManager",
     "to_type": "SetVolume",
     "relation_type": "uses",
     "strength": 1
@@ -7289,6 +7331,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
     "from_class": "SoundManager",
+    "to_type": "SoundMuted",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
+    "from_class": "SoundManager",
     "to_type": "Sounds",
     "relation_type": "uses",
     "strength": 1
@@ -7304,6 +7353,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
     "from_class": "SoundManager",
     "to_type": "System",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
+    "from_class": "SoundManager",
+    "to_type": "ToggleMute",
     "relation_type": "uses",
     "strength": 1
   },
@@ -10629,6 +10685,321 @@
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/ShaderFrontend.cs",
     "from_class": "ShaderFrontend",
     "to_type": "Vector3",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseButtonController.cs",
+    "from_class": "PauseButtonController",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseButtonController.cs",
+    "from_class": "PauseButtonController",
+    "to_type": "UIManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseButtonController.cs",
+    "from_class": "PauseButtonController",
+    "to_type": "GetUIComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseButtonController.cs",
+    "from_class": "PauseButtonController",
+    "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseButtonController.cs",
+    "from_class": "PauseButtonController",
+    "to_type": "PauseView",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseButtonController.cs",
+    "from_class": "PauseButtonController",
+    "to_type": "Show",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseButtonController.cs",
+    "from_class": "PauseButtonController",
+    "to_type": "ShowPauseView",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseButtonController.cs",
+    "from_class": "PauseButtonController",
+    "to_type": "UIManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseButtonController.cs",
+    "from_class": "PauseButtonController",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "UIViewStackable",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "SoundManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "AddListener",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "ApplySliderBarStyle",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "ApplySoundStyle",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "ApplyVolume",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "Awake",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "BGMVolume",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "bool",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "CacheOriginalSliderBarColors",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "Clamp01",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "Close",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "Color",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "Define",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "Graphic",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "Hide",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "Image",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "InitializeSoundSlider",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "IsMuted",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "Length",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "Play",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "PlayButtonSound",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "SetActive",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "SetSoundVolume",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "SetValueWithoutNotify",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "SFX",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "SFXVolume",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "Slider",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "Sound",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "SoundManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "ToggleMute",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "ToggleSoundStyle",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "UI",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "UIViewStackable",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "from_class": "PauseView",
+    "to_type": "UnityEngine",
     "relation_type": "uses",
     "strength": 1
   },

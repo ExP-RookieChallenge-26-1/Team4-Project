@@ -3384,9 +3384,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
     "file_name": "SoundManager.cs",
-    "content_hash": "f52290f3594d60bd7a9fbdc68904eb2458eb1db6",
-    "size": 6832,
-    "line_count": 211,
+    "content_hash": "e34b247035b0e88a5c3648051533680146c4960a",
+    "size": 7288,
+    "line_count": 232,
     "namespace": "",
     "using_list": [
       "DG.Tweening",
@@ -3416,6 +3416,9 @@
       "Play",
       "GetOrAddAudioClip",
       "SetVolume",
+      "ToggleMute",
+      "SetMute",
+      "ApplyVolume",
       "Stop",
       "Clear",
       "FadeAndChange"
@@ -3457,6 +3460,13 @@
         "is_static": false
       },
       {
+        "name": "_isMuted",
+        "type": "bool",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
         "name": "audioClip",
         "type": "AudioClip",
         "access": "internal",
@@ -3488,6 +3498,7 @@
       "Tween",
       "Define.BGM",
       "float",
+      "bool",
       "AudioClip",
       "DG",
       "Tweening",
@@ -3516,11 +3527,14 @@
       "PlayerPrefs",
       "SetFloat",
       "SFXVolume",
+      "IsMuted",
       "Find",
       "Object",
       "GetFloat",
       "GetComponent",
-      "SetVolume",
+      "GetInt",
+      "SoundMuted",
+      "ApplyVolume",
       "PlayOneShot",
       "SFXSound",
       "Enum",
@@ -3533,6 +3547,10 @@
       "TryGetValue",
       "Add",
       "Missing",
+      "SetVolume",
+      "ToggleMute",
+      "SetMute",
+      "SetInt",
       "Clear",
       "FadeAndChange",
       "Kill",
@@ -3552,6 +3570,7 @@
       "SFXVolume",
       "@Sound",
       "{s}",
+      "SoundMuted",
       "SFXSound",
       "volume",
       "{SFXSound}",
@@ -3569,8 +3588,8 @@
       0.5,
       0.25,
       1,
-      0.3,
-      0
+      0,
+      0.3
     ],
     "guessed_roles": [
       "manager",
@@ -5765,6 +5784,231 @@
       "UI 관련 로직 포함",
       "저장/불러오기 관련 로직 포함",
       "컴포넌트 조회 사용"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/PauseButtonController.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/PauseButtonController.cs",
+    "file_name": "PauseButtonController.cs",
+    "content_hash": "993bbef6af4f31c0a955abbeff854f5d59e38b84",
+    "size": 347,
+    "line_count": 16,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "PauseButtonController",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "PauseButtonController",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "ShowPauseView"
+    ],
+    "fields": [],
+    "properties": [],
+    "events": [],
+    "unity_messages": [],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "UnityEngine",
+      "ShowPauseView",
+      "PauseView",
+      "UIManager",
+      "Instance",
+      "GetUIComponent",
+      "Show"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [
+      "UIManager"
+    ],
+    "string_literals": [],
+    "numeric_literals": [],
+    "guessed_roles": [
+      "ui",
+      "manager",
+      "save-load",
+      "runtime"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함"
+    ]
+  },
+  {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/PauseView.cs",
+    "file_name": "PauseView.cs",
+    "content_hash": "2fee8a4b3b841e659a6da9fab6558af230de6a4c",
+    "size": 2931,
+    "line_count": 117,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine",
+      "UnityEngine.UI"
+    ],
+    "classes": [
+      {
+        "name": "PauseView",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "UIViewStackable"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "PauseView",
+    "unity_type": "None",
+    "methods": [
+      "Awake",
+      "Close",
+      "PlayButtonSound",
+      "ToggleSoundStyle",
+      "InitializeSoundSlider",
+      "SetSoundVolume",
+      "ApplySoundStyle",
+      "CacheOriginalSliderBarColors",
+      "ApplySliderBarStyle"
+    ],
+    "fields": [
+      {
+        "name": "_isSoundOn",
+        "type": "bool",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_sliderBarOriginalColors",
+        "type": "Color[]",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "graphic",
+        "type": "Graphic",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "disabledColor",
+        "type": "Color",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Awake"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": true,
+    "has_start": false,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 1,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "bool",
+      "Color",
+      "Graphic",
+      "UnityEngine",
+      "UI",
+      "UIViewStackable",
+      "Sound",
+      "Image",
+      "Slider",
+      "Awake",
+      "CacheOriginalSliderBarColors",
+      "InitializeSoundSlider",
+      "SoundManager",
+      "Instance",
+      "IsMuted",
+      "ApplySoundStyle",
+      "Close",
+      "Hide",
+      "PlayButtonSound",
+      "Play",
+      "Define",
+      "SFX",
+      "ToggleSoundStyle",
+      "ToggleMute",
+      "SetValueWithoutNotify",
+      "BGMVolume",
+      "AddListener",
+      "SetSoundVolume",
+      "Clamp01",
+      "SFXVolume",
+      "ApplyVolume",
+      "SetActive",
+      "ApplySliderBarStyle",
+      "Length"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [
+      "SoundManager"
+    ],
+    "string_literals": [
+      "Sound UI"
+    ],
+    "numeric_literals": [
+      0.4
+    ],
+    "guessed_roles": [
+      "ui",
+      "manager",
+      "runtime",
+      "save-load",
+      "data"
+    ],
+    "summary_signals": [
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함"
     ]
   },
   {
