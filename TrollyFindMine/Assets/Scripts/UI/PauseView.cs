@@ -3,6 +3,10 @@ using UnityEngine.UI;
 
 public class PauseView : UIViewStackable
 {
+    [Header("Layout")]
+    [SerializeField] private Vector2 referenceResolution = new Vector2(1440f, 3200f);
+    [SerializeField] private float referenceScale = 0.8333333f;
+
     [Header("Sound UI")]
     [SerializeField] private Image soundOnImage;
     [SerializeField] private Image soundOffImage;
@@ -11,13 +15,21 @@ public class PauseView : UIViewStackable
 
     private bool _isSoundOn = true;
     private Color[] _sliderBarOriginalColors;
+    private Vector2 _referenceAnchoredPosition;
 
     private void Awake()
     {
+        CacheReferenceAnchoredPosition();
         CacheOriginalSliderBarColors();
         InitializeSoundSlider();
         _isSoundOn = !SoundManager.Instance.IsMuted;
         ApplySoundStyle();
+    }
+
+    public override void Show()
+    {
+        base.Show();
+        ApplyRootScale();
     }
 
     public void Close()
@@ -73,6 +85,37 @@ public class PauseView : UIViewStackable
         }
 
         ApplySliderBarStyle();
+    }
+
+    private void ApplyRootScale()
+    {
+        if (transform.parent is not RectTransform parentRectTransform)
+            return;
+
+        if (referenceResolution.x <= 0f || referenceResolution.y <= 0f)
+            return;
+
+        float parentWidth = parentRectTransform.rect.width;
+        float parentHeight = parentRectTransform.rect.height;
+
+        if (parentWidth <= 0f || parentHeight <= 0f)
+            return;
+
+        float scale = Mathf.Min(parentWidth / referenceResolution.x, parentHeight / referenceResolution.y);
+        transform.localScale = Vector3.one * scale * referenceScale;
+
+        if (transform is RectTransform rectTransform)
+        {
+            rectTransform.anchoredPosition = _referenceAnchoredPosition * scale;
+        }
+    }
+
+    private void CacheReferenceAnchoredPosition()
+    {
+        if (transform is RectTransform rectTransform)
+        {
+            _referenceAnchoredPosition = rectTransform.anchoredPosition;
+        }
     }
 
     private void CacheOriginalSliderBarColors()

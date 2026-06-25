@@ -703,6 +703,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f544faed99034154aa493a9d89e45218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseView
+  referenceResolution: {x: 1440, y: 3200}
+  referenceScale: 1
   soundOnImage: {fileID: 6183666299181046015}
   soundOffImage: {fileID: 3357607816847828767}
   soundSlider: {fileID: 725083126832304614}
