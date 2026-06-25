@@ -19,6 +19,7 @@ public class ShaderCell : Cell
 
     public void SetFlag()
     {
+        isFlagged = true;
         image.color = new Color(1f, 1f, 1f, 1f);
         if (GameManager.Instance.AngryAtmosphere)
         {
@@ -32,6 +33,7 @@ public class ShaderCell : Cell
 
     public void DestroyFlag()
     {
+        isFlagged = false;
         image.color = new Color(1f, 1f, 1f, 0f);
         image.sprite = null;
     }

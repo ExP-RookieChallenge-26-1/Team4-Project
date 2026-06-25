@@ -9,20 +9,22 @@ public class Stage3 : MonoBehaviour
     [SerializeField] private int col = 15;
     [SerializeField] private int numOfMine = 30;
     private DialogueView dview;
-    
+    private ScreenBlinkEffect _screenBlinkEffect;
+
     #endregion
-    
+
     #region unity cycle
     private void Start()
     {
-        dview = DialogueManager.Instance.PlayDialogue(DialogueKey.Stage2_Tutorial);
+        _screenBlinkEffect = gameObject.AddComponent<ScreenBlinkEffect>();
+        dview = DialogueManager.Instance.PlayDialogue(DialogueKey.Stage3_Tutorial);
         dview.OnSequenceFinished += GameStart;
     }
-    
+
     #endregion
 
     #region publicFunction
-    // Dialogue View의 onSequenceFinished와 연결 
+    // Dialogue View의 onSequenceFinished와 연결
     public void GameStart()
     {
         dview.OnSequenceFinished -= GameStart;
@@ -30,14 +32,18 @@ public class Stage3 : MonoBehaviour
         _mineFieldBackend.OnGameOver += LoseSequence;
         _mineFieldBackend.OnGameMiddle += MiddleSequence;
         _mineFieldBackend.InitGrid(row, col, numOfMine);
+        GameManager.Instance.ChangeAtmosphere(); //튜토리얼 종료 후 분위기를 angry로 전환
+        _screenBlinkEffect.StartBlinking();
     }
 
     public void WinSequence()
     {
-        GameManager.Instance.StageClear(2);
+        GameManager.Instance.StageClear(3);
         _mineFieldBackend.OnGameWin -= WinSequence;
         _mineFieldBackend.OnGameOver -= LoseSequence;
-        dview = DialogueManager.Instance.PlayDialogue(DialogueKey.Stage2_Clear);
+        GameManager.Instance.ChangeAtmosphere(); //게임 종료 후 분위기 복원
+        _screenBlinkEffect.StopBlinking();
+        dview = DialogueManager.Instance.PlayDialogue(DialogueKey.Stage3_Clear);
         dview.OnSequenceFinished += WinSceneChange;
     }
 
@@ -52,7 +58,9 @@ public class Stage3 : MonoBehaviour
         GameManager.Instance.ResetData();
         _mineFieldBackend.OnGameWin -= WinSequence;
         _mineFieldBackend.OnGameOver -= LoseSequence;
-        dview = DialogueManager.Instance.PlayDialogue(DialogueKey.Stage2_GameOver);
+        GameManager.Instance.ChangeAtmosphere(); //게임 종료 후 분위기 복원
+        _screenBlinkEffect.StopBlinking();
+        dview = DialogueManager.Instance.PlayDialogue(DialogueKey.Stage3_GameOver);
         dview.OnSequenceFinished += LoseSceneChange;
     }
 
@@ -65,7 +73,7 @@ public class Stage3 : MonoBehaviour
     public void MiddleSequence()
     {
         _mineFieldBackend.OnGameMiddle -= MiddleSequence;
-        dview = DialogueManager.Instance.PlayDialogue(DialogueKey.Stage2_Hint_01);
+        dview = DialogueManager.Instance.PlayDialogue(DialogueKey.Stage3_Hint_01);
     }
     #endregion
 }

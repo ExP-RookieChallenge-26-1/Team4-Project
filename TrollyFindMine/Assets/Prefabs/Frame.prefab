@@ -410,9 +410,9 @@ MonoBehaviour:
   m_fontSize: 100
   m_fontSizeBase: 100
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 100
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -574,7 +574,6 @@ GameObject:
   - component: {fileID: 6023167002022000847}
   - component: {fileID: 2693621016041866527}
   - component: {fileID: 824620178267194447}
-  - component: {fileID: 3400702609342498517}
   m_Layer: 5
   m_Name: UpperGreenButton
   m_TagString: Untagged

@@ -65,15 +65,12 @@ public class GridCell : Cell
         Image thisImage = GetComponent<Image>();
         if (selectedCell)
         {
-            if (atmo == true)
-            {
-                thisImage.sprite = outlineAngry;
-            }
-            else
-            {
-                thisImage.sprite = outlineNormal;
-            }
-            
+            thisImage.sprite = atmo ? outlineAngry : outlineNormal;
+        }
+        else
+        {
+            if (cellNormal == null || cellAngry == null) return;
+            thisImage.sprite = atmo ? cellAngry : cellNormal;
         }
     }
 

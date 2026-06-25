@@ -45,9 +45,8 @@ public class GameManager : Singleton<GameManager>
     //게임 분위기 전환 함수
     public void ChangeAtmosphere()
     {
-        bool prevBool = angryAtmosphere;
         angryAtmosphere = !angryAtmosphere;
-        OnAtmoChanged?.Invoke(prevBool);
+        OnAtmoChanged?.Invoke(angryAtmosphere);
     }
 
     #endregion
