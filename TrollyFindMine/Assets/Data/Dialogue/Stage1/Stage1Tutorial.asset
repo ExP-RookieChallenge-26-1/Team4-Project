@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713941b1f69a060408652db841d87600, type: 3}
+  m_Name: Stage1Tutorial
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequenceData
+  lines:
+  - expression: 0
+    bubbleColor: 2
+    text: "\"\uC557 \uC548\uB155? \uB108\uAC00 \uC0C8\uB85C\uC6B4 \uD50C\uB808\uC774\uC5B4\uC57C?
+      \uBC18\uAC00\uC6CC!\" "
+    eventType: 0
+  - expression: 0
+    bubbleColor: 2
+    text: " \"\uB09C \uC774 \uD504\uB85C\uADF8\uB7A8\uC758 \uC548\uB0B4 \uC2DC\uC2A4\uD15C\uC778
+      \uC57C\uB974\uAC78\uC774\uB77C\uACE0 \uD574.\" "
+    eventType: 0
+  - expression: 0
+    bubbleColor: 2
+    text: "\"\uC9C0\uB8B0\uCC3E\uAE30\uC758 \uADDC\uCE59\uC740 \uC54C\uACE0 \uC788\uC9C0?
+      \uC22B\uC790 \uC8FC\uBCC0 8\uCE78 \uC911 \uADF8 \uC22B\uC790\uB9CC\uD07C\uB9CC
+      \uC9C0\uB8B0\uAC00 \uC788\uB2E4\uB294 \uB73B\uC774\uC57C. \uC548\uC804\uD55C
+      \uD0C0\uC77C\uC744 \uD558\uB098 \uACE8\uB77C\uC11C \uD074\uB9AD\uD574 \uBD10.\""
+    eventType: 0
+  - expression: 0
+    bubbleColor: 2
+    text: "\"\uD654\uBA74 \uD558\uB2E8\uC5D0 \uC788\uB294 \uC870\uC774\uC2A4\uD2F1
+      \uBC84\uD2BC\uC744 \uB204\uB974\uBA74 \uCEE4\uC11C\uB97C \uC6C0\uC9C1\uC77C
+      \uC218 \uC788\uC5B4.\""
+    eventType: 0
+  - expression: 0
+    bubbleColor: 2
+    text: "\"\uC548\uC804\uD55C \uCE78\uC744 \uD30C\uB0BC \uB54C\uB294 \uC0BD\uC9C8
+      \uBC84\uD2BC, \uC9C0\uB8B0\uB97C \uD45C\uC2DC\uD560 \uB54C\uB294 \uAE43\uBC1C
+      \uBC84\uD2BC\uC744 \uC0C1\uD669\uC5D0 \uB9DE\uAC8C \uB204\uB974\uBA74 \uB3FC.\""
+    eventType: 0
+  - expression: 0
+    bubbleColor: 2
+    text: "\"\uC22B\uC790\uCE78\uC744 \uD30C\uB0B4\uBA74, \uC8FC\uBCC0 8\uCE78\uC5D0
+      \uC22B\uC790\uB9CC\uD07C \uAE43\uBC1C\uC774 \uAF42\uD600\uC788\uC744\uB54C,
+      \uC548\uC5F4\uB824 \uC788\uB294 \uCE78\uB4E4\uC744 \uBAA8\uB450 \uC5F4 \uC218
+      \uC788\uC5B4.\""
+    eventType: 0

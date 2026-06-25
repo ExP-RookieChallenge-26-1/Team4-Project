@@ -28,7 +28,8 @@ public class Stage1 : MonoBehaviour
     public void GameStart()
     {
         dview.OnSequenceFinished -= GameStart;
-        _mineFieldBackend.OnGameWin += WinSequence; 
+        _mineFieldBackend.OnGameWin += WinSequence;
+        _mineFieldBackend.OnGameOver += LoseSequence;
         _mineFieldBackend.InitGrid(row, col, numOfMine);
     }
 
@@ -36,6 +37,7 @@ public class Stage1 : MonoBehaviour
     {
         GameManager.Instance.StageClear(1);
         _mineFieldBackend.OnGameWin -= WinSequence;
+        _mineFieldBackend.OnGameOver -= LoseSequence;
         dview = DialogueManager.Instance.PlayDialogue(DialogueKey.Stage1_Clear);
         dview.OnSequenceFinished += WinSceneChange;
     }
@@ -43,6 +45,21 @@ public class Stage1 : MonoBehaviour
     public void WinSceneChange()
     {
         dview.OnSequenceFinished -= WinSceneChange;
+        SceneManager.Instance.GoToStageSelectScene();
+    }
+
+    public void LoseSequence()
+    {
+        GameManager.Instance.ResetData();
+        _mineFieldBackend.OnGameWin -= WinSequence;
+        _mineFieldBackend.OnGameOver -= LoseSequence;
+        dview = DialogueManager.Instance.PlayDialogue(DialogueKey.Stage1_GameOver);
+        dview.OnSequenceFinished += LoseSceneChange;
+    }
+
+    public void LoseSceneChange()
+    {
+        dview.OnSequenceFinished -= LoseSceneChange;
         SceneManager.Instance.GoToStageSelectScene();
     }
 

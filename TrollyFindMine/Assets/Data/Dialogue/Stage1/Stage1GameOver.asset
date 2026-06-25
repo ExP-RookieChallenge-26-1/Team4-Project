@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713941b1f69a060408652db841d87600, type: 3}
+  m_Name: Stage1GameOver
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequenceData
+  lines:
+  - expression: 0
+    bubbleColor: 0
+    text: "\"\uD5C9! \uC8FD\uC5B4\uBC84\uB838\uB139;; \uC544\uC27D\uAC8C \uB41C\uAC70\uC9C0
+      \uBB50~. \uB2E4\uC2DC \uB3C4\uC804\uD574\uBD10!\""
+    eventType: 0

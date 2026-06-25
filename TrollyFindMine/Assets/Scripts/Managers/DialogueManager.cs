@@ -7,8 +7,10 @@ public enum DialogueKey
     Stage1_Tutorial,
     Stage1_Hint_01,
     Stage1_Clear,
+    Stage1_GameOver,
     Stage2_Tutorial,
     Stage2_Hint_01,
+    Stage2_GameOver,
     Stage2_Clear
 }
 
@@ -21,11 +23,13 @@ public class DialogueManager : Singleton<DialogueManager>
     [SerializeField] private DialogueSequenceData stage1Tutorial;
     [SerializeField] private DialogueSequenceData stage1Hint01;
     [SerializeField] private DialogueSequenceData stage1Clear;
+    [SerializeField] private DialogueSequenceData stage1GameOver;
 
     [Header("Stage 2")]
     [SerializeField] private DialogueSequenceData stage2Tutorial;
     [SerializeField] private DialogueSequenceData stage2Hint01;
     [SerializeField] private DialogueSequenceData stage2Clear;
+    [SerializeField] private DialogueSequenceData stage2GameOver;
 
     private Dictionary<DialogueKey, DialogueSequenceData> _sequenceDictionary;
 
@@ -43,9 +47,11 @@ public class DialogueManager : Singleton<DialogueManager>
         AddSequence(DialogueKey.Stage1_Tutorial, stage1Tutorial);
         AddSequence(DialogueKey.Stage1_Hint_01, stage1Hint01);
         AddSequence(DialogueKey.Stage1_Clear, stage1Clear);
+        AddSequence(DialogueKey.Stage1_GameOver, stage1GameOver);
         AddSequence(DialogueKey.Stage2_Tutorial, stage2Tutorial);
         AddSequence(DialogueKey.Stage2_Hint_01, stage2Hint01);
         AddSequence(DialogueKey.Stage2_Clear, stage2Clear);
+        AddSequence(DialogueKey.Stage2_GameOver, stage2GameOver);
     }
 
     public DialogueSequenceData GetSequence(DialogueKey key)
