@@ -79,10 +79,10 @@
       "referenced_type_count": 55
     },
     {
-      "class_name": "UIManager",
-      "file_id": "TrollyFindMine/Assets/Scripts/Managers/UIManager.cs",
-      "relation_count": 51,
-      "referenced_type_count": 46
+      "class_name": "DialogueView",
+      "file_id": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
+      "relation_count": 57,
+      "referenced_type_count": 54
     }
   ],
   "high_risk_classes": [
