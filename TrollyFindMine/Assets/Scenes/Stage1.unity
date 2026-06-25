@@ -487,6 +487,15 @@ MonoBehaviour:
   stage2Hint01: {fileID: 11400000, guid: d2e62968ccc847746a4bbb316f11ac72, type: 2}
   stage2Clear: {fileID: 11400000, guid: 9f3495a6245ac6141b7616bcf3e25219, type: 2}
   stage2GameOver: {fileID: 11400000, guid: 37631ac2a2e687849819c5af1cc602fb, type: 2}
+  stage3Tutorial: {fileID: 11400000, guid: 511e26064b79bec498d6ce795b16643a, type: 2}
+  stage3Hint01: {fileID: 11400000, guid: 95c7c1dc6d8f1c242bbde46e5112a733, type: 2}
+  stage3Clear: {fileID: 11400000, guid: ee3092af22e88ca47a85cd76e828f4e1, type: 2}
+  stage3GameOver: {fileID: 11400000, guid: 3db18c6add13815409973297167c6faf, type: 2}
+  stage4Tutorial: {fileID: 11400000, guid: d605c0fbbb4b7964aa5a57359a1d1e6a, type: 2}
+  stage4FirstG: {fileID: 11400000, guid: b97393ff1b8dcee4195744e9582d3f2f, type: 2}
+  stage4Hint01: {fileID: 11400000, guid: 37b1491ec02dcc041ae4c892842625e2, type: 2}
+  stage4Clear: {fileID: 11400000, guid: fc6a853d36b8b5b499e89b3c6d3d376a, type: 2}
+  stage4GameOver: {fileID: 11400000, guid: e2e8d6bd68745f84a8f3ac6630dc434d, type: 2}
 --- !u!4 &944478935
 Transform:
   m_ObjectHideFlags: 0
