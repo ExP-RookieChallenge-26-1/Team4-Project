@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "generated_at": "2026-06-25T01:04:35.367Z",
+  "generated_at": "2026-06-25T05:04:25.163Z",
   "generator": "ai-context-builder-v1",
   "source_branch": "main",
-  "source_commit_sha": "99ffc81c4f493d648eb49fa98e61a9411b179cab",
+  "source_commit_sha": "fa8545d4996c5d0c802dd022f87574561b713166",
   "build_mode_requested": "auto",
   "build_mode_used": "incremental",
   "rebuild_reasons": [],
-  "total_cs_files": 41,
-  "changed_cs_files": 2,
-  "added_cs_files": 0,
+  "total_cs_files": 42,
+  "changed_cs_files": 3,
+  "added_cs_files": 1,
   "deleted_cs_files": 0,
   "index_status": "ready"
 }

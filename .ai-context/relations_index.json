@@ -8267,6 +8267,251 @@
     "strength": 1
   },
   {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "DialogueManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "GameManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "SceneManager",
+    "relation_type": "singleton-access",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "Dialogue",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "DialogueKey",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "DialogueManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "DialogueView",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "Field",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "GameManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "GameStart",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "GoToStageSelectScene",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "InitGrid",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "Instance",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "LoseSceneChange",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "LoseSequence",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "MiddleSequence",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "MineFieldBackend",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "OnGameMiddle",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "OnGameOver",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "OnGameWin",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "OnSequenceFinished",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "PlayDialogue",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "ResetData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "SceneManager",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "Stage2_Clear",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "Stage2_GameOver",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "Stage2_Hint_01",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "Stage2_Tutorial",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "StageClear",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "View",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "WinSceneChange",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "from_class": "Stage2",
+    "to_type": "WinSequence",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
     "from_file": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
     "from_class": "MineFieldTestStarter",
     "to_type": "MonoBehaviour",
@@ -9565,6 +9810,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "from_class": "MineFieldBackend",
     "to_type": "Methods",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "OnGameMiddle",
     "relation_type": "uses",
     "strength": 1
   },

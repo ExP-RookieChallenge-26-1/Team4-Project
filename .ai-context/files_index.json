@@ -4187,6 +4187,130 @@
     ]
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "path": "TrollyFindMine/Assets/Scripts/StageScripts/Stage2.cs",
+    "file_name": "Stage2.cs",
+    "content_hash": "3b18bd0994e27182c40e84adb322cf418a6a8070",
+    "size": 2106,
+    "line_count": 73,
+    "namespace": "",
+    "using_list": [
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "Stage2",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "Stage2",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start",
+      "GameStart",
+      "WinSequence",
+      "WinSceneChange",
+      "LoseSequence",
+      "LoseSceneChange",
+      "MiddleSequence"
+    ],
+    "fields": [
+      {
+        "name": "dview",
+        "type": "DialogueView",
+        "access": "private",
+        "serialized": true,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 1,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "DialogueView",
+      "UnityEngine",
+      "Field",
+      "MineFieldBackend",
+      "Start",
+      "DialogueManager",
+      "Instance",
+      "PlayDialogue",
+      "DialogueKey",
+      "Stage2_Tutorial",
+      "OnSequenceFinished",
+      "GameStart",
+      "Dialogue",
+      "View",
+      "OnGameWin",
+      "WinSequence",
+      "OnGameOver",
+      "LoseSequence",
+      "OnGameMiddle",
+      "MiddleSequence",
+      "InitGrid",
+      "GameManager",
+      "StageClear",
+      "Stage2_Clear",
+      "WinSceneChange",
+      "SceneManager",
+      "GoToStageSelectScene",
+      "ResetData",
+      "Stage2_GameOver",
+      "LoseSceneChange",
+      "Stage2_Hint_01"
+    ],
+    "component_access_types": [],
+    "created_types": [],
+    "singleton_access_types": [
+      "DialogueManager",
+      "GameManager",
+      "SceneManager"
+    ],
+    "string_literals": [],
+    "numeric_literals": [
+      10,
+      12,
+      2
+    ],
+    "guessed_roles": [
+      "manager",
+      "scene",
+      "runtime",
+      "data",
+      "save-load"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "인스펙터 직렬화 필드 사용",
+      "저장/불러오기 관련 로직 포함"
+    ]
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
     "path": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
     "file_name": "Starter.cs",
@@ -4267,9 +4391,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
     "file_name": "DialogueView.cs",
-    "content_hash": "4a6869464e3af30556d80cd08f96904c6a695c41",
-    "size": 4175,
-    "line_count": 165,
+    "content_hash": "4fc3148786f356902dc6e2e6abb2562859dc643e",
+    "size": 4132,
+    "line_count": 164,
     "namespace": "",
     "using_list": [
       "System",
@@ -4382,7 +4506,6 @@
       "Count",
       "FinishSequence",
       "Show",
-      "Log",
       "ShowLine",
       "ApplyLine",
       "DialogueLineData",
@@ -4398,6 +4521,7 @@
       "DialogueEventType",
       "None",
       "ButtonHighlight",
+      "Log",
       "Dialogue",
       "Length"
     ],
@@ -4407,7 +4531,6 @@
     "string_literals": [
       "UI References",
       "Sprites",
-      "다음 라인 출력",
       "Dialogue event requested: ButtonHighlight"
     ],
     "numeric_literals": [],
@@ -4982,9 +5105,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "file_name": "MineFieldBackend.cs",
-    "content_hash": "7e3dc802b31f492d30e5fc097f8c9d5fabeb0e7d",
-    "size": 9933,
-    "line_count": 298,
+    "content_hash": "c959b1600125874ad447dfb1f9cfc6d5b6e9cd2c",
+    "size": 10356,
+    "line_count": 311,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -5031,6 +5154,13 @@
       {
         "name": "mineFlag",
         "type": "bool[,]",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "middleFlag",
+        "type": "bool",
         "access": "private",
         "serialized": false,
         "is_static": false
@@ -5238,8 +5368,8 @@
     "dont_destroy_on_load": false,
     "referenced_types": [
       "bool[,]",
-      "int",
       "bool",
+      "int",
       "Coord",
       "UnityEngine",
       "System",
@@ -5255,6 +5385,7 @@
       "InitGrid",
       "OnGameOver",
       "OnGameWin",
+      "OnGameMiddle",
       "Field",
       "TextMeshProUGUI",
       "ShaderFrontend",
