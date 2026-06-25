@@ -2955,9 +2955,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "file_name": "DialogueManager.cs",
-    "content_hash": "e4285df0489401fbfddbb5d0717eef711b19f4fc",
-    "size": 3263,
-    "line_count": 110,
+    "content_hash": "d3d689a83aad64fd99babea324357d78616fb65a",
+    "size": 3620,
+    "line_count": 114,
     "namespace": "",
     "using_list": [
       "System.Collections.Generic",
@@ -3028,6 +3028,10 @@
       "DialogueSequenceData",
       "Awake",
       "Instance",
+      "Parent",
+      "DialogueView",
+      "UIManager",
+      "ClearCollections",
       "AddSequence",
       "GetSequence",
       "TryGetValue",
@@ -3039,8 +3043,6 @@
       "Dialogue",
       "View",
       "ShowDialogueView",
-      "DialogueView",
-      "UIManager",
       "GetUIComponent",
       "PlayDialogue",
       "PlaySequence"
@@ -3191,8 +3193,8 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/SceneManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/SceneManager.cs",
     "file_name": "SceneManager.cs",
-    "content_hash": "5b918f47ff468417cece9cd956e63cecf105ed99",
-    "size": 681,
+    "content_hash": "ecefc1fe981f9d87193fb7e8ebea78d4dbb88f67",
+    "size": 742,
     "line_count": 40,
     "namespace": "",
     "using_list": [
@@ -3259,7 +3261,8 @@
       "StartScene",
       "GoToStage1",
       "Stage1",
-      "GoToStage2"
+      "GoToStage2",
+      "Stage2"
     ],
     "component_access_types": [],
     "created_types": [],
@@ -3267,7 +3270,8 @@
     "string_literals": [
       "StageSelectScene",
       "StartScene",
-      "Stage1"
+      "Stage1",
+      "Stage2"
     ],
     "numeric_literals": [],
     "guessed_roles": [
@@ -3380,9 +3384,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/SoundManager.cs",
     "file_name": "SoundManager.cs",
-    "content_hash": "496f97d113802d18de790dbc1d0b89e3fbb9d8d2",
-    "size": 6576,
-    "line_count": 207,
+    "content_hash": "f52290f3594d60bd7a9fbdc68904eb2458eb1db6",
+    "size": 6832,
+    "line_count": 211,
     "namespace": "",
     "using_list": [
       "DG.Tweening",

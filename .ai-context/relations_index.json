@@ -6358,6 +6358,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "from_class": "DialogueManager",
+    "to_type": "ClearCollections",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
     "to_type": "Collections",
     "relation_type": "uses",
     "strength": 1
@@ -6450,6 +6457,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "from_class": "DialogueManager",
     "to_type": "None",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Parent",
     "relation_type": "uses",
     "strength": 1
   },
@@ -6807,6 +6821,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/SceneManager.cs",
     "from_class": "SceneManager",
     "to_type": "Stage1",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/SceneManager.cs",
+    "from_class": "SceneManager",
+    "to_type": "Stage2",
     "relation_type": "uses",
     "strength": 1
   },
