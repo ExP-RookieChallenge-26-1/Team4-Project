@@ -46,6 +46,7 @@ public class VirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandler,
     {
         SetPressedVisual(true);
         UpdateJoystick(eventData);
+        SoundManager.Instance.Play(Define.SFX.fx_01_cursorMove);
         OnPressed?.Invoke();
     }
 

@@ -191,6 +191,8 @@ public class MineFieldBackend : MonoBehaviour
             }
             else if (grid[coord.x, coord.y] == -1) //지뢰를 클릭했을때
             {
+                //지뢰 폭발 소리
+                SoundManager.Instance.Play(Define.SFX.fx_03_mine_small);
                 //프론트 엔드 변화
                 shaderFrontend.DestroyAllShaders();
                 //게임 오버 로직

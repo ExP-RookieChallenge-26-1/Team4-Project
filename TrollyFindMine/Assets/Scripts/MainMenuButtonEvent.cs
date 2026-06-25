@@ -17,7 +17,12 @@ public class MainMenuButtonEvent : MonoBehaviour
 
     private void Start()
     {
+        SoundManager.Instance.Play(Define.BGM.p_theme_v2);
+
         gameStartButton.onClick.AddListener(SceneManager.Instance.GoToStageSelectScene);
+        gameStartButton.onClick.AddListener(() => SoundManager.Instance.Play(Define.SFX.fx_00_button));
+        settingsButton.onClick.AddListener(() => SoundManager.Instance.Play(Define.SFX.fx_00_button));
+        gameExitButton.onClick.AddListener(() => SoundManager.Instance.Play(Define.SFX.fx_00_button));
         //TODO : settingsButton, gameExitButton 연결
     }
 
