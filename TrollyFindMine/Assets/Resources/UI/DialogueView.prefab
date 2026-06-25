@@ -475,6 +475,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c81e70790d67546428fd0ae4ac7a3850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueView
+  referenceResolution: {x: 1440, y: 3200}
+  referenceScale: 1
   characterImage: {fileID: 1617585091668610717}
   bubbleImage: {fileID: 5601951909812177760}
   dialogueText: {fileID: 8043818464636497909}
@@ -483,6 +485,10 @@ MonoBehaviour:
   expressionSprites:
   - {fileID: -2050341391387626377, guid: 43022623117421544a687c787a1008aa, type: 3}
   - {fileID: -1951616946333757801, guid: 6d082e856fc905642b4d5522261b1218, type: 3}
+  - {fileID: -4135996522504861300, guid: 98234d773ef33314f9ab08341a41df51, type: 3}
+  - {fileID: -2872806270633961942, guid: 4b8458de7704c3449a2d0295609d260e, type: 3}
+  - {fileID: -2872806270633961942, guid: 4b8458de7704c3449a2d0295609d260e, type: 3}
+  - {fileID: -583092046271427146, guid: 43ab1d0a53da9bb4f9560339cd199d01, type: 3}
   bubbleSprites:
   - {fileID: 9113640945991482476, guid: fc63507dc501d9649b7f0df0c1594799, type: 3}
   - {fileID: -5334298724329575793, guid: 54fdff4caeeb6f84e97434f6dd2a661e, type: 3}

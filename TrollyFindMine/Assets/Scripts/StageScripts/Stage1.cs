@@ -9,7 +9,7 @@ public class Stage1 : MonoBehaviour
     [SerializeField] private MineFieldBackend _mineFieldBackend;
     [SerializeField] private int row = 5;
     [SerializeField] private int col = 5;
-    [SerializeField] private int numOfMine = 5;
+    [SerializeField] private int numOfMine = 8;
     private DialogueView dview;
     
     #endregion
