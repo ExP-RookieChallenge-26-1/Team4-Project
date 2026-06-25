@@ -2,26 +2,26 @@
   "project_name": "unknown",
   "language": "C#",
   "engine_guess": "Unity",
-  "total_cs_files": 41,
-  "mono_behaviour_files": 16,
+  "total_cs_files": 42,
+  "mono_behaviour_files": 17,
   "scriptable_object_files": 1,
   "files_with_update": 2,
   "files_with_fixed_update": 2,
   "files_with_late_update": 0,
   "singleton_candidates": 2,
-  "manager_like_classes": 13,
+  "manager_like_classes": 14,
   "ui_related_classes": 26,
-  "save_load_related_classes": 24,
+  "save_load_related_classes": 25,
   "role_counts": {
     "ui": 26,
-    "runtime": 31,
-    "save-load": 24,
+    "runtime": 32,
+    "save-load": 25,
     "player": 10,
     "combat": 3,
     "network": 2,
-    "manager": 13,
-    "data": 10,
-    "scene": 3
+    "manager": 14,
+    "data": 11,
+    "scene": 4
   },
   "high_coupling_classes": [
     {
@@ -75,8 +75,8 @@
     {
       "class_name": "MineFieldBackend",
       "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
-      "relation_count": 52,
-      "referenced_type_count": 49
+      "relation_count": 53,
+      "referenced_type_count": 50
     },
     {
       "class_name": "UIManager",
