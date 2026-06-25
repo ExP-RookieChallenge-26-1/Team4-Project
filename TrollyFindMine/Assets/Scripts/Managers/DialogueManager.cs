@@ -11,7 +11,16 @@ public enum DialogueKey
     Stage2_Tutorial,
     Stage2_Hint_01,
     Stage2_GameOver,
-    Stage2_Clear
+    Stage2_Clear,
+    Stage3_Tutorial,
+    Stage3_Hint_01,
+    Stage3_Clear,
+    Stage3_GameOver,
+    Stage4_Tutorial,
+    Stage4_FirstG,
+    Stage4_Hint_01,
+    Stage4_Clear,
+    Stage4_GameOver
 }
 
 public class DialogueManager : Singleton<DialogueManager>
@@ -30,6 +39,19 @@ public class DialogueManager : Singleton<DialogueManager>
     [SerializeField] private DialogueSequenceData stage2Hint01;
     [SerializeField] private DialogueSequenceData stage2Clear;
     [SerializeField] private DialogueSequenceData stage2GameOver;
+    
+    [Header("Stage 3")]
+    [SerializeField] private DialogueSequenceData stage3Tutorial;
+    [SerializeField] private DialogueSequenceData stage3Hint01;
+    [SerializeField] private DialogueSequenceData stage3Clear;
+    [SerializeField] private DialogueSequenceData stage3GameOver;
+    
+    [Header("Stage 4")]
+    [SerializeField] private DialogueSequenceData stage4Tutorial;
+    [SerializeField] private DialogueSequenceData stage4FirstG;
+    [SerializeField] private DialogueSequenceData stage4Hint01;
+    [SerializeField] private DialogueSequenceData stage4Clear;
+    [SerializeField] private DialogueSequenceData stage4GameOver;
 
     private Dictionary<DialogueKey, DialogueSequenceData> _sequenceDictionary;
 
@@ -56,6 +78,15 @@ public class DialogueManager : Singleton<DialogueManager>
         AddSequence(DialogueKey.Stage2_Hint_01, stage2Hint01);
         AddSequence(DialogueKey.Stage2_Clear, stage2Clear);
         AddSequence(DialogueKey.Stage2_GameOver, stage2GameOver);
+        AddSequence(DialogueKey.Stage3_Tutorial, stage3Tutorial);
+        AddSequence(DialogueKey.Stage3_Hint_01, stage3Hint01);
+        AddSequence(DialogueKey.Stage3_Clear, stage3Clear);
+        AddSequence(DialogueKey.Stage3_GameOver, stage3GameOver);
+        AddSequence(DialogueKey.Stage4_Tutorial, stage4Tutorial);
+        AddSequence(DialogueKey.Stage4_FirstG, stage4FirstG);
+        AddSequence(DialogueKey.Stage4_Hint_01, stage4Hint01);
+        AddSequence(DialogueKey.Stage4_Clear, stage4Clear);
+        AddSequence(DialogueKey.Stage4_GameOver, stage4GameOver);
     }
 
     public DialogueSequenceData GetSequence(DialogueKey key)

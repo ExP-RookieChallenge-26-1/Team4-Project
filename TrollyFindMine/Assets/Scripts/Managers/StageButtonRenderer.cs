@@ -62,6 +62,12 @@ public class StageButtonRenderer : MonoBehaviour
             case 2:
                 button.onClick.AddListener(SceneManager.Instance.GoToStage2);
                 break;
+            case 3:
+                button.onClick.AddListener(SceneManager.Instance.GoToStage3);
+                break;
+            case 4:
+                button.onClick.AddListener(SceneManager.Instance.GoToStage4);
+                break;
             default:
                 button.onClick.AddListener(() => Debug.LogWarning($"Stage {stageNumber} scene is not connected yet.", this));
                 break;

@@ -33,6 +33,17 @@ public class SceneManager : Singleton<SceneManager>
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Stage2");
     }
+    
+    public void GoToStage3()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Stage3");
+    }
+    
+    
+    public void GoToStage4()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Stage4");
+    }
 
     #endregion
 
