@@ -10649,6 +10649,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "from_class": "MineFieldBackend",
+    "to_type": "Destroy",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
     "to_type": "DestroyAllShaders",
     "relation_type": "uses",
     "strength": 1
@@ -10916,6 +10923,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
     "from_class": "MineFieldBackend",
     "to_type": "SFX",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
+    "from_class": "MineFieldBackend",
+    "to_type": "ShaderCell",
     "relation_type": "uses",
     "strength": 1
   },

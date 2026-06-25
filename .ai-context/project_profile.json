@@ -75,8 +75,8 @@
     {
       "class_name": "MineFieldBackend",
       "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/MineFieldBackend.cs",
-      "relation_count": 59,
-      "referenced_type_count": 55
+      "relation_count": 61,
+      "referenced_type_count": 57
     },
     {
       "class_name": "StageButtonRenderer",
