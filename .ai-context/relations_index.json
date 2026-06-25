@@ -6379,6 +6379,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "from_class": "DialogueManager",
+    "to_type": "Stage1_GameOver",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
     "to_type": "Stage1_Hint_01",
     "relation_type": "uses",
     "strength": 1
@@ -6394,6 +6401,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "from_class": "DialogueManager",
     "to_type": "Stage2_Clear",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
+    "from_class": "DialogueManager",
+    "to_type": "Stage2_GameOver",
     "relation_type": "uses",
     "strength": 1
   },
@@ -8122,7 +8136,28 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
     "from_class": "Stage1",
+    "to_type": "LoseSceneChange",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
+    "from_class": "Stage1",
+    "to_type": "LoseSequence",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
+    "from_class": "Stage1",
     "to_type": "MineFieldBackend",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
+    "from_class": "Stage1",
+    "to_type": "OnGameOver",
     "relation_type": "uses",
     "strength": 1
   },
@@ -8150,6 +8185,13 @@
   {
     "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
     "from_class": "Stage1",
+    "to_type": "ResetData",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
+    "from_class": "Stage1",
     "to_type": "SceneManager",
     "relation_type": "uses",
     "strength": 1
@@ -8158,6 +8200,13 @@
     "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
     "from_class": "Stage1",
     "to_type": "Stage1_Clear",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
+    "from_class": "Stage1",
+    "to_type": "Stage1_GameOver",
     "relation_type": "uses",
     "strength": 1
   },

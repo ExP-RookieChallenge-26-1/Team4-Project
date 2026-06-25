@@ -2931,9 +2931,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/DialogueManager.cs",
     "file_name": "DialogueManager.cs",
-    "content_hash": "19529c2c2ef4f2b8cacf05a422ee32247f045c21",
-    "size": 2957,
-    "line_count": 104,
+    "content_hash": "e4285df0489401fbfddbb5d0717eef711b19f4fc",
+    "size": 3263,
+    "line_count": 110,
     "namespace": "",
     "using_list": [
       "System.Collections.Generic",
@@ -2994,8 +2994,10 @@
       "Stage1_Tutorial",
       "Stage1_Hint_01",
       "Stage1_Clear",
+      "Stage1_GameOver",
       "Stage2_Tutorial",
       "Stage2_Hint_01",
+      "Stage2_GameOver",
       "Stage2_Clear",
       "Singleton",
       "Stage",
@@ -4068,9 +4070,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
     "path": "TrollyFindMine/Assets/Scripts/StageScripts/Stage1.cs",
     "file_name": "Stage1.cs",
-    "content_hash": "a0d3b5437dacf8c6874d0c8c3766e0087587c29a",
-    "size": 1284,
-    "line_count": 52,
+    "content_hash": "e3f94e6aaa9431cf44b92a591f8463e05fdbaaee",
+    "size": 1874,
+    "line_count": 69,
     "namespace": "",
     "using_list": [
       "System",
@@ -4096,7 +4098,9 @@
       "Start",
       "GameStart",
       "WinSequence",
-      "WinSceneChange"
+      "WinSceneChange",
+      "LoseSequence",
+      "LoseSceneChange"
     ],
     "fields": [
       {
@@ -4145,13 +4149,18 @@
       "View",
       "OnGameWin",
       "WinSequence",
+      "OnGameOver",
+      "LoseSequence",
       "InitGrid",
       "GameManager",
       "StageClear",
       "Stage1_Clear",
       "WinSceneChange",
       "SceneManager",
-      "GoToStageSelectScene"
+      "GoToStageSelectScene",
+      "ResetData",
+      "Stage1_GameOver",
+      "LoseSceneChange"
     ],
     "component_access_types": [],
     "created_types": [],
@@ -4168,6 +4177,7 @@
       "manager",
       "scene",
       "runtime",
+      "data",
       "save-load"
     ],
     "summary_signals": [
