@@ -3,6 +3,10 @@ using UnityEngine.UI;
 
 public class StageButtonRenderer : MonoBehaviour
 {
+    [Header("Layout Scale")]
+    [SerializeField] private Vector2 referenceResolution = new Vector2(1440f, 3200f);
+    [SerializeField] private float referenceScale = 1f;
+
     [Header("Stage Layout")]
     [SerializeField] private GameObject stageButtonPrefab;
     [SerializeField] private Transform stageButtonParent;
@@ -10,11 +14,14 @@ public class StageButtonRenderer : MonoBehaviour
     [SerializeField] private int columnCount = 3;
     private int stageCount = 9;
     private bool[] clearedStages;
+    private Vector2 _referenceAnchoredPosition;
 
     private void Start()
     {
+        CacheReferenceAnchoredPosition();
         stageCount = GameManager.Instance.StageCount;
         clearedStages = GameManager.Instance.ClearedStages;
+        ApplyButtonParentScale();
         GenerateStageButtons();
     }
 
@@ -113,6 +120,30 @@ public class StageButtonRenderer : MonoBehaviour
     {
         gridLayoutGroup.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
         gridLayoutGroup.constraintCount = columnCount;
+    }
+
+    private void ApplyButtonParentScale()
+    {
+        if (stageButtonParent is not RectTransform rectTransform)
+            return;
+
+        if (referenceResolution.x <= 0f || referenceResolution.y <= 0f)
+            return;
+
+        if (Screen.width <= 0 || Screen.height <= 0)
+            return;
+
+        float scale = Mathf.Min(Screen.width / referenceResolution.x, Screen.height / referenceResolution.y);
+        rectTransform.localScale = Vector3.one * scale * referenceScale;
+        rectTransform.anchoredPosition = _referenceAnchoredPosition * scale;
+    }
+
+    private void CacheReferenceAnchoredPosition()
+    {
+        if (stageButtonParent is RectTransform rectTransform)
+        {
+            _referenceAnchoredPosition = rectTransform.anchoredPosition;
+        }
     }
 
     /// <summary>
