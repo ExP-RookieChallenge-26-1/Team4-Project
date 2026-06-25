@@ -79,10 +79,10 @@
       "referenced_type_count": 55
     },
     {
-      "class_name": "DialogueView",
-      "file_id": "TrollyFindMine/Assets/Scripts/UI/DialogueView.cs",
-      "relation_count": 57,
-      "referenced_type_count": 54
+      "class_name": "StageButtonRenderer",
+      "file_id": "TrollyFindMine/Assets/Scripts/Managers/StageButtonRenderer.cs",
+      "relation_count": 59,
+      "referenced_type_count": 53
     }
   ],
   "high_risk_classes": [

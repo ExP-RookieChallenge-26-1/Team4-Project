@@ -3623,9 +3623,9 @@
     "file_id": "TrollyFindMine/Assets/Scripts/Managers/StageButtonRenderer.cs",
     "path": "TrollyFindMine/Assets/Scripts/Managers/StageButtonRenderer.cs",
     "file_name": "StageButtonRenderer.cs",
-    "content_hash": "64baaf845e410f3aa6efa33912a847827174bc46",
-    "size": 4375,
-    "line_count": 146,
+    "content_hash": "c73c883dd9b1df20890669f0f2206568adebafae",
+    "size": 5458,
+    "line_count": 177,
     "namespace": "",
     "using_list": [
       "UnityEngine",
@@ -3648,11 +3648,14 @@
     "main_class_name": "StageButtonRenderer",
     "unity_type": "MonoBehaviour",
     "methods": [
+      "Vector2",
       "Start",
       "GenerateStageButtons",
       "AddStageButtonClickEvent",
       "ValidateReferences",
       "ApplyGridSettings",
+      "ApplyButtonParentScale",
+      "CacheReferenceAnchoredPosition",
       "ClearExistingButtons",
       "DestroyImmediate",
       "IsStageUnlocked"
@@ -3668,6 +3671,13 @@
       {
         "name": "clearedStages",
         "type": "bool[]",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_referenceAnchoredPosition",
+        "type": "Vector2",
         "access": "private",
         "serialized": false,
         "is_static": false
@@ -3696,23 +3706,27 @@
     "public_field_count": 0,
     "get_component_count": 2,
     "find_call_count": 0,
-    "new_keyword_count": 0,
+    "new_keyword_count": 1,
     "coroutine_count": 0,
     "singleton_candidate": false,
     "dont_destroy_on_load": false,
     "referenced_types": [
       "int",
       "bool",
+      "Vector2",
       "UnityEngine",
       "UI",
-      "Stage",
       "Layout",
+      "Scale",
+      "Stage",
       "GridLayoutGroup",
       "Start",
+      "CacheReferenceAnchoredPosition",
       "GameManager",
       "Instance",
       "StageCount",
       "ClearedStages",
+      "ApplyButtonParentScale",
       "GenerateStageButtons",
       "ContextMenu",
       "Generate",
@@ -3741,6 +3755,10 @@
       "StageManager",
       "Constraint",
       "FixedColumnCount",
+      "RectTransform",
+      "Screen",
+      "Min",
+      "Vector3",
       "GetChild",
       "Application",
       "Destroy",
@@ -3751,12 +3769,15 @@
       "StageButtonImageController",
       "Button"
     ],
-    "created_types": [],
+    "created_types": [
+      "Vector2"
+    ],
     "singleton_access_types": [
       "GameManager",
       "SceneManager"
     ],
     "string_literals": [
+      "Layout Scale",
       "Stage Layout",
       "Generate Stage Buttons",
       "StageButton_{i + 1}",
@@ -3768,10 +3789,14 @@
       "StageManager: columnCount must be at least 1."
     ],
     "numeric_literals": [
+      1440,
+      3200,
+      1,
       3,
       9,
       2,
-      4
+      4,
+      0
     ],
     "guessed_roles": [
       "ui",
