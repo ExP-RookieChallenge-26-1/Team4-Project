@@ -4817,6 +4817,116 @@
     ]
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "path": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "file_name": "FloatAnimation.cs",
+    "content_hash": "d9e117b01904648a93cdae6dae4c1192506a6012",
+    "size": 663,
+    "line_count": 27,
+    "namespace": "",
+    "using_list": [
+      "DG.Tweening",
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "FloatAnimation",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "FloatAnimation",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start",
+      "OnDestroy"
+    ],
+    "fields": [
+      {
+        "name": "_tween",
+        "type": "Tween",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "baseY",
+        "type": "float",
+        "access": "internal",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start",
+      "OnDestroy"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 0,
+    "public_field_count": 0,
+    "get_component_count": 1,
+    "find_call_count": 0,
+    "new_keyword_count": 0,
+    "coroutine_count": 0,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "Tween",
+      "float",
+      "DG",
+      "Tweening",
+      "UnityEngine",
+      "Start",
+      "RectTransform",
+      "GetComponent",
+      "DOAnchorPosY",
+      "SetEase",
+      "Ease",
+      "InOutSine",
+      "SetLoops",
+      "LoopType",
+      "Yoyo",
+      "OnDestroy",
+      "Kill"
+    ],
+    "component_access_types": [
+      "RectTransform"
+    ],
+    "created_types": [],
+    "singleton_access_types": [],
+    "string_literals": [],
+    "numeric_literals": [
+      20,
+      1.2
+    ],
+    "guessed_roles": [
+      "runtime",
+      "ui",
+      "save-load"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "UI 관련 로직 포함",
+      "저장/불러오기 관련 로직 포함",
+      "컴포넌트 조회 사용"
+    ]
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/UI/MineField/Cell.cs",
     "path": "TrollyFindMine/Assets/Scripts/UI/MineField/Cell.cs",
     "file_name": "Cell.cs",

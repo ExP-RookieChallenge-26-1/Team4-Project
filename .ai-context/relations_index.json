@@ -9618,6 +9618,139 @@
     "strength": 1
   },
   {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "RectTransform",
+    "relation_type": "component-access",
+    "strength": 3
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "MonoBehaviour",
+    "relation_type": "inherits",
+    "strength": 4
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "DG",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "DOAnchorPosY",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "Ease",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "float",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "GetComponent",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "InOutSine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "Kill",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "LoopType",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "OnDestroy",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "RectTransform",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "SetEase",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "SetLoops",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "Start",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "Tween",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "Tweening",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "UnityEngine",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
+    "from_file": "TrollyFindMine/Assets/Scripts/UI/FloatAnimation.cs",
+    "from_class": "FloatAnimation",
+    "to_type": "Yoyo",
+    "relation_type": "uses",
+    "strength": 1
+  },
+  {
     "from_file": "TrollyFindMine/Assets/Scripts/UI/MineField/Cell.cs",
     "from_class": "Cell",
     "to_type": "Image",
