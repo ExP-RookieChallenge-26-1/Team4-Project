@@ -4559,6 +4559,169 @@
     ]
   },
   {
+    "file_id": "TrollyFindMine/Assets/Scripts/StageScripts/Stage4.cs",
+    "path": "TrollyFindMine/Assets/Scripts/StageScripts/Stage4.cs",
+    "file_name": "Stage4.cs",
+    "content_hash": "5a80768e10dbc34d9f6bea7e78166ce982392bc1",
+    "size": 3643,
+    "line_count": 121,
+    "namespace": "",
+    "using_list": [
+      "System.Collections",
+      "UnityEngine"
+    ],
+    "classes": [
+      {
+        "name": "Stage4",
+        "kind": "class",
+        "access": "public",
+        "base_types": [
+          "MonoBehaviour"
+        ],
+        "interfaces": [],
+        "attributes": [],
+        "is_partial": false,
+        "is_generic": false
+      }
+    ],
+    "main_class_name": "Stage4",
+    "unity_type": "MonoBehaviour",
+    "methods": [
+      "Start",
+      "GameStart",
+      "WinSequence",
+      "WinSceneChange",
+      "LoseSequence",
+      "LoseSceneChange",
+      "MiddleSequence",
+      "StopSlideGimmick",
+      "SlideGimmickCoroutine",
+      "WaitForSeconds"
+    ],
+    "fields": [
+      {
+        "name": "dview",
+        "type": "DialogueView",
+        "access": "private",
+        "serialized": true,
+        "is_static": false
+      },
+      {
+        "name": "_firstGimmickFired",
+        "type": "bool",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      },
+      {
+        "name": "_slideGimmickCoroutine",
+        "type": "Coroutine",
+        "access": "private",
+        "serialized": false,
+        "is_static": false
+      }
+    ],
+    "properties": [],
+    "events": [],
+    "unity_messages": [
+      "Start"
+    ],
+    "has_update": false,
+    "has_fixed_update": false,
+    "has_late_update": false,
+    "has_awake": false,
+    "has_start": true,
+    "has_on_enable": false,
+    "has_on_disable": false,
+    "serialize_field_count": 1,
+    "public_field_count": 0,
+    "get_component_count": 0,
+    "find_call_count": 0,
+    "new_keyword_count": 1,
+    "coroutine_count": 2,
+    "singleton_candidate": false,
+    "dont_destroy_on_load": false,
+    "referenced_types": [
+      "DialogueView",
+      "bool",
+      "Coroutine",
+      "System",
+      "Collections",
+      "UnityEngine",
+      "Field",
+      "MineFieldBackend",
+      "SelectedCellMove",
+      "Unity",
+      "Cycle",
+      "Start",
+      "DialogueManager",
+      "Instance",
+      "PlayDialogue",
+      "DialogueKey",
+      "Stage4_Tutorial",
+      "OnSequenceFinished",
+      "GameStart",
+      "Public",
+      "Methods",
+      "OnGameWin",
+      "WinSequence",
+      "OnGameOver",
+      "LoseSequence",
+      "OnGameMiddle",
+      "MiddleSequence",
+      "InitGrid",
+      "StartCoroutine",
+      "SlideGimmickCoroutine",
+      "GameManager",
+      "StageClear",
+      "StopSlideGimmick",
+      "ChangeAtmosphere",
+      "Stage4_Clear",
+      "WinSceneChange",
+      "SceneManager",
+      "GoToStageSelectScene",
+      "ResetData",
+      "Stage4_GameOver",
+      "LoseSceneChange",
+      "Stage4_Hint_01",
+      "Private",
+      "StopCoroutine",
+      "Highlight",
+      "WaitForSeconds",
+      "Stage4_FirstG"
+    ],
+    "component_access_types": [],
+    "created_types": [
+      "WaitForSeconds"
+    ],
+    "singleton_access_types": [
+      "DialogueManager",
+      "GameManager",
+      "SceneManager"
+    ],
+    "string_literals": [],
+    "numeric_literals": [
+      15,
+      30,
+      4,
+      2,
+      3,
+      2,
+      3
+    ],
+    "guessed_roles": [
+      "manager",
+      "scene",
+      "runtime",
+      "player",
+      "data"
+    ],
+    "summary_signals": [
+      "런타임 컴포넌트",
+      "인스펙터 직렬화 필드 사용"
+    ]
+  },
+  {
     "file_id": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
     "path": "TrollyFindMine/Assets/Scripts/testScript/Starter.cs",
     "file_name": "Starter.cs",
