@@ -12,4 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713941b1f69a060408652db841d87600, type: 3}
   m_Name: Stage4FirstG
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequenceData
-  lines: []
+  lines:
+  - expression: 1
+    bubbleColor: 1
+    text: "\"\uC800\uB7F0 \uCEE4\uC11C\uAC00 \uB2E4\uB978 \uB370\uB85C \uC774\uB3D9\uD574
+      \uBC84\uB838\uB294\uB370 \uB204\uAC00 \uADF8\uB7AC\uC744\uAE4C \uD788\uD79B\""
+    eventType: 0
+  - expression: 1
+    bubbleColor: 1
+    text: "\"\uC0BD\uC9C8 \uBC84\uD2BC\uC774\uB098 \uAE43\uBC1C \uBC84\uD2BC \uB204\uB97C
+      \uB54C \uC870\uC2EC\uD574\uC57C \uACA0\uB294\uAC78\""
+    eventType: 0

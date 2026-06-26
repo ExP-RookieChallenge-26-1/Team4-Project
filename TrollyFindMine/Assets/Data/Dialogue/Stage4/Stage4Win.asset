@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713941b1f69a060408652db841d87600, type: 3}
   m_Name: Stage4Win
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequenceData
-  lines: []
+  lines:
+  - expression: 5
+    bubbleColor: 1
+    text: "\"\uC774\uAC78 \uC2E4\uC218 \uC5C6\uC774 \uAE7C\uB2E4\uACE0?\""
+    eventType: 0
+  - expression: 5
+    bubbleColor: 1
+    text: "\"\uB0B4 \uC608\uC0C1 \uBC16\uC778\uAC78\""
+    eventType: 0

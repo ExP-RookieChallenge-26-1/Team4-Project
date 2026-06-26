@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713941b1f69a060408652db841d87600, type: 3}
   m_Name: Stage4Tutorial
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequenceData
-  lines: []
+  lines:
+  - expression: 1
+    bubbleColor: 2
+    text: "\"\uC774\uC81C\uB294 \uD654\uBA74\uC774 \uAE5C\uBE61\uC774\uC9C0 \uC54A\uC744\uAC70\uC57C\r\n\uC544\uB9C8\uB3C4..
+      \uB9D0\uC774\uC57C\""
+    eventType: 0

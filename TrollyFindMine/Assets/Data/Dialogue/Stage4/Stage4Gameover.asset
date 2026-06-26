@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713941b1f69a060408652db841d87600, type: 3}
   m_Name: Stage4Gameover
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequenceData
-  lines: []
+  lines:
+  - expression: 1
+    bubbleColor: 1
+    text: "\"\uD788\uD788\uD79B \uC798\uBABB \uB20C\uB800\uAD6C\uB098?\""
+    eventType: 0
+  - expression: 1
+    bubbleColor: 1
+    text: "\"\uB2E4\uC2DC \uD568\uAED8 \uD558\uC790\""
+    eventType: 0
